@@ -12,7 +12,6 @@ set background=dark
 colorscheme solarized
 
 " editing preferences
-set guifont=Consolas:h10:cANSI
 set nocompatible
 set nowrap
 set tabstop=4
@@ -46,9 +45,6 @@ nnoremap <Up> <NOP>
 nnoremap <Down> <NOP>
 nnoremap <Left> <NOP>
 nnoremap <Right> <NOP>
-" tab navigation
-nnoremap L gt
-nnoremap H gT
 " pane navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
