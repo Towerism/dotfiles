@@ -14,12 +14,14 @@
    '(
      (git :variables
           git-gutter-use-fringe t)
+     auto-completion
+     auto-complete-clang
+     auto-complete-clang-async
      markdown
      org
      c-c++
      syntax-checking
      haskell
-     shell-scripts
      ruby
      python
      markdown
@@ -28,14 +30,9 @@
      javascript
      php
      csharp
-     company
-     company-mode
-     company-c-headers
-     company-ghci
-     company-math
-     company-quickhealp
-     company-statistics
-     cpputils-cmake
+     cmake-ide
+     cmake-project
+     cmake-font-lock
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
@@ -104,9 +101,7 @@ before layers configuration."
    dotspacemacs-enable-paste-micro-state t
    ;; Guide-key delay in seconds. The Guide-key is the popup buffer listing
    ;; the commands bound to the current keystrokes.
-   dotspacemacs-guide-key-delay 0.4
-   ;; If non nil a progress bar is displayed when spacemacs is loading. This
-   ;; may increase the boot time on some systems and emacs builds, set it to
+   dotspacemacs-guide-key-delay 0.4 ;; If non nil a progress bar is displayed when spacemacs is loading. This ;; may increase the boot time on some systems and emacs builds, set it to
    ;; nil ;; to boost the loading time.
    dotspacemacs-loading-progress-bar t
    ;; If non nil the frame is fullscreen when Emacs starts up.
@@ -120,7 +115,7 @@ before layers configuration."
    ;; (Emacs 24.4+ only) dotspacemacs-maximized-at-startup nil
    ;; A value from the range (0..100), in increasing opacity, which describes
    ;; the transparency level of a frame when it's active or selected.
-   ;; Transparency can be toggled through `toggle-transparency'.
+   ;; Transparency can be toggled through `toggle-transparency'
    dotspacemacs-active-transparency 90
    ;; A value from the range (0..100), in increasing opacity, which describes
    ;; the transparency level of a frame when it's inactive or deselected.
@@ -147,14 +142,20 @@ before layers configuration."
    flycheck-gcc-language-standard "c++14"
    )
   ;; User initialization goes here
-                                        ; Add cmake listfile names to the mode list.
   )
 
-(defun dotspacemacs/config (
-                            )
+(defun dotspacemacs/config ()
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
+  (setq
+   global-auto-complete-mode t
+   ac-modes '(c++-mode)
+   )
+  (setq powerline-default-separator 'box)
+  (global-hl-line-mode -1)
+  (global-linum-mode)
+  (global-vi-tilde-fringe-mode -1)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
