@@ -15,8 +15,6 @@
      (git :variables
           git-gutter-use-fringe t)
      auto-completion
-     auto-complete-clang
-     auto-complete-clang-async
      markdown
      org
      c-c++
@@ -30,9 +28,7 @@
      javascript
      php
      csharp
-     cmake-ide
-     cmake-project
-     cmake-font-lock
+     martin-c++
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
