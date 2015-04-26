@@ -1,3 +1,3 @@
 cd ~/dotfiles
 git pull
-ln -sf .spacemacs ~/.spacemacs
+ln -sf ~/dotfiles/.spacemacs ~/.spacemacs
