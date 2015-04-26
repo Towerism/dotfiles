@@ -36,7 +36,13 @@
      javascript
      php
      csharp
+     company
      company-mode
+     company-c-headers
+     company-ghci
+     company-math
+     company-quickhealp
+     company-statistics
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
@@ -147,10 +153,11 @@ before layers configuration."
    dotspacemacs-default-package-repository nil
    )
   ;; User initialization goes here
-  ; Add cmake listfile names to the mode list.
+                                        ; Add cmake listfile names to the mode list.
   )
 
-(defun dotspacemacs/config ()
+(defun dotspacemacs/config (
+                            )
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
