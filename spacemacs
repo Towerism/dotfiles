@@ -28,6 +28,7 @@
      javascript
      php
      csharp
+     flycheck
      martin-c++
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
@@ -136,6 +137,7 @@ before layers configuration."
    dotspacemacs-default-package-repository nil
    ;; flycheck c++ standard
    flycheck-gcc-language-standard "c++14"
+   flycheck-clang-language-standard "c++14"
    )
   ;; User initialization goes here
   )
