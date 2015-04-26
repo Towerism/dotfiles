@@ -143,6 +143,8 @@ before layers configuration."
    ;; specified with an installed package.
    ;; Not used for now.
    dotspacemacs-default-package-repository nil
+   ;; flycheck c++ standard
+   flycheck-gcc-language-standard "c++14"
    )
   ;; User initialization goes here
                                         ; Add cmake listfile names to the mode list.
