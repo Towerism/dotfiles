@@ -3,6 +3,11 @@
         "clean": ["~"]
     },
     {
+        "shell": [
+            ["rm -rf ~/.emacs.d/private", "Removing default emacs.d private dir"]
+        ]
+    },
+    {
         "link": {
             "~/.spacemacs": "spacemacs",
             "~/.emacs.d/private": "emacs.d/private/"
