@@ -1,4 +1,4 @@
 - link: {
-  ~/.spacemacs: spacemacs
-  ~/.emacs.d/private/: emacs.d/private/
+  ~/.spacemacs: spacemacs,
+  ~/.emacs.d/private: emacs.d/private/
   }
