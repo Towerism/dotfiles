@@ -14,8 +14,8 @@
     cpputils-cmake
                             auto-complete-clang
                             ;;cmake-font-lock
-                            cmake-ide
                             flycheck
+                            cmake-ide
                             )
   )
 

@@ -138,6 +138,8 @@ before layers configuration."
    ;; flycheck c++ standard
    flycheck-gcc-language-standard "c++14"
    flycheck-clang-language-standard "c++14"
+   ;; paradox github token
+   paradox-github-token "475cfb1866acdff9a1abc8884d9423e8107fcef4"
    )
   ;; User initialization goes here
   )
