@@ -12,11 +12,14 @@
 (defvar martin-c++-packages
   '(
     cpputils-cmake
-                            auto-complete-clang
-                            ;;cmake-font-lock
-                            flycheck
-                            cmake-ide
-                            )
+    auto-complete-clang
+    cmake-font-lock
+    cmake-ide
+    )
+  )
+
+(defun martin-c++/cmake-font-lock ()
+  (use-package cmake-font-lock)
   )
 
 (defun martin-c++/init-auto-complete-clang ()
@@ -106,7 +109,8 @@
 
       ;; (setq cppcm-debug t)
       )
-    ))
+    )
+  )
 
 ;; (defun sam-cedet/init-stickyfunc-enhance ()
 ;;   (use-package stickyfunc-enhance)
