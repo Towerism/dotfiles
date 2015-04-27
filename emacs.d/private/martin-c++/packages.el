@@ -20,7 +20,11 @@
 
 (defun martin-c++/cmake-font-lock ()
   (use-package cmake-font-lock)
+  auto-complete-clang
+  cmake-font-lock
+  cmake-ide
   )
+)
 
 (defun martin-c++/init-auto-complete-clang ()
   (add-to-list 'load-path "~/AC")
