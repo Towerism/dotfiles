@@ -29,6 +29,8 @@
      php
      csharp
      flycheck
+     dash
+     ;; private layers
      martin-c++
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
@@ -157,6 +159,7 @@ layers configuration."
   (global-linum-mode)
   (global-vi-tilde-fringe-mode -1)
   )
+
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.

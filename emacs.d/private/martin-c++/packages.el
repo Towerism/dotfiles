@@ -34,7 +34,6 @@
   (setq ac-sources (append '(ac-source-clang ac-source-yasnippet) ac-sources)))
 (add-hook 'c-mode-common-hook 'my-ac-cc-mode-setup)
 
-
 (defun martin-c++/init-auto-complete-clang ()
   (add-to-list 'load-path "~/AC")
   (require 'auto-complete-config)
@@ -92,7 +91,8 @@
 
       ;; (setq cppcm-debug t)
       )
-    ))
+    )
+  )
 
 ;; (defun sam-cedet/init-stickyfunc-enhance ()
 ;;   (use-package stickyfunc-enhance)
