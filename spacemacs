@@ -159,6 +159,7 @@ layers configuration."
   (global-hl-line-mode -1)
   (global-linum-mode)
   (global-vi-tilde-fringe-mode -1)
+  (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
   )
 
 
