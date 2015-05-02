@@ -19,7 +19,6 @@
      org
      c-c++
      syntax-checking
-     haskell
      ruby
      python
      markdown
