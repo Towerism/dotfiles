@@ -14,7 +14,7 @@
     cpputils-cmake
     auto-complete-clang
     cmake-font-lock
-    cmake-ide
+    ;;cmake-ide
     )
   )
 
