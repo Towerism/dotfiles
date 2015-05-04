@@ -21,17 +21,10 @@
      syntax-checking
      ruby
      python
-     markdown
-     lua
-     html
-     javascript
-     php
-     csharp
-     flycheck
      dash
+     themes-megapack
      ;; private layers
      martin-c++
-     themes-megapack
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
