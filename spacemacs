@@ -23,6 +23,8 @@
      python
      dash
      themes-megapack
+     emacs-lisp
+     shell
      ;; private layers
      martin-c++
      )
@@ -135,6 +137,8 @@ before layers configuration."
    flycheck-clang-language-standard "c++14"
    ;; paradox github token
    paradox-github-token "475cfb1866acdff9a1abc8884d9423e8107fcef4"
+   ;; set garbage collection threshold much higher
+   gc-cons-threshold 20000000
    )
   ;; User initialization goes here
   )
