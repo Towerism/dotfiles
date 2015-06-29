@@ -9,13 +9,18 @@
 ;; This file is not part of GNU Emacs.
 ;;
 ;;; License: GPLv3
-(defvar martin-c++-packages
+(setq martin-c++-packages
   '(
     cpputils-cmake
     auto-complete-clang
     cmake-font-lock
     cmake-ide
+    ninja-mode
     )
+  )
+
+(defun martin-c++/init-ninja-mode ()
+  (add-to-list 'load-path "~/.emacs.d/private/ninja-mode")
   )
 
 (defun martin-c++/init-cmake-ide ()
