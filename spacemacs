@@ -14,6 +14,7 @@
    '(
      auto-completion
      c-c++
+     chrome
      emacs-lisp
      git
      github
