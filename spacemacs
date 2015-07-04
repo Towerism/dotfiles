@@ -12,8 +12,8 @@
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
    '(
-     (git :variables
-          git-gutter-use-fringe t)
+     github
+     version-control
      auto-completion
      markdown
      org
