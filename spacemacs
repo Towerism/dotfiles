@@ -12,6 +12,7 @@
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
    '(
+     git
      github
      version-control
      auto-completion
@@ -21,12 +22,13 @@
      syntax-checking
      ruby
      python
-     dash
      themes-megapack
      emacs-lisp
      shell
      ;; private layers
      martin-c++
+     martin-compile
+     martin-ssh
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()

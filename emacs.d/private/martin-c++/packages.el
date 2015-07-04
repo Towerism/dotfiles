@@ -16,23 +16,7 @@
     cmake-font-lock
     cmake-ide
     ninja-mode
-    ansi-color
-    keychain-environment
     )
-  )
-
-(defun martin-c++/init-keychain-environment ()
-  (keychain-refresh-environment)
-  )
-
-(defun colorize-compilation-buffer ()
-  (toggle-read-only)
-  (ansi-color-apply-on-region (point-min) (point-max))
-  (toggle-read-only)
-  )
-
-(defun martin-c++/init-ansi-color ()
-  (add-hook 'compilation-filter-hook 'colorize-compilation-buffer)
   )
 
 (defun martin-c++/init-ninja-mode ()
