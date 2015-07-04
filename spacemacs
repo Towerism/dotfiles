@@ -156,6 +156,7 @@ layers configuration."
   (global-linum-mode)
   (global-vi-tilde-fringe-mode -1)
   (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+  (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
   )
 
 
