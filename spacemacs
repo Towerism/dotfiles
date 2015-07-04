@@ -12,9 +12,7 @@
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
    '(
-     git
-     github
-     version-control
+     source-control
      auto-completion
      markdown
      org
