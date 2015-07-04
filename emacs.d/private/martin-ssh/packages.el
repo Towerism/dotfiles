@@ -1,7 +1,7 @@
 ;;; packages.el --- martin-ssh Layer packages File for Spacemacs
 ;;
 ;; Copyright (c) 2012-2014 Sylvain Benner
-;; Copyright (c) 2014-2015 Sylvain Benner & Contributors
+;; Copyright (c) 2014-2015 Martin Fracker & Contributors
 ;;
 ;; Author: Sylvain Benner <sylvain.benner@gmail.com>
 ;; URL: https://github.com/syl20bnr/spacemacs
@@ -20,7 +20,7 @@
 ;; List of packages to exclude.
 (setq martin-ssh-excluded-packages '())
 
-(defun martin-c++/init-keychain-environment ()
+(defun martin-ssh/init-keychain-environment ()
   (keychain-refresh-environment)
   )
 
