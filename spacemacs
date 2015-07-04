@@ -12,17 +12,19 @@
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
    '(
-     source-control
      auto-completion
+     c-c++
+     emacs-lisp
+     git
+     github
      markdown
      org
-     c-c++
-     syntax-checking
-     ruby
      python
-     themes-megapack
-     emacs-lisp
+     ruby
      shell
+     syntax-checking
+     themes-megapack
+     version-control
      ;; private layers
      martin-c++
      martin-compile
