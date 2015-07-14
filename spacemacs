@@ -12,7 +12,7 @@
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
    '(
-     auto-completion
+     ;auto-completion
      c-c++
      chrome
      emacs-lisp
@@ -23,7 +23,7 @@
      python
      ruby
      shell
-     syntax-checking
+     ;syntax-checking
      themes-megapack
      version-control
      ;; private layers

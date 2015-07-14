@@ -11,10 +11,10 @@
 ;;; License: GPLv3
 (setq martin-c++-packages
   '(
-    cpputils-cmake
-    auto-complete-clang
-    cmake-font-lock
-    cmake-ide
+    ;cpputils-cmake
+    ;auto-complete-clang
+    ;cmake-font-lock
+    ;cmake-ide
     ninja-mode
     )
   )
