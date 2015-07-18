@@ -13,12 +13,19 @@
   '(
     cpputils-cmake
     auto-complete-clang
+    cmake-ide
     ninja-mode
     )
   )
 
 (defun martin-c++/init-ninja-mode ()
   (add-to-list 'load-path "~/.emacs.d/private/ninja-mode")
+  )
+
+(defun martin-c++/init-cmake-ide ()
+  (add-to-list 'load-path "~/.emacs.d/private/flycheck")
+  (cmake-ide-setup)
+  (global-set-key (kbd "C-x C-o") 'ff-find-other-file)
   )
 
 (defun my-ac-config ()
