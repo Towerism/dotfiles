@@ -150,15 +150,10 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
-  (setq
-   global-auto-complete-mode t
-   ac-modes '(c++-mode)
-   )
   (setq powerline-default-separator 'box)
   (global-hl-line-mode -1)
   (global-linum-mode)
   (global-vi-tilde-fringe-mode -1)
-  (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
   (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
   )
 
