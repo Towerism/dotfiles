@@ -18,6 +18,7 @@
      emacs-lisp
      git
      github
+     lua
      markdown
      org
      python
@@ -30,6 +31,7 @@
      martin-c++
      martin-compile
      martin-ssh
+     martin-gdscript
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
