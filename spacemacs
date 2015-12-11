@@ -14,19 +14,16 @@
    '(
      auto-completion
      c-c++
-     chrome
      emacs-lisp
      git
      github
      lua
-     markdown
      org
      python
      ruby
      shell
      syntax-checking
      themes-megapack
-     version-control
      ;; private layers
      martin-c++
      martin-compile
