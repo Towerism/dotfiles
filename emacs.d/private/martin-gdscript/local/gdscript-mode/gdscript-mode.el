@@ -21,14 +21,21 @@
   '("Vector2" "Rect2" "Vector3" "Matrix32" "Plane" "Quat" "AABB" "Matrix3" "Transform"))
 
 (defvar gdscript-keywords
-  '("func" "const" "var" "if" "else" "elif" "for" "while" "return" "class" "extends"))
+  '("export" "static" "func" "const" "var" "if" "else" "elif" "for" "while" "return" "class" "extends"))
+
+(defvar gdscript-func-regex
+  "\\([a-zA-Z_]*\\) *(")
 
 (defun regex-maker (words)
   (regexp-opt words 'symbols))
 
+(defun identity (a)
+  a)
+
 (defvar gdscript-font-lock
   `((,(regex-maker gdscript-keywords) 1 font-lock-keyword-face)
     (,(regex-maker gdscript-builtin-words) 1 font-lock-type-face)
+    (,(identity gdscript-func-regex) 1 font-lock-function-name-face)
     ))
 
 (defvar gdscript-syntax-table nil)
