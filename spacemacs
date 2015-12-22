@@ -144,9 +144,12 @@ before layers configuration."
    gc-cons-threshold 20000000
    )
   ;; User initialization goes here
+  (setq-default indent-tabs-mode nil
+                tab-width 2
+                exec-path-from-shell-check-startup-files nil)
   )
 
-(defun dotspacemacs/config ()
+(defun dotspacemacs/user-config ()
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
