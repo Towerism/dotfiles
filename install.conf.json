@@ -10,7 +10,7 @@
     },
     {
         "link": {
-            "~/.spacemacs": "spacemacs",
+            "~/.spacemacs.d": "spacemacs.d",
             "~/.emacs.d/private": "emacs.d/private/"
         }
     }
