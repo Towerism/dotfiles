@@ -4,14 +4,12 @@
     },
     {
         "shell": [
-            ["git pull", "Pulling latest commits"],
-            ["rm -rf ~/.emacs.d/private", "Removing default emacs.d private dir"]
+            ["git pull", "Pulling latest commits"]
         ]
     },
     {
         "link": {
-            "~/.spacemacs.d": "spacemacs.d",
-            "~/.emacs.d/private": "emacs.d/private/"
+            "~/.emacs.d": "emacs.d"
         }
     }
 ]
