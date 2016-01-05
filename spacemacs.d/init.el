@@ -17,6 +17,7 @@
      emacs-lisp
      git
      github
+     java
      lua
      org
      python
@@ -24,12 +25,12 @@
      shell
      syntax-checking
      themes-megapack
+     yaml
      ;; private layers
      martin-c++
      martin-compile
      martin-ssh
      martin-gdscript
-     yaml
      )
    ;; A list of packages and/or extensions that will not be install and loaded.
    dotspacemacs-excluded-packages '()
