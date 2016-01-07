@@ -21,6 +21,6 @@
 (load-directory "~/.emacs.d/config")
 
 ;; custom override emacs lisp file
-(load "~/.emacs.d/custom")
+(when (file-exists-p "~/.emacs.d/custom.el") (load "~/.emacs.d/custom"))
 
 
