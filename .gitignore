@@ -1,0 +1,9 @@
+emacs.d/auto-save-list
+emacs.d/#*
+emacs.d/*~
+emacs.d/.cache
+emacs.d/.cask
+emacs.d/url
+emacs.d/elpa
+/emacs.d/projectile-bookmarks.eld
+/emacs.d/projectile.cache
