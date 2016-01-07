@@ -1,3 +1,6 @@
 emacs.d/auto-save-list
 emacs.d/#*
 emacs.d/*~
+emacs.d/.cache
+emacs.d/.cask
+emacs.d/url
