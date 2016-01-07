@@ -13,6 +13,9 @@
 (pallet-mode t)
 
 (setq make-backup-files nil)
+(menu-bar-mode -1)
+(scroll-bar-mode -1)
+(tool-bar-mode -1)
 
 (load "~/.emacs.d/load-directory")
 (load-directory "~/.emacs.d/config")
