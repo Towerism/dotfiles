@@ -6,7 +6,7 @@
         "shell": [
             ["git pull", "Pulling latest commits"],
             ["cd emacs.d && cask install", "Installing emacs lisp packages"],
-            ["rm ~/.emacs.d", "Remove .emacs.d before symlinking"]
+            ["rm -rf ~/.emacs.d", "Remove .emacs.d before symlinking"]
         ]
     },
     {
