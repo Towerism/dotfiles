@@ -5,3 +5,4 @@ emacs.d/.cache
 emacs.d/.cask
 emacs.d/url
 emacs.d/elpa
+/emacs.d/projectile-bookmarks.eld

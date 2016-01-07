@@ -9,4 +9,6 @@
 (depends-on "list-packages-ext")
 (depends-on "magit")
 (depends-on "pallet")
+(depends-on "powerline")
+(depends-on "powerline-evil")
 (depends-on "projectile")
