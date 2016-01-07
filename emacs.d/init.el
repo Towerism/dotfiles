@@ -12,6 +12,7 @@
 (require 'pallet)
 (pallet-mode t)
 
+(setq make-backup-files nil)
 
 (load "~/.emacs.d/load-directory")
 (load-directory "~/.emacs.d/config")
