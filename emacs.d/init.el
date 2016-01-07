@@ -20,4 +20,7 @@
 (load "~/.emacs.d/load-directory")
 (load-directory "~/.emacs.d/config")
 
+;; custom override emacs lisp file
+(load "~/.emacs.d/custom")
+
 
