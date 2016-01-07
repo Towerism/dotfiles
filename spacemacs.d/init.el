@@ -67,8 +67,8 @@ before layers configuration."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(monokai
-                         solarized-light
                          solarized-dark
+                         solarized-light
                          leuven
                          zenburn)
    ;; If non nil the cursor color matches the state color.
@@ -156,9 +156,12 @@ before layers configuration."
 layers configuration."
   (setq powerline-default-separator 'box)
   (global-hl-line-mode -1)
-  (global-linum-mode)
+  ;;(global-linum-mode)
   (global-vi-tilde-fringe-mode -1)
   (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
+  (setq-default dotspacemacs-configuration-layers
+                '((auto-completion :variables
+                                   auto-completion-enable-snippets-in-popup t)))
   )
 
 
