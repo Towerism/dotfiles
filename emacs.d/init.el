@@ -4,8 +4,24 @@
         package-archives )
   (push '("melpa" . "http://melpa.milkbox.net/packages/")
         package-archives)
-  (package-initialize)
+(package-initialize)
 
-;; enable auto loading of files in the config directory
-(require 'load-dir)
-(setq load-dirs "~/.emacs.d/config")
+(if (not (package-installed-p 'use-package))
+    (progn
+      (package-refresh-contents)
+      (package-install 'use-package)))
+
+(require 'use-package)
+
+(use-package cask)
+(require 'cask)
+(cask-initialize)
+
+(require 'pallet)
+(pallet-mode t)
+(use-package pallet)
+
+(load "~/.emacs.d/load-directory")
+(load-directory "~/.emacs.d/config")
+
+

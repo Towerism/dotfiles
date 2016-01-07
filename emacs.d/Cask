@@ -1,0 +1,8 @@
+(source melpa)
+
+(depends-on "evil-escape")
+(depends-on "evil-leader")
+(depends-on "evil-magit")
+(depends-on "helm")
+(depends-on "list-packages-ext")
+(depends-on "pallet")
