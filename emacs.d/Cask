@@ -5,6 +5,8 @@
 (depends-on "evil-leader")
 (depends-on "evil-magit")
 (depends-on "helm")
+(depends-on "helm-projectile")
 (depends-on "list-packages-ext")
 (depends-on "magit")
 (depends-on "pallet")
+(depends-on "projectile")
