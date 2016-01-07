@@ -6,4 +6,5 @@
 (depends-on "evil-magit")
 (depends-on "helm")
 (depends-on "list-packages-ext")
+(depends-on "magit")
 (depends-on "pallet")
