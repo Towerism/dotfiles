@@ -18,9 +18,8 @@
 (tool-bar-mode -1)
 
 (setq-default indent-tabs-mode nil)
-(setq-default tab-width 2)
-(defvaralias 'c-basic-offset 'tab-width)
-(defvaralias 'cperl-indent-level 'tab-width)
+(setq-default c-basic-offset 2)
+(setq-default cperl-indent-level 2)
 
 (load "~/.emacs.d/load-directory")
 (load-directory "~/.emacs.d/config")
