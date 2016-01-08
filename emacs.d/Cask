@@ -18,4 +18,3 @@
 (depends-on "powerline")
 (depends-on "powerline-evil")
 (depends-on "projectile")
-(depends-on "smart-tabs-mode")
