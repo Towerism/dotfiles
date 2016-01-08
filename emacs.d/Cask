@@ -4,6 +4,8 @@
 (depends-on "evil-escape")
 (depends-on "evil-leader")
 (depends-on "evil-magit")
+(depends-on "evil-nerd-commenter")
+(depends-on "evil-org")
 (depends-on "helm")
 (depends-on "helm-projectile")
 (depends-on "list-packages-ext")

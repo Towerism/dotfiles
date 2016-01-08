@@ -17,6 +17,8 @@
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 
+(setq-default indent-tabs-mode nil)
+
 (load "~/.emacs.d/load-directory")
 (load-directory "~/.emacs.d/config")
 
