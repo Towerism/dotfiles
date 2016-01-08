@@ -1,5 +1,7 @@
 (source melpa)
 
+(depends-on "cmake-mode")
+(depends-on "cpputils-cmake")
 (depends-on "evil")
 (depends-on "evil-escape")
 (depends-on "evil-leader")
@@ -10,8 +12,10 @@
 (depends-on "helm-projectile")
 (depends-on "list-packages-ext")
 (depends-on "magit")
+(depends-on "magit-popup")
 (depends-on "monokai-theme")
 (depends-on "pallet")
 (depends-on "powerline")
 (depends-on "powerline-evil")
 (depends-on "projectile")
+(depends-on "smart-tabs-mode")
