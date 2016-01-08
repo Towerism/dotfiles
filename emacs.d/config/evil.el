@@ -27,6 +27,7 @@
   "fe" 'helm-find-files
   "fw" 'save-buffer
   "fj" 'dired-jump
+  "ir" 'indent-region
   "wc" 'delete-window
   "wh" 'evil-window-left
   "wj" 'evil-window-down
