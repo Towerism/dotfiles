@@ -17,12 +17,13 @@
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 
-(setq-default indent-tabs-mode nil)
+(setq-default indent-tabs-mode t)
+(setq-default tab-width 2)
+(defvaralias 'c-basic-offset 'tab-width)
+(defvaralias 'cperl-indent-level 'tab-width)
 
 (load "~/.emacs.d/load-directory")
 (load-directory "~/.emacs.d/config")
 
 ;; custom override emacs lisp file
 (when (file-exists-p "~/.emacs.d/custom.el") (load "~/.emacs.d/custom"))
-
-
