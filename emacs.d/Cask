@@ -3,6 +3,7 @@
 (depends-on "async")
 (depends-on "cmake-mode")
 (depends-on "cpputils-cmake")
+(depends-on "el-init")
 (depends-on "evil")
 (depends-on "evil-escape")
 (depends-on "evil-leader")
