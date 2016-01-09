@@ -21,7 +21,8 @@
   (setq-default
    indent-tabs-mode nil
    c-basic-offset width
-   perl-indent-level width))
+   perl-indent-level width
+   js-indent-level width))
 
 (dolist (config-file
          '("evil"
