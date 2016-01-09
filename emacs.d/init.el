@@ -32,5 +32,5 @@
   (load-file
    (format "~/.emacs.d/config/%s.el" config-file)))
 
-;; custom override emacs lisp file
-(when (file-exists-p "~/.emacs.d/custom.el") (load "~/.emacs.d/custom"))
+(let ((custom-override-file "~/.emacs.d/custom.el"))
+  (when (file-exists-p custom-override-file) (load-file custom-override-file)))
