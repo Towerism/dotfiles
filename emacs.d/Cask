@@ -1,5 +1,6 @@
 (source melpa)
 
+(depends-on "async")
 (depends-on "cmake-mode")
 (depends-on "cpputils-cmake")
 (depends-on "evil")
@@ -9,6 +10,7 @@
 (depends-on "evil-nerd-commenter")
 (depends-on "evil-org")
 (depends-on "helm")
+(depends-on "helm-core")
 (depends-on "helm-projectile")
 (depends-on "list-packages-ext")
 (depends-on "magit")
