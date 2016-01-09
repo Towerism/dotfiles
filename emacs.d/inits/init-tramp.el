@@ -1,4 +1,5 @@
-(defvar find-file-root-prefix (if (featurep 'xemacs) "/[sudo/root@localhost]" "/sudo:root@localhost:" )
+(defvar find-file-root-prefix
+  (if (featurep 'xemacs) "/[sudo/root@localhost]" "/sudo:root@localhost:" )
   "*The filename prefix used to open a file with `find-file-root'.")
 
 (defvar find-file-root-history nil
@@ -15,17 +16,17 @@
   (interactive)
   (require 'tramp)
   (let* ( ;; We bind the variable `file-name-history' locally so we can
-	 ;; use a separate history list for "root" files.
-	 (file-name-history find-file-root-history)
-	 (name (or buffer-file-name default-directory))
-	 (tramp (and (tramp-tramp-file-p name)
-		     (tramp-dissect-file-name name)))
-	 path dir file)
+         ;; use a separate history list for "root" files.
+         (file-name-history find-file-root-history)
+         (name (or buffer-file-name default-directory))
+         (tramp (and (tramp-tramp-file-p name)
+                     (tramp-dissect-file-name name)))
+         path dir file)
 
     ;; If called from a "root" file, we need to fix up the path.
     (when tramp
       (setq path (tramp-file-name-localname tramp)
-	    dir (file-name-directory path)))
+            dir (file-name-directory path)))
 
     (when (setq file (read-file-name "Find file (UID = 0): " dir path))
       (find-file (concat find-file-root-prefix file))
