@@ -17,9 +17,11 @@
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 
-(setq-default indent-tabs-mode nil)
-(setq-default c-basic-offset 2)
-(setq-default cperl-indent-level 2)
+(let ((width 2))
+  (setq-default
+   indent-tabs-mode nil
+   c-basic-offset width
+   perl-indent-level width))
 
 (dolist (config-file
          '("evil"
