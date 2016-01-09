@@ -1,0 +1,9 @@
+/auto-save-list
+/.cache
+/.cask
+/url
+/projectile-bookmarks.eld
+/projectile.cache
+/custom.el
+/session.*
+/tramp
