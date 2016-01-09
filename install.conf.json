@@ -1,17 +1,17 @@
 [
-    {
-        "clean": ["~"]
-    },
-    {
-        "shell": [
-            ["git pull", "Pulling latest commits"],
-            ["cd emacs.d && cask install", "Installing emacs lisp packages"]
-        ]
-    },
-    {
-        "link": {
-            "~/.emacs.d": "emacs.d",
-            "~/.zshrc": "zshrc"
-        }
+  {
+    "clean": ["~"]
+  },
+  {
+    "shell": [
+      ["git pull", "Pulling latest commits"],
+      ["cd emacs.d && cask install", "Installing emacs lisp packages"]
+    ]
+  },
+  {
+    "link": {
+      "~/.emacs.d": "emacs.d",
+      "~/.zshrc": "zshrc"
     }
+  }
 ]
