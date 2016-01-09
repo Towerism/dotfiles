@@ -3,13 +3,15 @@
     "clean": ["~"]
   },
   {
-    "shell": [
+    "shell":
+    [
       ["git pull", "Pulling latest commits"],
       ["cd emacs.d && cask install", "Installing emacs lisp packages"]
     ]
   },
   {
-    "link": {
+    "link":
+    {
       "~/.emacs.d": "emacs.d",
       "~/.zshrc": "zshrc"
     }
