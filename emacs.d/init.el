@@ -21,8 +21,16 @@
 (setq-default c-basic-offset 2)
 (setq-default cperl-indent-level 2)
 
-(load "~/.emacs.d/load-directory")
-(load-directory "~/.emacs.d/config")
+(dolist (config-file
+         '("evil"
+           "helm"
+           "magit"
+           "powerline"
+           "projectile"
+           "theme"
+           "tramp"))
+  (load-file
+   (format "~/.emacs.d/config/%s.el" config-file)))
 
 ;; custom override emacs lisp file
 (when (file-exists-p "~/.emacs.d/custom.el") (load "~/.emacs.d/custom"))
