@@ -1,0 +1,12 @@
+* dotfiles
+This repo currently has the following dotfiles:
+- .zshrc
+- .emacs.d
+** .zshrc
+The .zshrc assumes [[http://www.github.com/skwp/dotfiles][yadr]] is installed. It automatically starts the emacs daemon
+and gives several aliases to ~emacsclient -t~.
+** .emacs.d
+The emacs configuration was inspired by [[http://www.github.com/syl20bnr/spacemacs][Spacemacs]], which was my first foray
+into emacs. However, Spacemacs was too bloated for me. Thus, I am essentially
+taking my most commonly used features from Spacemacs and putting them into my
+own config without all the extra bloat.
