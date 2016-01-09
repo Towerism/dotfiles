@@ -1,5 +1,6 @@
 (require 'projectile)
 (require 'helm-projectile)
+(require 'init-evil-leader)
 
 (projectile-global-mode)
 
@@ -10,3 +11,5 @@
   "pc" 'projectile-compile-project
   "mgs" 'projectile-find-other-file
 )
+
+(el-init-provide)

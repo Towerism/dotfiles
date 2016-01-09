@@ -12,28 +12,9 @@
 (require 'pallet)
 (pallet-mode t)
 
-(setq make-backup-files nil)
-(menu-bar-mode -1)
-(scroll-bar-mode -1)
-(tool-bar-mode -1)
-
-(let ((width 2))
-  (setq-default
-   indent-tabs-mode nil
-   c-basic-offset width
-   perl-indent-level width
-   js-indent-level width))
-
-(dolist (config-file
-         '("evil"
-           "helm"
-           "magit"
-           "powerline"
-           "projectile"
-           "theme"
-           "tramp"))
-  (load-file
-   (format "~/.emacs.d/config/%s.el" config-file)))
+(require 'el-init)
+(el-init-load "~/.emacs.d/inits"
+              :subdirectories '("." "evil" "lang" "version-control" "visual"))
 
 (let ((custom-override-file "~/.emacs.d/custom.el"))
   (when (file-exists-p custom-override-file) (load-file custom-override-file)))

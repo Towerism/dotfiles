@@ -36,3 +36,5 @@
 
 (evil-leader/set-key
   "fr" 'find-file-root)
+
+(el-init-provide)

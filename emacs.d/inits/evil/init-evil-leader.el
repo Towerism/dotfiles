@@ -1,13 +1,4 @@
 (require 'evil-leader)
-(require 'evil-magit)
-(require 'evil-org)
-(require 'evil)
-(require 'helm)
-
-(evil-mode 1)
-
-(setq-default evil-escape-key-sequence "fd")
-(evil-escape-mode 1)
 
 (global-evil-leader-mode)
 
@@ -38,3 +29,5 @@
   "wm" 'delete-other-windows
   "!" 'shell-command
 )
+
+(el-init-provide)
