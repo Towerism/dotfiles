@@ -1,7 +1,11 @@
+(require 'dtrt-indent)
 (require 'init-smartparens)
 
 (add-hook 'c-mode-common-hook
           'smartparens-mode)
+
+(add-hook 'c-mode-common-hook
+          'dtrt-indent-mode)
 
 (sp-local-pair '(c++-mode c-mode java-mode) "{" nil
                :post-handlers '((my-create-newline-and-enter-sexp "RET")))
