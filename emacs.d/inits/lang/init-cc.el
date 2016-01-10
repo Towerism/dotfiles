@@ -6,6 +6,6 @@
 (defun c++-suppress-indentation-inside-namespaces ()
   (c-set-style "suppress-namespace-indent"))
 (add-hook 'c++-mode-hook
-          'suppress-indentation-inside-namespaces)
+          'c++-suppress-indentation-inside-namespaces)
 
 (el-init-provide)
