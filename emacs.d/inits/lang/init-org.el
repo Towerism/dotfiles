@@ -3,24 +3,19 @@
 (require 'evil-org)
 (require 'init-evil-leader)
 
-(add-hook 'org-mode-hook
-          'org-autolist-mode)
+(defun my-org-mode-hook ()
+  (org-autolist-mode)
+  (org-bullets-mode)
+  (evil-org-mode)
+  (org-indent-mode)
+  (org-auto-fill))
 
 (add-hook 'org-mode-hook
-          'org-bullets-mode)
-
-(add-hook 'org-mode-hook
-          'evil-org-mode)
-
-(add-hook 'org-mode-hook
-          'org-indent-mode)
+          'my-org-mode-hook)
 
 (defun org-auto-fill ()
   (auto-fill-mode)
   (set-fill-column 80))
-
-(add-hook 'org-mode-hook
-          'org-auto-fill)
 
 (setq org-startup-indented t)
 
