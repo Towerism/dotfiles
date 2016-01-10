@@ -1,13 +1,13 @@
 (require 'init-smartparens)
 
-(defconst c++-do-not-indent-inside-namespaces
+(defconst my-c++-style
   '("cc-mode"
     (c-offsets-alist . ((innamespace . [0])))))
-(c-add-style "suppress-namespace-indent" c++-do-not-indent-inside-namespaces)
+(c-add-style "my-c++" my-c++-style)
 
-(defun c++-suppress-indentation-inside-namespaces ()
-  (c-set-style "suppress-namespace-indent"))
+(defun use-my-c++-style ()
+  (c-set-style "my-c++"))
 (add-hook 'c++-mode-hook
-          'c++-suppress-indentation-inside-namespaces)
+          'use-my-c++-style)
 
 (el-init-provide)
