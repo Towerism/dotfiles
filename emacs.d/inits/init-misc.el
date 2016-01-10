@@ -7,4 +7,6 @@
    perl-indent-level width
    js-indent-level width))
 
+(dtrt-indent-mode 1) ;; infer indentation on a per-buffer basis
+
 (el-init-provide)
