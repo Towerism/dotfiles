@@ -14,4 +14,6 @@
 (add-hook 'org-mode-hook
           'org-indent-mode)
 
+(setq org-startup-indented t)
+
 (el-init-provide)
