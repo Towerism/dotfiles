@@ -2,6 +2,6 @@
 
 (set-face-attribute 'default nil
 		    :family "Source Code Pro"
-		    :height 140)
+		    :height 180)
 
 (el-init-provide)
