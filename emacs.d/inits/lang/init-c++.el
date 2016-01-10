@@ -10,7 +10,4 @@
 (add-hook 'c++-mode-hook
           'c++-suppress-indentation-inside-namespaces)
 
-(add-hook 'c++-mode-hook
-          'smartparens-mode)
-
 (el-init-provide)
