@@ -1,3 +1,5 @@
+(require 'init-smartparens)
+
 (defconst c++-do-not-indent-inside-namespaces
   '("cc-mode"
     (c-offsets-alist . ((innamespace . [0])))))
