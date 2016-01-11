@@ -9,4 +9,6 @@
 `(yas-with-comment "")` ${2:This project} is free software, released under the terms
 `(yas-with-comment "")` of the ${3:GNU General Public License v${4:3}}. Please see the
 `(yas-with-comment "")` file LICENSE in the root directory or visit
-`(yas-with-comment "")` ${5:www.gnu.org/licenses/gpl-$4.0.en.html} for license terms.$0
+`(yas-with-comment "")` ${5:www.gnu.org/licenses/gpl-$4.0.en.html} for license terms.
+
+$0
