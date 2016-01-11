@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+#name : #pragma once
+#key : once
+#contributor : Martin
+# --
+#pragma once
+
+$0
