@@ -1,5 +1,6 @@
 (source melpa)
 
+(depends-on "ace-jump-mode")
 (depends-on "async")
 (depends-on "cmake-mode")
 (depends-on "cpputils-cmake")
