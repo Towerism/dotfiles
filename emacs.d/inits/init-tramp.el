@@ -36,6 +36,6 @@
       (run-hooks 'find-file-root-hook))))
 
 (evil-leader/set-key
-  "fr" 'find-file-root)
+  "fE" 'find-file-root)
 
 (el-init-provide)
