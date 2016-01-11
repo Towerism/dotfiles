@@ -6,3 +6,5 @@
 
 (add-hook 'prog-mode-hook
           'my-prog-mode-hook)
+
+(el-init-provide)

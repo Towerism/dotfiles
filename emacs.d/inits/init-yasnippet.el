@@ -12,3 +12,5 @@
   "sr" 'helm-yas-create-snippet-on-region
   "sf" 'helm-yas-visit-snippet-file
   )
+
+(el-init-provide)
