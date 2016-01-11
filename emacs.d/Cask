@@ -13,6 +13,7 @@
 (depends-on "evil-org")
 (depends-on "evil-smartparens")
 (depends-on "helm")
+(depends-on "helm-c-yasnippet")
 (depends-on "helm-core")
 (depends-on "helm-projectile")
 (depends-on "list-packages-ext")
