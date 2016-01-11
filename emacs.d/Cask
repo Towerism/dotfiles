@@ -27,3 +27,4 @@
 (depends-on "powerline-evil")
 (depends-on "projectile")
 (depends-on "smartparens")
+(depends-on "yasnippet")
