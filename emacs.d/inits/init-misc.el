@@ -1,4 +1,5 @@
 (setq-default make-backup-files nil)
+(setq-default auto-save-default nil)
 
 (let ((width 2))
   (setq-default
