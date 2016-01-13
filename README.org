@@ -2,9 +2,14 @@
 This repo currently has the following dotfiles:
 - .zshrc
 - .emacs.d
+** Requirements
+The following are assumed to be installed:
+- [[https://github.com/skwp/dotfiles][yadr]] (required by .zshrc)
+- Cask (required by .emacs.d)
 ** .zshrc
-The .zshrc assumes [[http://www.github.com/skwp/dotfiles][yadr]] is installed. It automatically starts the emacs daemon
-and gives several aliases to ~emacsclient -t~.
+It automatically starts the emacs daemon and gives several aliases to
+~emacsclient -t~. It also provides good defaults, including fuzzy completion,
+and git integration.
 ** .emacs.d
 The emacs configuration was inspired by [[http://www.github.com/syl20bnr/spacemacs][Spacemacs]], which was my first foray
 into emacs. However, Spacemacs was too bloated for me. Thus, I am essentially
