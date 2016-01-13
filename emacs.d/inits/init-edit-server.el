@@ -2,4 +2,4 @@
 
 (edit-server-start)
 
-(el-provide-file)
+(el-init-provide)
