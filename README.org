@@ -6,6 +6,13 @@ This repo currently has the following dotfiles:
 The following are assumed to be installed:
 - [[https://github.com/skwp/dotfiles][yadr]] (required by .zshrc)
 - Cask (required by .emacs.d)
+** Usage
+You may have to remove existing dotfiles if they are not already symlinks. After
+cloning, running the install script will set up the symlinks for you:
+#+BEGIN_SRC
+$ git clone https://github.com/towerism/dotfiles ~/.dotfiles
+$ ~/.dotfiles/install
+#+END_SRC
 ** .zshrc
 It automatically starts the emacs daemon and gives several aliases to
 ~emacsclient -t~. It also provides good defaults, including fuzzy completion,
