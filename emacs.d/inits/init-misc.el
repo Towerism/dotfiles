@@ -6,7 +6,9 @@
    indent-tabs-mode nil
    c-basic-offset width
    perl-indent-level width
-   js-indent-level width))
+   js-indent-level width
+   sh-basic-offset width
+   sh-indentation width))
 
 (dtrt-indent-mode 1) ;; infer indentation on a per-buffer basis
 
