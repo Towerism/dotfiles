@@ -9,6 +9,7 @@
   "pf" 'helm-projectile-find-file
   "pi" 'projectile-invalidate-cache
   "pc" 'projectile-compile-project
+  "p!" 'projectile-run-shell-command-in-root
   "mgs" 'projectile-find-other-file
 )
 
