@@ -5,7 +5,9 @@
   "bd" 'kill-this-buffer
   "bp" 'previous-buffer
   "bn" 'next-buffer
-  "fe" 'helm-find-files
+  "ff" 'helm-find-files
+  "fed" 'edit-dotfile
+  "fer" 'reload-dotfile
   "fw" 'save-buffer
   "fj" 'dired-jump
   "ir" 'indent-region
@@ -19,5 +21,15 @@
   "wm" 'delete-other-windows
   "!" 'shell-command
 )
+
+(setq dotfile "~/.emacs.d/init.el")
+
+(defun edit-dotfile ()
+  (interactive)
+  (find-file dotfile))
+
+(defun reload-dotfile ()
+  (interactive)
+  (load-file dotfile))
 
 (el-init-provide)
