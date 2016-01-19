@@ -1,4 +1,5 @@
 (source "melpa" "http://melpa.milkbox.net/packages/")
+(source "melpa" "http://melpa.milkbox.net/packages/")
 (source melpa)
 
 (depends-on "ace-jump-mode")
@@ -13,6 +14,7 @@
 (depends-on "evil-magit")
 (depends-on "evil-nerd-commenter")
 (depends-on "evil-org")
+(depends-on "golden-ratio")
 (depends-on "helm")
 (depends-on "helm-c-yasnippet")
 (depends-on "helm-core")
