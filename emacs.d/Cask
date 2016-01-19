@@ -14,7 +14,6 @@
 (depends-on "evil-magit")
 (depends-on "evil-nerd-commenter")
 (depends-on "evil-org")
-(depends-on "golden-ratio")
 (depends-on "helm")
 (depends-on "helm-c-yasnippet")
 (depends-on "helm-core")
