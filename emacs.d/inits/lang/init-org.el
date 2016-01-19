@@ -17,7 +17,8 @@
   (auto-fill-mode)
   (set-fill-column 80))
 
-(setq org-startup-indented t)
+(setq org-startup-indented t
+      org-log-done 'time)
 
 (evil-leader/set-key-for-mode 'org-mode
   "mf" 'fill-paragraph
