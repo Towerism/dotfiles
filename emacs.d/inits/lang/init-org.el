@@ -21,6 +21,11 @@
 
 (evil-leader/set-key-for-mode 'org-mode
   "mf" 'fill-paragraph
+  "mta" 'org-table-align
+  "mtc" 'org-table-create
+  "mtJ" 'org-table-move-row-down
+  "mtK" 'org-table-move-row-up
+  "mtO" 'org-table-insert-row
   )
 
 (el-init-provide)
