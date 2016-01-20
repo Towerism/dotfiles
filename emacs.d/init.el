@@ -17,7 +17,7 @@
  ;; If there is more than one, they won't work right.
  '(org-agenda-files
    (quote
-    ("~/notes/geog/203/todo.org" "~/notes/csce/481/todo.org"))))
+    ("~/notes/mktg/409/todo.org" "~/notes/geog/203/todo.org" "~/notes/csce/481/todo.org" "~/notes/csce/441/todo.org" "~/notes/csce/443/todo.org"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
