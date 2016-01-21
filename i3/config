@@ -9,10 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
-
-# Start the pulse audio server
-exec pulseaudio --start
+set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -28,6 +25,14 @@ font pango:Source Code Pro 16
 # clear in small sizes. However, its unicode glyph coverage is limited, the old
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
+
+# Start the pulse audio server
+exec pulseaudio --start
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 2 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 2 -5% #decrease sound volume
+bindsym XF86AudioMute exec pactl set-sink-mute 2 toggle # mute sound
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
