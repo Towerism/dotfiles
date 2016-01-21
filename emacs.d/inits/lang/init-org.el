@@ -23,6 +23,7 @@
       org-agenda-files '("~/todos"))
 
 (evil-leader/set-key-for-mode 'org-mode
+  "me" 'org-export-dispatch
   "mf" 'fill-paragraph
   "mta" 'org-table-align
   "mtc" 'org-table-create
