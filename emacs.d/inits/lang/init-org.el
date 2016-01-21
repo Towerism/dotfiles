@@ -18,7 +18,9 @@
   (set-fill-column 80))
 
 (setq org-startup-indented t
-      org-log-done 'time)
+      org-log-done 'time
+      org-agenda-skip-deadline-prewarning-if-scheduled t
+      org-agenda-files '("~/todos"))
 
 (evil-leader/set-key-for-mode 'org-mode
   "me" 'org-export-dispatch
