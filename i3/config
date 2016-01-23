@@ -38,7 +38,7 @@ bindsym XF86AudioMute exec pactl set-sink-mute 2 toggle # mute sound
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec guake
+bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
