@@ -34,6 +34,10 @@ bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 2 +5% #increase sound vo
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 2 -5% #decrease sound volume
 bindsym XF86AudioMute exec pactl set-sink-mute 2 toggle # mute sound
 
+# Backlight controls
+bindsym $mod+F5 exec xbacklight -dec 10
+bindsym $mod+F6 exec xbacklight -inc 10
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
