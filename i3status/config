@@ -38,6 +38,8 @@ battery 0 {
         status_bat = "   "
         status_chr = "   "
         format_down = ""
+
+        integer_battery_capacity = true
 }
 
 tztime local {
