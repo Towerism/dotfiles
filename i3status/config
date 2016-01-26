@@ -46,7 +46,7 @@ load {
 }
 
 disk "/" {
-        format = "   %avail"
+        format = "   %avail"
 }
 
 volume master {
