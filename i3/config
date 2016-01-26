@@ -30,9 +30,9 @@ font pango:DejaVu Sans Mono, Icons 12
 exec --no-startup-id pulseaudio --start
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 2 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 2 -5% #decrease sound volume
-bindsym XF86AudioMute exec pactl set-sink-mute 2 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec pulseaudio-ctl up
+bindsym XF86AudioLowerVolume exec pulseaudio-ctl down
+bindsym XF86AudioMute exec pulseaudio-ctl mute
 
 # Backlight controls
 bindsym $mod+F5 exec xbacklight -dec 10
