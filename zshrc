@@ -1,3 +1,4 @@
+# -*- mode: shell-script -*-
 #
 # Executes commands at the start of an interactive session.
 #
@@ -22,3 +23,5 @@ alias e='emacsclient -t'
 alias ec='emacsclient -c'
 alias vim='emacsclient -t'
 alias vi='emacsclient -t'
+
+eval $(keychain --eval --agents ssh -Q --quiet com.github)
