@@ -7,7 +7,6 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-        colors = false
         interval = 5
         separator = "|"
 }
@@ -38,6 +37,8 @@ battery 0 {
         status_bat = "   "
         status_chr = "   "
         format_down = ""
+        low_threshold = 15
+        threshold_type = percentage
 
         integer_battery_capacity = true
 }
