@@ -9,6 +9,9 @@
 general {
         interval = 5
         separator = "|"
+        color_good = "#A6E22E"
+        color_bad = "#F92672"
+        color_degraded = "#FD971F"
 }
 
 order += "disk /"
