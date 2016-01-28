@@ -3,6 +3,7 @@
 
 (require 'pallet)
 (pallet-mode t)
+(pallet-install)
 
 (require 'el-init)
 (el-init-load "~/.emacs.d/inits"

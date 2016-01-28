@@ -5,8 +5,7 @@
   {
     "shell":
     [
-      ["git pull", "Pulling latest commits"],
-      ["cd emacs.d && cask install", "Installing emacs lisp packages"]
+      ["git pull", "Pulling latest commits"]
     ]
   },
   {
