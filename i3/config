@@ -42,7 +42,9 @@ set $ws0 10
 assign [class="URxvt"] $ws1
 assign [class="Emacs"] $ws2
 assign [class="chromium"] $ws3
+assign [class="Uzbl-core"] $ws3
 for_window [class="Spotify"] move to workspace $ws4 # Spotify devs are scrubs
+for_window [class="Uzbl-core"] focus child, layout tabbed, focus # tabbed web browsing
 
 # Start the pulse audio server
 exec --no-startup-id pulseaudio --start
