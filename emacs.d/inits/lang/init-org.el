@@ -8,7 +8,8 @@
   (org-bullets-mode)
   (evil-org-mode)
   (org-indent-mode)
-  (org-auto-fill))
+  (org-auto-fill)
+  (yas-minor-mode))
 
 (add-hook 'org-mode-hook
           'my-org-mode-hook)
