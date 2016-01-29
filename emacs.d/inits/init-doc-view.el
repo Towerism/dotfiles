@@ -1,0 +1,3 @@
+(add-hook 'doc-view-mode-hook 'auto-revert-mode)
+
+(el-init-provide)
