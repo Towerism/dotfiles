@@ -3,6 +3,12 @@
 (require 'evil-org)
 (require 'init-evil-leader)
 
+(setq org-latex-pdf-process
+      '("pdflatex -interaction nonstopmode -output-directory %o %f"
+	"bibtex %b"
+	"pdflatex -interaction nonstopmode -output-directory %o %f"
+	"pdflatex -interaction nonstopmode -output-directory %o %f"))
+
 (defun my-org-mode-hook ()
   (org-autolist-mode)
   (org-bullets-mode)
