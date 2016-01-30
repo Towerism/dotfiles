@@ -1,4 +1,5 @@
 (source "melpa" "http://melpa.milkbox.net/packages/")
+(source "melpa" "http://melpa.milkbox.net/packages/")
 (source melpa)
 
 (depends-on "ace-jump-mode")
@@ -25,6 +26,7 @@
 (depends-on "on-parens")
 (depends-on "org-autolist")
 (depends-on "org-bullets")
+(depends-on "org-ref")
 (depends-on "package-build")
 (depends-on "pallet")
 (depends-on "powerline")
