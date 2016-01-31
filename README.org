@@ -2,10 +2,17 @@
 This repo currently has the following dotfiles:
 - .zshrc
 - .emacs.d
+- i3wm
+- i3config
+- Xresources
 ** Requirements
 The following are assumed to be installed:
 - [[https://github.com/skwp/dotfiles][yadr]] (required by .zshrc)
 - Cask (required by .emacs.d)
+- i3wm
+- i3status
+- dmenu
+- Font Awesome
 ** Usage
 You may have to remove existing dotfiles if they are not already symlinks. After
 cloning, running the install script will set up the symlinks for you:
@@ -22,3 +29,14 @@ The emacs configuration was inspired by [[http://www.github.com/syl20bnr/spacema
 into emacs. However, Spacemacs was too bloated for me. Thus, I am essentially
 taking my most commonly used features from Spacemacs and putting them into my
 own config without all the extra bloat.
+** i3config
+This is a modified version of the default config. Window navigation was modified
+to mirror vim bindings exactly, so horizontal splitting had to be remapped. I've
+also configured certain programs to open to certain workspaces, i.e. emacs open
+in the code workspaces, and chromium opens in the www workspace.
+** i3status
+This config shows only the necessary information. That is, if wifi is down, the
+wifi status is hidden; if ethernet is down, the ethernet status is hidden. Font
+Awesome is required in order for the icons to display properly.
+** Xresources
+This config setups up the Monokai theme for URxvt. It also hides the URxvt's scrollbar.
