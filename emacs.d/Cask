@@ -5,7 +5,6 @@
 (depends-on "async")
 (depends-on "cmake-mode")
 (depends-on "dtrt-indent")
-(depends-on "edit-server")
 (depends-on "el-init")
 (depends-on "evil")
 (depends-on "evil-escape")
