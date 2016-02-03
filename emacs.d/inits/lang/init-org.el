@@ -15,7 +15,8 @@
   (evil-org-mode)
   (org-indent-mode)
   (org-auto-fill)
-  (yas-minor-mode))
+  (yas-minor-mode)
+  (flyspell-mode))
 
 (add-hook 'org-mode-hook
           'my-org-mode-hook)
