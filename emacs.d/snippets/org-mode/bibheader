@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+#name : bibheader
+#key : bib
+#contributor : 
+# --
+#+LATEX_HEADER: \usepackage{setspace}
+#+LATEX_HEADER: \doublespacing
+#+LATEX_HEADER: \bibliographystyle{plain}
