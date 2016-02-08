@@ -1,0 +1,29 @@
+# -*- mode: snippet -*-
+#name : template
+#key : template
+#contributor : Martin
+# --
+SRCS := \$(wildcard *.cc) \
+	\$(wildcard **/*.cc)
+OBJS := \$(SRCS:.cc=.o)
+DEPS := \$(OBJS:.o=.d)
+EXECUTABLE ?= ${1:main}
+
+CXXFLAGS ?= ${2:-std=${3:c++11} ${4:-Wall --pedantic} ${5:-I.}}
+LDFLAGS ?= ${6:-lglut -lGL -lGLU}
+CXX ?= ${7:g++}
+RM ?= rm -rf
+
+all: \$(EXECUTABLE)
+
+\$(EXECUTABLE): \$(OBJS)
+	\$(CXX) \$(LDFLAGS) \$^ -o \$@
+
+%.d: %.cc
+	@\$(CXX) \$(CXXFLAGS) \$< -MM -MT \$(@:.d=.o) >\$@
+
+.PHONY: clean
+clean:
+	\$(RM) \$(OBJS) \$(DEPS) \$(EXECUTABLE)
+
+-include \$(DEPS)
