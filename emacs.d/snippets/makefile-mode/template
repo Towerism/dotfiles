@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 #name : template
-#key : template
+#key : money
 #contributor : Martin
 # --
 SRCS := \$(wildcard *.cc) \
