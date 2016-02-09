@@ -11,6 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+if [ -n "$INSIDE_EMACS" ]; then
+    unset zle_bracketed_paste
+fi
+
 # Customize to your needs...
 
 for config_file ($HOME/.yadr/zsh/*.zsh) source $config_file
