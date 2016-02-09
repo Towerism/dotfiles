@@ -6,7 +6,8 @@
     "shell":
     [
       ["git pull", "Pulling latest commits"],
-      ["cd emacs.d && cask install", "Installing emacs lisp packages"]
+      ["cd emacs.d && cask install", "Installing emacs lisp packages"],
+      ["rm -rf ~/.emacs.d", "Remove prolematic stray dotfiles"]
     ]
   },
   {
@@ -15,7 +16,6 @@
       "~/.emacs.d": "emacs.d",
       "~/.zshrc": "zshrc",
       "~/.Xresources": "Xresources",
-      "~/.xinitrc": "xinitrc",
       "~/.config/i3": "i3",
       "~/.config/i3status": "i3status"
     }
