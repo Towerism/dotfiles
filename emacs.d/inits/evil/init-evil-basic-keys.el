@@ -19,6 +19,7 @@
   "ws" 'evil-window-split
   "wv" 'evil-window-vsplit
   "wm" 'delete-other-windows
+  "w=" 'balance-windows
   "!" 'shell-command
 )
 
