@@ -1,5 +1,4 @@
 (source "melpa" "http://melpa.milkbox.net/packages/")
-(source "melpa" "http://melpa.milkbox.net/packages/")
 (source melpa)
 
 (depends-on "ace-jump-mode")
@@ -8,6 +7,9 @@
 (depends-on "company")
 (depends-on "dtrt-indent")
 (depends-on "el-init")
+(depends-on "esh-buf-stack")
+(depends-on "eshell-did-you-mean")
+(depends-on "eshell-git-prompt")
 (depends-on "evil")
 (depends-on "evil-escape")
 (depends-on "evil-leader")
