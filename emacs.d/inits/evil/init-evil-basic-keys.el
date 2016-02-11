@@ -5,6 +5,8 @@
   "bd" 'kill-this-buffer
   "bp" 'previous-buffer
   "bn" 'next-buffer
+  "be" 'eval-buffer
+  "bs" 'edit-scratch
   "ff" 'helm-find-files
   "fed" 'edit-dotfile
   "fer" 'reload-dotfile
@@ -32,5 +34,9 @@
 (defun reload-dotfile ()
   (interactive)
   (load-file dotfile))
+
+(defun edit-scratch ()
+  (interactive)
+  (switch-to-buffer "*scratch*"))
 
 (el-init-provide)
