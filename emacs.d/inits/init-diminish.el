@@ -12,5 +12,6 @@
 (diminish 'undo-tree-mode)
 (diminish 'yas-minor-mode)
 (diminish 'company-mode)
+(diminish 'org-indent-mode)
 
 (el-init-provide)
