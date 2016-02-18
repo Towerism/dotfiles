@@ -28,4 +28,6 @@ alias ec='emacsclient -c'
 alias vim='emacsclient -t'
 alias vi='emacsclient -t'
 
+alias fuck='sudo $(fc -ln -1)'
+
 eval $(keychain --eval --agents ssh -Q --quiet com.github)
