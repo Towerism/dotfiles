@@ -17,6 +17,7 @@
 (depends-on "evil-magit")
 (depends-on "evil-nerd-commenter")
 (depends-on "evil-org")
+(depends-on "evil-surround")
 (depends-on "helm")
 (depends-on "helm-c-yasnippet")
 (depends-on "helm-core")
