@@ -19,10 +19,7 @@ You may have to remove existing dotfiles if they are not already symlinks. After
 cloning, running the install script will set up the symlinks for you:
 #+BEGIN_SRC
 $ git clone https://github.com/towerism/dotfiles ~/.dotfiles
-$ cd ~/.dotfiles
-$ stow emacs
-$ stow zsh
-$ stow i3
+$ ~/.dotfiles/install
 #+END_SRC
 ** .zshrc
 It automatically starts the emacs daemon and gives several aliases to
