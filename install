@@ -1,0 +1,14 @@
+#!/bin/bash
+# -*- mode: shell-script -*-
+
+DIR="$HOME/.dotfiles"
+OPT="-d $DIR"
+
+set -x
+
+stow $OPT emacs
+stow $OPT i3
+stow $OPT zsh
+
+cd ~/.emacs.d
+cask install
