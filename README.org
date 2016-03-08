@@ -2,23 +2,27 @@
 This repo currently has the following dotfiles:
 - .zshrc
 - .emacs.d
-- i3wm
-- i3config
-- Xresources
+- .config/i3/config
+- .config/i3status/config
+- .Xresources
 ** Requirements
 The following are assumed to be installed:
 - [[https://github.com/skwp/dotfiles][yadr]] (required by .zshrc)
 - Cask (required by .emacs.d)
 - i3wm
 - i3status
-- dmenu
-- Font Awesome
+- dmenu (required by i3)
+- Font Awesome (required by i3)
+- GNU Stow (recommended for symlinking)
 ** Usage
 You may have to remove existing dotfiles if they are not already symlinks. After
 cloning, running the install script will set up the symlinks for you:
 #+BEGIN_SRC
 $ git clone https://github.com/towerism/dotfiles ~/.dotfiles
-$ ~/.dotfiles/install
+$ cd ~/.dotfiles
+$ stow emacs
+$ stow zsh
+$ stow i3
 #+END_SRC
 ** .zshrc
 It automatically starts the emacs daemon and gives several aliases to
@@ -38,5 +42,5 @@ in the code workspaces, and chromium opens in the www workspace.
 This config shows only the necessary information. That is, if wifi is down, the
 wifi status is hidden; if ethernet is down, the ethernet status is hidden. Font
 Awesome is required in order for the icons to display properly.
-** Xresources
+** .Xresources
 This config setups up the Monokai theme for URxvt. It also hides the URxvt's scrollbar.
