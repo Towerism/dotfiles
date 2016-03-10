@@ -13,5 +13,8 @@
 (diminish 'yas-minor-mode)
 (diminish 'company-mode)
 (diminish 'org-indent-mode)
+(diminish 'evil-org-mode)
+(diminish 'org-autolist-mode)
+(diminish 'flyspell-mode)
 
 (el-init-provide)
