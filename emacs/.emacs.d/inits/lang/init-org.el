@@ -40,6 +40,7 @@
   "mtJ" 'org-table-move-row-down
   "mtK" 'org-table-move-row-up
   "mtO" 'org-table-insert-row
+  "mse" 'org-edit-src-code
   )
 
 (el-init-provide)
