@@ -21,6 +21,7 @@
   "ws" 'evil-window-split
   "wv" 'evil-window-vsplit
   "wm" 'delete-other-windows
+  "wr" 'evil-window-rotate-upwards
   "w=" 'balance-windows
   "!" 'shell-command
 )
