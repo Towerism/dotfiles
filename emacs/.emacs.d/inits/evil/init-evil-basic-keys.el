@@ -1,18 +1,20 @@
 (require 'init-evil-leader)
 
 (evil-leader/set-key
+  ;;; buffer
   "bb" 'helm-buffers-list
   "bd" 'kill-this-buffer
   "bp" 'previous-buffer
   "bn" 'next-buffer
   "be" 'eval-buffer
   "bs" 'edit-scratch
+  ;;; file
   "ff" 'helm-find-files
   "fed" 'edit-dotfile
   "fer" 'reload-dotfile
   "fw" 'save-buffer
   "fj" 'dired-jump
-  "ir" 'indent-region
+  ;;; window
   "wc" 'delete-window
   "wh" 'evil-window-left
   "wj" 'evil-window-down
@@ -27,7 +29,9 @@
   "wm" 'delete-other-windows
   "wr" 'evil-window-rotate-upwards
   "w=" 'balance-windows
+  ;;; misc
   "!" 'shell-command
+  "ir" 'indent-region
 )
 
 (setq dotfile "~/.emacs.d/init.el")
