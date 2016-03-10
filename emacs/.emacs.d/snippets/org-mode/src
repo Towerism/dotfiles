@@ -3,6 +3,6 @@
 #key : src
 #contributor : 
 # --
-#+BEGIN_SRC
+#+BEGIN_SRC ${1:lang}
 $0
 #+END_SRC
