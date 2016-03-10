@@ -30,4 +30,5 @@ alias vi='emacsclient -t'
 
 alias fuck='sudo $(fc -ln -1)'
 
+export PATH="$(ruby -rubygems -e "puts Gem.user_dir")/bin:$PATH"
 eval $(keychain --eval --agents ssh -Q --quiet com.github)
