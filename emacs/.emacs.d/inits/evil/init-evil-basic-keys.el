@@ -18,6 +18,10 @@
   "wj" 'evil-window-down
   "wk" 'evil-window-up
   "wl" 'evil-window-right
+  "wH" 'evil-window-move-far-left
+  "wJ" 'evil-window-move-very-bottom
+  "wK" 'evil-window-move-very-top
+  "wL" 'evil-window-move-far-right
   "ws" 'evil-window-split
   "wv" 'evil-window-vsplit
   "wm" 'delete-other-windows
