@@ -40,4 +40,4 @@ This config shows only the necessary information. That is, if wifi is down, the
 wifi status is hidden; if ethernet is down, the ethernet status is hidden. Font
 Awesome is required in order for the icons to display properly.
 ** .Xresources
-This config setups up the Monokai theme for URxvt. It also hides the URxvt's scrollbar.
+This config sets up the Monokai theme for URxvt. It also hides the URxvt's scrollbar.
