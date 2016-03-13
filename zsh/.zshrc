@@ -28,6 +28,8 @@ alias ec='emacsclient -c'
 alias vim='emacsclient -t'
 alias vi='emacsclient -t'
 
+export EDITOR=vim
+
 alias fuck='sudo $(fc -ln -1)'
 
 export PATH="$(ruby -rubygems -e "puts Gem.user_dir")/bin:$PATH"
