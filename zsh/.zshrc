@@ -31,6 +31,7 @@ alias vi='emacsclient -t'
 export EDITOR=vim
 
 alias fuck='sudo $(fc -ln -1)'
+alias stow-local='sudo stow -t /usr/local/bin'
 
 export PATH="$(ruby -rubygems -e "puts Gem.user_dir")/bin:$PATH"
 eval $(keychain --eval --agents ssh -Q --quiet com.github)
