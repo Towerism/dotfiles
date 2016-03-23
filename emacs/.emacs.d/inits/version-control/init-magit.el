@@ -3,7 +3,7 @@
 (require 'init-evil-leader)
 
 (evil-leader/set-key
-  "mga" 'magit-status
+  "ga" 'magit-status
 )
 
 (el-init-provide)
