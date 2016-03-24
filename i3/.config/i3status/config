@@ -14,7 +14,6 @@ general {
         color_degraded = "#FD971F"
 }
 
-order += "disk /"
 order += "run_watch VPN"
 order += "wireless _first_"
 order += "ethernet _first_"
