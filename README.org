@@ -15,8 +15,9 @@ The following are assumed to be installed:
 - Font Awesome (required by i3)
 - GNU Stow (recommended for symlinking)
 ** Usage
-You may have to remove existing dotfiles if they are not already symlinks. After
-cloning, running the install script will set up the symlinks for you:
+You may have to remove existing dotfiles if they are not already managed by GNU
+stow. After cloning, running the install script will set up the symlinks for
+you:
 #+BEGIN_SRC
 $ git clone https://github.com/towerism/dotfiles ~/.dotfiles
 $ ~/.dotfiles/install
