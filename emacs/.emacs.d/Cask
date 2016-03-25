@@ -5,6 +5,7 @@
 (depends-on "async")
 (depends-on "cmake-mode")
 (depends-on "company")
+(depends-on "csharp-mode")
 (depends-on "diminish")
 (depends-on "dtrt-indent")
 (depends-on "el-init")
