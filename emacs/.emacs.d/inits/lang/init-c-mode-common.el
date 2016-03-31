@@ -1,6 +1,6 @@
 (require 'init-smartparens)
 
-(sp-local-pair '(c++-mode c-mode java-mode) "{" nil
+(sp-local-pair '(c++-mode c-mode java-mode csharp-mode) "{" nil
                :post-handlers '((my-create-newline-and-enter "RET")))
 
 (defun my-create-newline-and-enter (&rest _ignored)
