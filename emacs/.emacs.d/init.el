@@ -11,3 +11,4 @@
 
 (let ((custom-override-file "~/.emacs.d/custom.el"))
   (when (file-exists-p custom-override-file) (load-file custom-override-file)))
+(put 'narrow-to-region 'disabled nil)
