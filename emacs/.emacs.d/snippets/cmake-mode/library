@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+#name : library
+#key : lib
+#contributor : Martin
+# --
+set(${1:LIB}_SRCS
+  $0
+  )
+
+add_library(${2:lib} $1_SRCS)
