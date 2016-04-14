@@ -14,5 +14,5 @@ set(TEST_LIBS
   gtest_main
   )
 
-add_executable(unit-tests ${TEST_SRCS})
-target_link_libraries(unit-tests ${TEST_LIBS})
+add_executable(unit-tests \$\{TEST_SRCS\})
+target_link_libraries(unit-tests \$\{TEST_LIBS\})
