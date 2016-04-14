@@ -12,4 +12,7 @@
 
 (dtrt-indent-mode 1) ;; infer indentation on a per-buffer basis
 
+;; enable commands disabled by default
+(put 'narrow-to-region 'disabled nil)
+
 (el-init-provide)
