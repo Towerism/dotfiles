@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+#name : monobehaviour
+#key : mono
+#contributor : 
+# --
+using UnityEngine;
+using System.Collections;
+
+public class ${1:Script} : MonoBehaviour {
+
+  $0
+
+  public void Start() {
+  }
+
+  public void Update() {
+  }
+}
