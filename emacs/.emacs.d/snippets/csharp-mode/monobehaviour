@@ -6,7 +6,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class ${1:Script} : MonoBehaviour {
+public class ${1:`(file-name-nondirectory (file-name-sans-extension buffer-file-name))`} : MonoBehaviour {
 
   $0
 
