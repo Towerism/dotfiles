@@ -1,4 +1,4 @@
-(require 'org-ref)
+; (require 'org-ref)
 
 (setq reftex-default-bibliography '("~/bibliography/references.bib"))
 

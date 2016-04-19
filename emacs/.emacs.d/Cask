@@ -31,7 +31,6 @@
 (depends-on "on-parens")
 (depends-on "org-autolist")
 (depends-on "org-bullets")
-(depends-on "org-ref")
 (depends-on "package-build")
 (depends-on "pallet")
 (depends-on "powerline")
