@@ -76,6 +76,11 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+F5 exec xbacklight -dec 10
 bindsym $mod+F6 exec xbacklight -inc 10
 
+# Screenshot
+set $screenshot_dir "/home/mfracker/screenshots/"
+set $screenshot_file "$(date +%Y-%m-%d:%H:%M:%S).png"
+bindsym --release $mod+z exec scrot -u $screenshot_dir/$screenshot_file
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
