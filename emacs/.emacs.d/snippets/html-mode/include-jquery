@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : include-jquery
+#key : include-jquery
+#contributor : 
+# --
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
