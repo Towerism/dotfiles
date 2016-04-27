@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+#name : basic-template
+#key : temp
+#contributor : 
+# --
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      ${1:My Title}
+    </title>
+  </head>
+  <body>
+    $0    
+  </body>
+</html>
