@@ -10,7 +10,7 @@
   "pi" 'projectile-invalidate-cache
   "pc" 'projectile-compile-project
   "p!" 'projectile-run-shell-command-in-root
-  "gs" 'projectile-find-other-file
+  "po" 'projectile-find-other-file
 )
 
 (el-init-provide)
