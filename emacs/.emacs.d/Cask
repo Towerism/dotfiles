@@ -30,6 +30,7 @@
 (depends-on "list-packages-ext")
 (depends-on "magit")
 (depends-on "magit-popup")
+(depends-on "markdown-mode")
 (depends-on "monokai-theme")
 (depends-on "on-parens")
 (depends-on "org-autolist")
