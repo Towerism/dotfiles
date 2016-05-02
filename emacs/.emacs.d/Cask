@@ -44,6 +44,8 @@
 (depends-on "projectile-rails")
 (depends-on "rails-new")
 (depends-on "rinari")
+(depends-on "sass-mode")
+(depends-on "scss-mode")
 (depends-on "smartparens")
 (depends-on "web-mode")
 (depends-on "yaml-mode")
