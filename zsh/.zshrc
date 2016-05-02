@@ -39,3 +39,5 @@ eval $(keychain --eval --agents ssh -Q --quiet com.github)
 
 # Make git an alias for hub (git extension allowing interface with GitHub)
 eval "$(hub alias -s)"
+
+source ~/.profile
