@@ -36,6 +36,7 @@
 (depends-on "org-autolist")
 (depends-on "org-bullets")
 (depends-on "org-ref")
+(depends-on "ox-twbs")
 (depends-on "package-build")
 (depends-on "pallet")
 (depends-on "powerline")
