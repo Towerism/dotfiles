@@ -1,3 +1,3 @@
-; (require 'org-ref)
+(require 'org-ref)
 
 (el-init-provide)
