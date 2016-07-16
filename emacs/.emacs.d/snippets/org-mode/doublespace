@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-#name : doublespace
-#key : doublespace
-#contributor : 
-# --
-#+LATEX_HEADER: \usepackage{setspace}
-#+LATEX_HEADER: \doublespacing

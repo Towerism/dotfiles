@@ -4,11 +4,17 @@
 DIR="$HOME/.dotfiles"
 OPT="-d $DIR"
 
-set -x
+MODULES="emacs i3 zsh"
 
-stow $OPT emacs
-stow $OPT i3
-stow $OPT zsh
+echo "Stowing modules..."
+for module in $MODULES; do
+    stow $OPT $module
+done
 
-cd ~/.emacs.d
-cask install
+echo "DONE"
+
+echo "Ensuring Spacemacs is initialized..."
+cd "$DIR/"
+git submodule init
+git submodule update
+echo "DONE"

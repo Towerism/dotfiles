@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-#name : requirecomponent
-#key : comp
-#contributor : Martin
-# --
-[RequireComponent (typeof (${1:Component}))]$0

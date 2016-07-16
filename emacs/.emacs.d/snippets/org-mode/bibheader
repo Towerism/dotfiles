@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-#name : bibheader
-#key : bib
-#contributor : 
-# --
-#+LATEX_HEADER: \bibliographystyle{plain}

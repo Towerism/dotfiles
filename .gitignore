@@ -1,1 +1,4 @@
-/emacs/.emacs.d/rake.cache
+
+  /emacs/.emacs.d
+  !/emacs/.emacs.d/private
+  !/emacs/.emacs.d/private

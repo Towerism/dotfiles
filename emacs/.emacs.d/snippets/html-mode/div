@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-#name : div
-#key : div
-#contributor : 
-# --
-<div class="${1:name}">
-     $0
-</div>
