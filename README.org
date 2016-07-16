@@ -13,7 +13,7 @@ The following are assumed to be installed:
 - i3status
 - dmenu (required by i3)
 - Font Awesome (required by i3)
-- GNU Stow (recommended for symlinking)
+- GNU Stow (recommended if you want to run the auto-install script)
 ** Usage
 You may have to remove existing dotfiles if they are not already managed by GNU
 stow. After cloning, running the install script will set up the symlinks for
