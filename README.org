@@ -2,13 +2,13 @@
 This repo currently has the following dotfiles:
 - .zshrc
 - .emacs.d
+- .spacemacs.d
 - .config/i3/config
 - .config/i3status/config
 - .Xresources
 ** Requirements
 The following are assumed to be installed:
 - [[https://github.com/skwp/dotfiles][yadr]] (required by .zshrc)
-- Cask (required by .emacs.d)
 - i3wm
 - i3status
 - dmenu (required by i3)
@@ -27,10 +27,10 @@ It automatically starts the emacs daemon and gives several aliases to
 ~emacsclient -t~. It also provides good defaults, including fuzzy completion,
 and git integration.
 ** .emacs.d
-The emacs configuration was inspired by [[http://www.github.com/syl20bnr/spacemacs][Spacemacs]], which was my first foray
-into emacs. However, Spacemacs was too bloated for me. Thus, I am essentially
-taking my most commonly used features from Spacemacs and putting them into my
-own config without all the extra bloat.
+This is essentially a snapshot of Spacemacs. Updating this submodule will update the Spacemacs emacs distribution.
+
+** .spacemacs.d
+This is the configuration dotfile for Spacemacs. Any custom layers will go in here.
 ** i3config
 This is a modified version of the default config. Window navigation was modified
 to mirror vim bindings exactly, so horizontal splitting had to be remapped. I've
