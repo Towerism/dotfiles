@@ -1,4 +1,4 @@
-Why are dotfile repositories important? See [https://dotfiles.github.io/].
+Why are dotfile repositories important? See https://dotfiles.github.io/.
 * dotfiles
 This repo currently has the following dotfiles:
 - .zshrc
