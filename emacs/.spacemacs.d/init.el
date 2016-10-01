@@ -34,6 +34,7 @@ values."
      github
      javascript
      keychain
+     irony
      markdown
      org
      ruby
@@ -265,6 +266,8 @@ you should place your code here."
   (defun clang-format-bindings ()
     (define-key c++-mode-map [tab] 'clang-format-buffer))
   (global-linum-mode)
+  (setq-default dotspacemacs-configuration-layers
+                '((c-c++ :variables c-c++-enable-clang-support t)))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
