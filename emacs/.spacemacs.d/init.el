@@ -26,6 +26,7 @@ values."
      auto-completion
      c-c++
      clojure
+     cscope
      csharp
      emacs-lisp
      git
@@ -36,6 +37,7 @@ values."
      org
      ruby
      ruby-on-rails
+     semantic
      typescript
      version-control
      )
