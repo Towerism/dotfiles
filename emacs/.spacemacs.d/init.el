@@ -26,6 +26,7 @@ values."
      auto-completion
      c-c++
      clojure
+     cmake-ide
      cscope
      csharp
      emacs-lisp
@@ -38,6 +39,7 @@ values."
      ruby
      ruby-on-rails
      semantic
+     syntax-checking
      typescript
      version-control
      )
@@ -256,6 +258,12 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (add-hook 'org-mode-hook 'auto-fill-mode)
   (add-hook 'markdown-mode-hook 'auto-fill-mode)
+  ;; Bind clang-format-region to C-M-tab in all modes:
+  (global-set-key [C-M-tab] 'clang-format-region)
+  ;; Bind clang-format-buffer to tab on the c++-mode only:
+  (add-hook 'c++-mode-hook 'clang-format-bindings)
+  (defun clang-format-bindings ()
+    (define-key c++-mode-map [tab] 'clang-format-buffer))
   (global-linum-mode)
   )
 
