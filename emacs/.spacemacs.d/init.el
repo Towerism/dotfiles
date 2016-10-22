@@ -24,6 +24,7 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      auto-completion
+     bibtex
      c-c++
      clojure
      cmake-ide
@@ -40,6 +41,7 @@ values."
      ruby
      ruby-on-rails
      semantic
+     shell
      syntax-checking
      typescript
      version-control
@@ -274,3 +276,18 @@ you should place your code here."
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (yaxception request flx tide typescript-mode org-ref key-chord ivy org-projectile org-download livid-mode skewer-mode simple-httpd helm-bibtex parsebib github-search git-commit with-editor eshell-z clojure-snippets biblio biblio-core ace-window avy xterm-color shell-pop multi-term eshell-prompt-extras esh-help ws-butler which-key web-beautify use-package tss toc-org stickyfunc-enhance srefactor spacemacs-theme smeargle rvm ruby-tools ruby-test-mode rubocop rtags rspec-mode robe restart-emacs rbenv quelpa projectile-rails popwin page-break-lines orgit org-repo-todo org-present org-pomodoro org-plus-contrib org-bullets omnisharp mmm-mode markdown-toc magit-gitflow magit-gh-pulls macrostep keychain-environment js2-refactor js-doc ido-vertical-mode htmlize hl-todo help-fns+ helm-projectile helm-gitignore helm-flx helm-descbinds helm-cscope helm-company helm-c-yasnippet gnuplot github-clone github-browse-file gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ gist gh-md flycheck-pos-tip flycheck-irony fill-column-indicator feature-mode exec-path-from-shell evil-visualstar evil-surround evil-magit evil-escape elisp-slime-nav disaster diff-hl company-tern company-statistics company-quickhelp company-irony company-c-headers coffee-mode cmake-mode cmake-ide clj-refactor clang-format cider-eval-sexp-fu chruby bundler bind-map auto-yasnippet auto-compile ac-ispell))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
+ '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))
