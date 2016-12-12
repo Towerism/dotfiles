@@ -42,3 +42,7 @@ eval $(keychain --eval --agents ssh -Q --quiet com.github)
 eval "$(hub alias -s)"
 
 source ~/.profile
+
+if [ -f "$HOME/.system_specific_paths" ]; then
+    source ~/.system_specific_paths
+fi
