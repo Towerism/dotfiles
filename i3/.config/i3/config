@@ -49,8 +49,8 @@ for_window [class="Uzbl-core"] focus child, layout tabbed, focus # tabbed web br
 # Start the pulse audio server
 exec --no-startup-id pulseaudio --start
 
-# Start wicd client tray
-exec --no-startup-id wicd-client -t
+# Start network manager client tray
+exec --no-startup-id nm-applet
 
 # Start base programs
 exec i3-sensible-terminal
