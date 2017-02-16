@@ -18,6 +18,7 @@ values."
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
    '(
+     yaml
      python
      html
      ;; ----------------------------------------------------------------
@@ -36,9 +37,7 @@ values."
      emacs-lisp
      git
      github
-     javascript
      keychain
-     irony
      markdown
      org
      ruby
@@ -275,24 +274,6 @@ you should place your code here."
                 '((c-c++ :variables c-c++-enable-clang-support t)))
 
   (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
-  (add-to-list 'projectile-other-file-alist '("cc" "h"))
-  (add-to-list 'projectile-other-file-alist '("h" "cc"))
+  (add-hook 'c++-mode-hook (lambda () ((add-to-list 'projectile-other-file-alist '("cc" "h"))
+                                   (add-to-list 'projectile-other-file-alist '("h" "cc")))))
   )
-
-;; Do not write anything past this comment. This is where Emacs will
-;; auto-generate custom variable definitions.
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (protobuf-mode yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode helm-pydoc cython-mode company-anaconda anaconda-mode pythonic web-mode tagedit slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data window-numbering volatile-highlights vi-tilde-fringe uuidgen spaceline powerline rainbow-delimiters rake inflections persp-mode pcre2el paradox org alert log4e gntp open-junk-file neotree move-text minitest markdown-mode lorem-ipsum linum-relative link-hint json-mode json-snatcher json-reformat js2-mode info+ indent-guide hydra hungry-delete highlight-parentheses highlight-numbers parent-mode highlight-indentation hide-comnt helm-themes helm-swoop helm-mode-manager helm-make projectile xcscope helm-ag google-translate golden-ratio gitignore-mode fringe-helper git-gutter+ git-gutter gh marshal logito pcache ht pos-tip flycheck flx-ido fancy-battery eyebrowse expand-region evil-visual-mark-mode evil-unimpaired evil-tutor evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit magit magit-popup evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree dumb-jump f diminish define-word csharp-mode dash-functional tern irony company column-enforce-mode levenshtein multiple-cursors paredit s peg clean-aindent-mode eval-sexp-fu highlight cider pkg-info clojure-mode epl inf-ruby bind-key yasnippet auto-highlight-symbol packed dash aggressive-indent adaptive-wrap ace-link ace-jump-helm-line helm helm-core async auto-complete popup package-build yaxception request flx tide typescript-mode org-ref key-chord ivy org-projectile org-download livid-mode skewer-mode simple-httpd helm-bibtex parsebib github-search git-commit with-editor eshell-z clojure-snippets biblio biblio-core ace-window avy xterm-color shell-pop multi-term eshell-prompt-extras esh-help ws-butler which-key web-beautify use-package tss toc-org stickyfunc-enhance srefactor spacemacs-theme smeargle rvm ruby-tools ruby-test-mode rubocop rtags rspec-mode robe restart-emacs rbenv quelpa projectile-rails popwin page-break-lines orgit org-repo-todo org-present org-pomodoro org-plus-contrib org-bullets omnisharp mmm-mode markdown-toc magit-gitflow magit-gh-pulls macrostep keychain-environment js2-refactor js-doc ido-vertical-mode htmlize hl-todo help-fns+ helm-projectile helm-gitignore helm-flx helm-descbinds helm-cscope helm-company helm-c-yasnippet gnuplot github-clone github-browse-file gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ gist gh-md flycheck-pos-tip flycheck-irony fill-column-indicator feature-mode exec-path-from-shell evil-visualstar evil-surround evil-magit evil-escape elisp-slime-nav disaster diff-hl company-tern company-statistics company-quickhelp company-irony company-c-headers coffee-mode cmake-mode cmake-ide clj-refactor clang-format cider-eval-sexp-fu chruby bundler bind-map auto-yasnippet auto-compile ac-ispell))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
- '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))
