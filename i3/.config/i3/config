@@ -41,7 +41,7 @@ set $ws0 10
 # Setup clients for workspaces
 assign [class="URxvt"] $ws1
 assign [class="Emacs"] $ws2
-assign [class="chromium"] $ws3
+assign [class="Firefox"] $ws3
 assign [class="Uzbl-core"] $ws3
 for_window [class="Spotify"] move to workspace $ws4 # Spotify devs are scrubs
 for_window [class="Uzbl-core"] focus child, layout tabbed, focus # tabbed web browsing
@@ -55,7 +55,7 @@ exec --no-startup-id nm-applet
 # Start base programs
 exec i3-sensible-terminal
 exec emacs
-exec chromium
+exec firefox
 
 # Preferences
 focus_follows_mouse no
