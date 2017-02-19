@@ -4,17 +4,19 @@
 DIR="$HOME/.dotfiles"
 OPT="-d $DIR"
 
+which stow >/dev/null 2>&1 || { echo "Unable to automatically install dotfiles: stow was not found"; exit 1; }
+
 MODULES="emacs i3 zsh"
 
-echo "Stowing modules..."
+printf "Stowing modules... "
 for module in $MODULES; do
     stow $OPT $module
 done
 
-echo "DONE"
+printf "DONE\n"
 
-echo "Ensuring Spacemacs is initialized..."
+printf "Ensuring Spacemacs is initialized... "
 cd "$DIR/"
 git submodule init
 git submodule update
-echo "DONE"
+printf "DONE\n"
