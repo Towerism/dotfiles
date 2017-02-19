@@ -21,7 +21,7 @@
                   (define-key irony-mode-map [remap complete-symbol]
                     'irony-completion-at-point-async)))
       (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
-      (setq-default irony-server-install-prefix (expand-file-name ".local/irony"))
+      (setq-default irony-server-install-prefix ".local/irony")
       (spacemacs|diminish irony-mode " Ⓘ" " I"))))
 
 (defun irony/init-company-irony ()
