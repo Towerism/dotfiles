@@ -1,4 +1,3 @@
-
 (setq irony-packages
   '(irony
     company-irony
