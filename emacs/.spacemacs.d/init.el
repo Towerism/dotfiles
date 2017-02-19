@@ -29,9 +29,8 @@ values."
      auto-completion
      protobuf
      bibtex
-     c-c++
+     (c-c++ :variables c-c++-enable-clang-support t)
      clojure
-     cmake-ide
      cscope
      csharp
      emacs-lisp
@@ -252,7 +251,9 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
-  )
+  (setq-default
+   exec-path-from-shell-check-startup-files nil
+   ))
 
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
@@ -270,10 +271,9 @@ you should place your code here."
   (defun clang-format-bindings ()
     (define-key c++-mode-map [tab] 'clang-format-buffer))
   (global-linum-mode)
-  (setq-default dotspacemacs-configuration-layers
-                '((c-c++ :variables c-c++-enable-clang-support t)))
 
   (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
-  (add-hook 'c++-mode-hook (lambda () ((add-to-list 'projectile-other-file-alist '("cc" "h"))
-                                   (add-to-list 'projectile-other-file-alist '("h" "cc")))))
+  (add-hook 'c++-mode-hook (lambda () ((add-to-list 'projectile-other-file-alist '("cc" . "h"))
+                                   (add-to-list 'projectile-other-file-alist '("h" . "cc")))))
+  (add-hook 'c++-mode-hook (lambda () (setq flycheck-clang-language-standard "c++14")))
   )
