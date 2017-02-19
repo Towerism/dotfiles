@@ -16,7 +16,7 @@ The following are assumed to be installed:
 - Font Awesome (required by i3)
 - GNU Stow (recommended if you want to run the auto-install script)
 ** Usage
-You should edit `install` and change `DIR` to where you cloned the repository.
+You should edit ~install~ and change ~DIR~ to where you cloned the repository.
 You may have to remove existing dotfiles if they are not already managed by GNU
 stow. After cloning, running the install script will set up the symlinks for
 you:
