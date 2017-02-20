@@ -87,6 +87,9 @@ bindsym --release $mod+z exec scrot -u $screenshot_dir/$screenshot_file
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# suspend
+bindsym $mod+Shift+s exec --no-startup-id systemctl suspend
+
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
