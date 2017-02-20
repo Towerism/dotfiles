@@ -275,15 +275,19 @@ you should place your code here."
   (global-set-key [C-M-tab] 'clang-format-region)
   ;; Bind clang-format-buffer to tab on the c++-mode only:
   (add-hook 'c++-mode-hook 'clang-format-bindings)
-  (defun clang-format-bindings ()
-    (define-key c++-mode-map [tab] 'clang-format-buffer))
   (global-linum-mode)
 
   (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
   (add-hook 'c++-mode-hook (lambda () (progn (add-to-list 'projectile-other-file-alist '("cxx" . ("h" "hh" "hxx" "ixx")))
                                              (add-to-list 'projectile-other-file-alist '("h" . ("c" "cc" "cpp" "cxx" "ipp" "hpp" "m" "mm"))))))
   (add-hook 'c++-mode-hook (lambda () (setq flycheck-clang-language-standard "c++14")))
-  )
+  (setq-default
+   auto-completion-private-snippets-directory "~/.spacemacs.d/snippets"
+   ))
+
+(defun clang-format-bindings ()
+  (define-key c++-mode-map [tab] 'clang-format-buffer))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
