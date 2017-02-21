@@ -38,6 +38,7 @@ values."
      clojure
      cscope
      csharp
+     dash
      emacs-lisp
      git
      github
@@ -46,6 +47,7 @@ values."
      keychain
      markdown
      org
+     pdf-tools
      ruby
      ruby-on-rails
      semantic
@@ -283,6 +285,7 @@ you should place your code here."
   (add-hook 'c++-mode-hook (lambda () (setq flycheck-clang-language-standard "c++14")))
   (setq-default
    auto-completion-private-snippets-directory "~/.spacemacs.d/snippets"
+   neo-theme 'arrow
    ))
 
 (defun clang-format-bindings ()
