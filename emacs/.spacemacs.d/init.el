@@ -283,6 +283,9 @@ you should place your code here."
   (add-hook 'c++-mode-hook (lambda () (progn (add-to-list 'projectile-other-file-alist '("cxx" . ("h" "hh" "hxx" "ixx")))
                                              (add-to-list 'projectile-other-file-alist '("h" . ("c" "cc" "cpp" "cxx" "ipp" "hpp" "m" "mm"))))))
   (add-hook 'c++-mode-hook (lambda () (setq flycheck-clang-language-standard "c++14")))
+  (add-to-list 'ivy-initial-inputs-alist '(counsel-M-x . ""))
+  (add-to-list 'ivy-initial-inputs-alist '(counsel-describe-function . ""))
+  (add-to-list 'ivy-initial-inputs-alist '(counsel-describe-variable . ""))
   (setq-default
    auto-completion-private-snippets-directory "~/.spacemacs.d/snippets"
    neo-theme 'arrow
