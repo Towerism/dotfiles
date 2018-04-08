@@ -61,9 +61,9 @@ exec chromium
 focus_follows_mouse no
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec pulseaudio-ctl up
-bindsym XF86AudioLowerVolume exec pulseaudio-ctl down
-bindsym XF86AudioMute exec pulseaudio-ctl mute
+bindsym XF86AudioRaiseVolume exec ponymix increase 1
+bindsym XF86AudioLowerVolume exec ponymix decrease 1
+bindsym XF86AudioMute exec ponymix toggle
 
 # Media player controls
 bindsym $mod+Down exec playerctl play-pause
