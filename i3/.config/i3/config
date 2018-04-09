@@ -46,6 +46,17 @@ assign [class="Uzbl-core"] $ws3
 for_window [class="Spotify"] move to workspace $ws4 # Spotify devs are scrubs
 for_window [class="Uzbl-core"] focus child, layout tabbed, focus # tabbed web browsing
 
+# Setup gaps
+gaps inner 12 
+gaps outer 0
+for_window [class="^.*"] border pixel 0
+
+# Setup X composition
+exec compton
+
+# Setup wallpaper
+exec --no-startup-id exec bash $HOME/.fehbg
+
 # Start the pulse audio server
 exec --no-startup-id pulseaudio --start
 
@@ -213,13 +224,13 @@ bar {
         strip_workspace_numbers yes
 
         colors {
-            background #282828
+            background #042632
             statusline #F8F8F0
             separator #666666
 
             focused_workspace  #4c7899 #285577 #ffffff
-            active_workspace   #333333 #5f676a #ffffff
-            inactive_workspace #49483E #2e2e2e #777777
+            active_workspace   #268bd2 #5f676a #ffffff
+            inactive_workspace #586e75 #073642 #777777
             urgent_workspace   #2f343a #900000 #ffffff
             binding_mode       #2f343a #900000 #ffffff
         }

@@ -20,3 +20,6 @@ URxvt*color15:  #FEFFFE
 
 URxvt*font:  xft:DejaVu Sans Mono:size=12
 URxvt*scrollBar:  false
+
+URxvt.transparent:  true
+URxvt.shading:      20
