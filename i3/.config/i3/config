@@ -67,8 +67,8 @@ bindsym XF86AudioMute exec ponymix toggle && pkill -RTMIN+10 i3blocks
 
 # Media player controls
 bindsym $mod+Down exec playerctl play-pause
-bindsym $mod+Right exec playerctl next
-bindsym $mod+Left exec playerctl previous
+bindsym $mod+Right exec playerctl next && pkill -RTMIN+20 i3blocks
+bindsym $mod+Left exec playerctl previous && pkill -RTMIN+20 i3blocks
 
 # Alternate media player controls
 bindsym XF86AudioPlay exec playerctl play-pause
