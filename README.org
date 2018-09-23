@@ -49,5 +49,15 @@ This config shows only the necessary information. That is, if wifi is down, the
 wifi status is hidden; if ethernet is down, the ethernet status is hidden. Font
 Awesome is required in order for the icons to display properly. It also shows
 whether an update is needed.
+** i3lock
+You can use i3lock-fancy instead which will blur your screen and give you a
+password prompt. Creating a systemd unit in ~/usr/lib/systemd/system~ will allow
+you to lock the screen before sleeping the system. See this [[https://bbs.archlinux.org/viewtopic.php?id=150058][thread]] for more
+info. 
+
+If issues are encountered with black screen upon wake, check to make sure
+mkinitcpio hooks includes resume and kernel parameters sets resume=</dev/sdaX>,
+where X is swap partition. If you still have problems, then it is likely a
+graphics driver issue.
 ** .Xresources
 This config sets up the Monokai theme for URxvt. It also hides the URxvt's scrollbar.
