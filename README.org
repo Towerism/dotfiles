@@ -15,6 +15,8 @@ The following are assumed to be installed:
 - rofi (required by i3)
 - acpi (required by i3blocks for battery indicator)
 - sysstat (required by i3blocks for cpu usage)
+- feh (required for background)
+- compton (optional for cool animations and transparency)
 - Font Awesome (required by i3)
 - GNU Stow (recommended if you want to run the auto-install script)
 ** Usage
