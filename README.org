@@ -11,8 +11,9 @@ This repo currently has the following dotfiles:
 The following are assumed to be installed:
 - [[https://github.com/skwp/dotfiles][yadr]] (required by .zshrc)
 - i3wm
-- i3status
-- dmenu (required by i3)
+- i3blocks
+- rofi (required by i3)
+- acpi (required by i3blocks for battery indicator)
 - Font Awesome (required by i3)
 - GNU Stow (recommended if you want to run the auto-install script)
 ** Usage
@@ -38,9 +39,10 @@ This is a modified version of the default config. Window navigation was modified
 to mirror vim bindings exactly, so horizontal splitting had to be remapped. I've
 also configured certain programs to open to certain workspaces, i.e. emacs open
 in the code workspaces, and chromium opens in the www workspace.
-** i3status
+** i3blocks
 This config shows only the necessary information. That is, if wifi is down, the
 wifi status is hidden; if ethernet is down, the ethernet status is hidden. Font
-Awesome is required in order for the icons to display properly.
+Awesome is required in order for the icons to display properly. It also shows
+whether an update is needed.
 ** .Xresources
 This config sets up the Monokai theme for URxvt. It also hides the URxvt's scrollbar.
