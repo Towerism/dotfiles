@@ -36,7 +36,7 @@ alias stow-local='sudo stow -t /usr/local/bin'
 export PATH="$(ruby -rubygems -e "puts Gem.user_dir")/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/scripts:$PATH"
-eval $(keychain --eval --agents ssh -Q --quiet com.github)
+eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 
 # Make git an alias for hub (git extension allowing interface with GitHub)
 eval "$(hub alias -s)"
