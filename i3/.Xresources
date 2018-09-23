@@ -18,7 +18,7 @@ URxvt*color13:  #695ABB
 URxvt*color14:  #D53864
 URxvt*color15:  #FEFFFE
 
-URxvt*font:  xft:DejaVu Sans Mono:size=12
+URxvt*font:  xft:Source Code Pro:size=13
 URxvt*scrollBar:  false
 
 URxvt.transparent:  true
