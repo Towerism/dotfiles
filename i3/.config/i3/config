@@ -31,7 +31,7 @@ set $ws1 "1: home"
 set $ws2 "2: code"
 set $ws3 "3: www"
 set $ws4 "4: music"
-set $ws5 "5: email"
+set $ws5 "5: cloud"
 set $ws6 6
 set $ws7 7
 set $ws8 8
@@ -43,7 +43,7 @@ assign [class="URxvt"] $ws1
 assign [class="Emacs"] $ws2
 assign [class="Chromium"] $ws3
 assign [class="Uzbl-core"] $ws3
-assign [class="wavebox" tiling] $ws5
+assign [class="Rambox"] $ws5
 for_window [class="Spotify"] move to workspace $ws4 # Spotify devs are scrubs
 for_window [class="Uzbl-core"] focus child, layout tabbed, focus # tabbed web browsing
 
@@ -68,6 +68,7 @@ exec --no-startup-id pulseaudio --start
 exec --no-startup-id i3-sensible-terminal
 exec --no-startup-id emacs
 exec --no-startup-id chromium
+exec --no-startup-id rambox
 
 # Preferences
 focus_follows_mouse no
