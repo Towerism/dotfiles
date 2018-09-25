@@ -14,14 +14,18 @@ The following are assumed to be installed:
 - i3blocks
 - rofi (required by i3)
 - acpi (required by i3blocks for battery indicator)
+- feh (required for background)
+- Font Awesome (required by i3)
 - sysstat (required by i3blocks for cpu usage)
 - pacman-contrib (required by i3blocks for update checking)
-- feh (required for background)
-- compton (optional for cool animations and transparency)
-- pulseaudio (optional for audio server)
+- pulseaudio
 - ponymix (used for pulseaudio volume control)
-- Font Awesome (required by i3)
+** Optional
+The following are optional:
 - GNU Stow (recommended if you want to run the auto-install script)
+- compton (optional for cool animations and transparency)
+- Rambox (for cloud services)
+- Spotify
 ** Usage
 You should edit ~install~ and change ~DIR~ to where you cloned the repository.
 You may have to remove existing dotfiles if they are not already managed by GNU
