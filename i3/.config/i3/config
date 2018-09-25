@@ -43,7 +43,7 @@ assign [class="URxvt"] $ws1
 assign [class="Emacs"] $ws2
 assign [class="Chromium"] $ws3
 assign [class="Uzbl-core"] $ws3
-assign [class="Rambox"] $ws5
+assign [class="Franz"] $ws5
 for_window [class="Spotify"] move to workspace $ws4 # Spotify devs are scrubs
 for_window [class="Uzbl-core"] focus child, layout tabbed, focus # tabbed web browsing
 
@@ -68,7 +68,7 @@ exec --no-startup-id pulseaudio --start
 exec --no-startup-id i3-sensible-terminal
 exec --no-startup-id emacs
 exec --no-startup-id chromium
-exec --no-startup-id rambox
+exec --no-startup-id franz
 
 # Preferences
 focus_follows_mouse no

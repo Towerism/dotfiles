@@ -24,7 +24,7 @@ The following are assumed to be installed:
 The following are optional:
 - GNU Stow (recommended if you want to run the auto-install script)
 - compton (optional for cool animations and transparency)
-- Rambox (for cloud services)
+- Franz (for cloud services)
 - Spotify
 ** Usage
 You should edit ~install~ and change ~DIR~ to where you cloned the repository.
