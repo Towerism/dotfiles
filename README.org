@@ -15,6 +15,7 @@ The following are assumed to be installed:
 - rofi (required by i3)
 - acpi (required by i3blocks for battery indicator)
 - sysstat (required by i3blocks for cpu usage)
+- pacman-contrib (required by i3blocks for update checking)
 - feh (required for background)
 - compton (optional for cool animations and transparency)
 - pulseaudio (optional for audio server)
