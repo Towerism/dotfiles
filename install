@@ -6,7 +6,7 @@ OPT="-d $DIR"
 
 which stow >/dev/null 2>&1 || { echo "Unable to automatically install dotfiles: stow was not found"; exit 1; }
 
-MODULES="emacs i3 zsh"
+MODULES="emacs i3 zsh dunst"
 
 printf "Stowing modules... "
 for module in $MODULES; do
