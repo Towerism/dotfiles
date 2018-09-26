@@ -50,6 +50,7 @@ values."
      clojure
      csharp
      dash
+     docker
      emacs-lisp
      git
      github
