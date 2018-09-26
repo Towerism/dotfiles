@@ -35,6 +35,12 @@ you:
 $ git clone https://github.com/towerism/dotfiles ~/.dotfiles
 $ ~/.dotfiles/install
 #+END_SRC
+
+*** `.loginssh`
+You can override the unlocking of your ssh key by creating a script at
+`$HOME/.loginssh`. The zshrc will be invoked with once for each of your private
+keys. The identities array in the zshrc will determine which keys are unlocked.
+If `.loginssh` is not provided, zshrc will fallback to prezto ssh unlocking.
 ** .zshrc
 It automatically starts the emacs daemon and gives several aliases to
 ~emacsclient -t~. It also provides good defaults, including fuzzy completion,
