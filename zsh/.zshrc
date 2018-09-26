@@ -10,6 +10,18 @@ export IDENTITY_EMAIL="martin.frackerjr@gmail.com"
 
 IDENTITIES=(id_rsa)
 
+LOGINSSH=$HOME/.loginssh
+if [[ -a "$LOGINSSH" ]]; then
+    printf "unlocking private keys... "
+    for identity in $IDENTITIES; do
+        $LOGINSSH $identity
+    done
+    echo "done"
+
+    # disable prezto identity intialization
+    zstyle ':prezto:module:ssh:load' identities ''
+fi
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -40,18 +52,6 @@ alias stow-local='sudo stow -t /usr/local/bin'
 export PATH="$(ruby -r rubygems -e "puts Gem.user_dir")/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/scripts:$PATH"
-
-LOGINSSH=$HOME/.loginssh
-if [[ -a "$LOGINSSH" ]]; then
-    printf "unlocking private keys... "
-    for identity in $IDENTITIES; do
-        $LOGINSSH $identity
-    done
-    echo "done"
-
-    # disable prezto identity intialization
-    zstyle ':prezto:module:ssh:load' identities ''
-fi
 
 # Make git an alias for hub (git extension allowing interface with GitHub)
 eval "$(hub alias -s)"
