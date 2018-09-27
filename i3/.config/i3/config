@@ -226,20 +226,3 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bar {
-        tray_output primary
-        position bottom
-        strip_workspace_numbers yes
-
-        colors {
-            background #042632
-            statusline #F8F8F0
-            separator #666666
-
-            focused_workspace  #4c7899 #285577 #ffffff
-           active_workspace   #268bd2 #5f676a #ffffff
-            inactive_workspace #586e75 #073642 #777777
-            urgent_workspace   #2f343a #900000 #ffffff
-            binding_mode       #2f343a #900000 #ffffff
-        }
-}
