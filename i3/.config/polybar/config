@@ -59,7 +59,7 @@ font-3 = FontAwesome:pixelsize=10;2
 
 modules-left = i3
 modules-center = date
-modules-right = filesystem pulseaudio memory cpu wlan eth battery powermenu
+modules-right = filesystem xbacklight pulseaudio memory cpu wlan eth battery powermenu
 
 tray-position = right
 tray-padding = 2
@@ -125,7 +125,7 @@ index-sort = true
 wrapping-scroll = false
 
 ; Only show workspaces on the same output as the bar
-;pin-workspaces = true
+pin-workspaces = true
 
 label-mode-padding = 2
 label-mode-foreground = #000
