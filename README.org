@@ -11,11 +11,12 @@ This repo currently has the following dotfiles:
 The following are assumed to be installed:
 - [[https://github.com/skwp/dotfiles][yadr]] (required by .zshrc)
 - i3wm
-- i3blocks
+- polybar
 - rofi (required by i3)
 - acpi (required by i3blocks for battery indicator)
 - feh (required for background)
-- Font Awesome (required by i3)
+- Font Awesome (required by polybar)
+- Roboto font (required by polybar)
 - sysstat (required by i3blocks for cpu usage)
 - pacman-contrib (required by i3blocks for update checking)
 - pulseaudio
@@ -55,11 +56,10 @@ This is a modified version of the default config. Window navigation was modified
 to mirror vim bindings exactly, so horizontal splitting had to be remapped. I've
 also configured certain programs to open to certain workspaces, i.e. emacs open
 in the code workspaces, and chromium opens in the www workspace.
-** i3blocks
-This config shows only the necessary information. That is, if wifi is down, the
-wifi status is hidden; if ethernet is down, the ethernet status is hidden. Font
-Awesome is required in order for the icons to display properly. It also shows
-whether an update is needed.
+** polybar
+This config shows a pretty status bar at the top of the screen. It shows
+battery, storage capacity used, volume, memory and cpu usage, wifi, power menu,
+and workspaces that are pinned to the corresponding monitor.
 ** i3lock
 You can use i3lock-fancy instead which will blur your screen and give you a
 password prompt. Creating a systemd unit in ~/usr/lib/systemd/system~ will allow
