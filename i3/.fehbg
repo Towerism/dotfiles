@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --bg-scale '/home/mfracker/.dotfiles/i3/.wallpapers/arch-solarized.png' 
+feh --bg-scale '/home/mfracker/.wallpapers/arch-dark.png' 
