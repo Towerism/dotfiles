@@ -1,7 +1,6 @@
 #!/bin/bash
 # -*- mode: shell-script -*-
-
-DIR=$(dirname "$0")
+DIR=$(dirname $(realpath "$0"))
 OPT="-d $DIR"
 
 which stow >/dev/null 2>&1 || { echo "Unable to automatically install dotfiles: stow was not found"; exit 1; }
