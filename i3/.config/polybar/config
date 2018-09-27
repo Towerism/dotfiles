@@ -375,7 +375,7 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = %{T4}%{T-}
+label-open =  
 label-open-foreground = ${colors.secondary}
 label-close =  cancel
 label-close-foreground = ${colors.secondary}
