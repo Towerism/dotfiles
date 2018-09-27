@@ -55,7 +55,7 @@ module-margin-right = 2
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
-font-3 = FontAwesome:pixelsize=10;0
+font-3 = FontAwesome:pixelsize=10;2
 
 modules-left = i3
 modules-center = date
@@ -375,7 +375,7 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = POWER
+label-open = %{T4}%{T-}
 label-open-foreground = ${colors.secondary}
 label-close =  cancel
 label-close-foreground = ${colors.secondary}
