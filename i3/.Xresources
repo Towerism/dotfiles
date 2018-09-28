@@ -42,6 +42,8 @@ URxvt.transparent:    true
 URxvt.shading:        35
 URxvt*borderLess:     0
 URxvt*borderColor:    #e39c39
+emacs*borderColor:    #e39c39
+emacs*borderWidth: 1
 URxvt*externalBorder: 1
 
 
