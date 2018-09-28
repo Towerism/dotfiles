@@ -38,7 +38,10 @@
 URxvt*font:  xft:Source Code Pro:size=13
 URxvt*scrollBar:  false
 
-URxvt.transparent:  true
-URxvt.shading:      35
+URxvt.transparent:    true
+URxvt.shading:        35
+URxvt*borderLess:     0
+URxvt*borderColor:    #e39c39
+URxvt*externalBorder: 1
 
 
