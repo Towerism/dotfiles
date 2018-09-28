@@ -19,3 +19,10 @@ cd "$DIR/"
 git submodule init
 git submodule update
 printf "done\n"
+
+printf "Configuring dunst theme...\n"
+DUNST_CONFIG=~/.config/dunst
+printf "\t"
+$DUNST_CONFIG/xrdb_theme.sh
+mv -f $DUNST_CONFIG/dunstrc_xr_colors $DUNST_CONFIG/dunstrc
+printf "done\n"

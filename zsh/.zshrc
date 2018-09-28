@@ -66,3 +66,4 @@ source /usr/share/nvm/init-nvm.sh
 # restore terminal colors
 (cat ~/.cache/wal/sequences &)
 source ~/.cache/wal/colors-tty.sh
+source ~/.cache/wal/colors.sh
