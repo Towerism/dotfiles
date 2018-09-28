@@ -7,6 +7,8 @@ This repo currently has the following dotfiles:
 - .config/i3/config
 - .config/i3status/config
 - .Xresources
+- .config/polybar/config
+- .config/kitty/kitty.conf
 ** Requirements
 The following are assumed to be installed:
 - [[https://github.com/skwp/dotfiles][yadr]] (required by .zshrc)
@@ -21,12 +23,14 @@ The following are assumed to be installed:
 - pacman-contrib (required by i3blocks for update checking)
 - pulseaudio
 - ponymix (used for pulseaudio volume control)
+- pywal (used for tty colorscheme restoration)
 ** Optional
 The following are optional:
 - GNU Stow (recommended if you want to run the auto-install script)
 - compton (optional for cool animations and transparency)
 - Franz (for cloud services)
 - Spotify
+- kitty (preferred terminal)
 ** Usage
 You should edit ~install~ and change ~DIR~ to where you cloned the repository.
 You may have to remove existing dotfiles if they are not already managed by GNU

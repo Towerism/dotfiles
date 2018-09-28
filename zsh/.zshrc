@@ -62,3 +62,7 @@ if [ -f "$HOME/.system_specific_paths" ]; then
     source ~/.system_specific_paths
 fi
 source /usr/share/nvm/init-nvm.sh
+
+# restore terminal colors
+(cat ~/.cache/wal/sequences &)
+source ~/.cache/wal/colors-tty.sh
