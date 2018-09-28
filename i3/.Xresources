@@ -39,6 +39,6 @@ URxvt*font:  xft:Source Code Pro:size=13
 URxvt*scrollBar:  false
 
 URxvt.transparent:  true
-URxvt.shading:      15
+URxvt.shading:      35
 
 
