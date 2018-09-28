@@ -39,7 +39,7 @@ URxvt*font:  xft:Source Code Pro:size=13
 URxvt*scrollBar:  false
 
 URxvt.transparent:    true
-URxvt.tintColor:      #231f1e
+URxvt.shading:        20
 URxvt*borderLess:     0
 URxvt*borderColor:    #e39c39
 emacs*borderColor:    #e39c39
