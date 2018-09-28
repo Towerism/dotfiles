@@ -1,0 +1,21 @@
+set $wallpaper /home/mfracker/.wallpapers/colorscheme-skyline-sunset.png
+
+set $background #131116
+set $foreground #e4dfbe
+
+set $color0 #131116
+set $color1 #976D56
+set $color2 #D5963D
+set $color3 #F9AB3E
+set $color4 #EEA547
+set $color5 #FBC170
+set $color6 #38BAF5
+set $color7 #e4dfbe
+set $color8 #9f9c85
+set $color9 #976D56
+set $color10 #D5963D
+set $color11 #F9AB3E
+set $color12 #EEA547
+set $color13 #FBC170
+set $color14 #38BAF5
+set $color15 #e4dfbe

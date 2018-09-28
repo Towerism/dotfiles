@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/mfracker/.wallpapers/colorscheme-skyline-sunset.png",
+    "alpha": "100",
+    "special": {
+        "background": "#131116",
+        "foreground": "#e4dfbe",
+        "cursor": "#e4dfbe"
+    },
+    "colors": {
+        "color0": "#131116",
+        "color1": "#976D56",
+        "color2": "#D5963D",
+        "color3": "#F9AB3E",
+        "color4": "#EEA547",
+        "color5": "#FBC170",
+        "color6": "#38BAF5",
+        "color7": "#e4dfbe",
+        "color8": "#9f9c85",
+        "color9": "#976D56",
+        "color10": "#D5963D",
+        "color11": "#F9AB3E",
+        "color12": "#EEA547",
+        "color13": "#FBC170",
+        "color14": "#38BAF5",
+        "color15": "#e4dfbe"
+    }
+}

@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/mfracker/.wallpapers/colorscheme-skyline-sunset.png"
+let background = "#131116"
+let foreground = "#e4dfbe"
+let cursor     = "#e4dfbe"
+
+" Colors
+let color0  = "#131116"
+let color1  = "#976D56"
+let color2  = "#D5963D"
+let color3  = "#F9AB3E"
+let color4  = "#EEA547"
+let color5  = "#FBC170"
+let color6  = "#38BAF5"
+let color7  = "#e4dfbe"
+let color8  = "#9f9c85"
+let color9  = "#976D56"
+let color10 = "#D5963D"
+let color11 = "#F9AB3E"
+let color12 = "#EEA547"
+let color13 = "#FBC170"
+let color14 = "#38BAF5"
+let color15 = "#e4dfbe"
