@@ -18,14 +18,14 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #222
-background-alt = #444
+background = #ab18160f
+background-alt = #ab2f2c1d
 ;foreground = ${xrdb:color7:#222}
-foreground = #dfdfdf
-foreground-alt = #666
-primary = #ffb52a
-secondary = #e60053
-alert = #bd2c40
+foreground = #fce0b8
+foreground-alt = #555358
+primary = #f9ab3e
+secondary = #e39c39
+alert = #9c4e18
 
 [bar/example]
 monitor = ${env:MONITOR:HDMI-0}
@@ -58,7 +58,7 @@ font-2 = FontAwesome:pixelsize=13;2
 
 modules-left = i3
 modules-center = date
-modules-right = filesystem xbacklight pulseaudio updates-arch-combined memory cpu wlan eth battery powermenu
+modules-right = xbacklight pulseaudio updates-arch-combined filesystem memory cpu wlan eth battery powermenu
 
 tray-position = right
 tray-padding = 2
@@ -91,16 +91,19 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
-label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.foreground-alt}
+format-mounted-prefix = " "
+format-mounted-prefix-foreground = ${colors.foreground-alt}
+format-mounted-underline = ${colors.secondary}
+label-mounted = %percentage_used%%
+label-unmounted =
+label-unmounted-foreground =
 
 [module/bspwm]
 type = internal/bspwm
 
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
+label-focused-underline= ${colors.secondary}
 label-focused-padding = 2
 
 label-occupied = %index%
@@ -162,11 +165,11 @@ label = BL
 
 bar-width = 10
 bar-indicator = |
-bar-indicator-foreground = #fff
+bar-indicator-foreground = ${colors.foreground}
 bar-indicator-font = 2
 bar-fill = ─
 bar-fill-font = 2
-bar-fill-foreground = #9f78e1
+bar-fill-foreground = ${colors.secondary}
 bar-empty = ─
 bar-empty-font = 2
 bar-empty-foreground = ${colors.foreground-alt}
@@ -181,20 +184,20 @@ type = internal/cpu
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #f90000
+format-underline = ${colors.secondary}
 label = %percentage:2%%
 
 [module/updates-arch-combined]
 type = custom/script
 exec = ~/.config/polybar/scripts/updates-arch-combined.sh
-format-underline = #f7fe72
+format-underline = ${colors.secondary}
 
 [module/memory]
 type = internal/memory
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #4bffdc
+format-underline = ${colors.secondary}
 label = %percentage_used%%
 
 [module/wlan]
@@ -205,12 +208,12 @@ interval = 3.0
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 format-connected = <label-connected>
-format-connected-underline = #9f78e1
+format-connected-underline = ${colors.secondary}
 label-connected = %essid%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
+;format-disconnected-underline = ${colors.secondary}
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
@@ -219,7 +222,7 @@ type = internal/network
 interface = vethe22ff28
 interval = 3.0
 
-format-connected-underline = #55aa55
+format-connected-underline = ${colors.secondary}
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
@@ -242,7 +245,7 @@ time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #0a6cf5
+format-underline = ${colors.secondary}
 
 label = %date% %time%
 
@@ -250,24 +253,18 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
+label-volume = VOL
 label-volume-foreground = ${root.foreground}
 
 label-muted =   muted
 label-muted-foreground = #666
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
 bar-volume-indicator = |
 bar-volume-indicator-font = 2
 bar-volume-fill = ─
+bar-volume-fill-foreground = ${colors.secondary}
 bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
@@ -280,7 +277,7 @@ adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
+format-charging-underline = ${colors.secondary}
 
 format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}

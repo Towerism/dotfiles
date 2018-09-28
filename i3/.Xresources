@@ -1,25 +1,44 @@
-URxvt*foreground:  #F6F5EE
-URxvt*background:  #1D1D19
+! special
+*.foreground:   #d1a282
+*.background:   #050505
+*.cursorColor:  #d1a282
 
-URxvt*color0:  #1C1D19
-URxvt*color1:  #D01B24
-URxvt*color2:  #A7D32C
-URxvt*color3:  #D8CF67
-URxvt*color4:  #61B8D0
-URxvt*color5:  #695ABB
-URxvt*color6:  #D53864
-URxvt*color7:  #FEFFFE
-URxvt*color8:  #1C1D19
-URxvt*color9:  #D12A24
-URxvt*color10:  #A7D32C
-URxvt*color11:  #D8CF67
-URxvt*color12:  #61B8D0
-URxvt*color13:  #695ABB
-URxvt*color14:  #D53864
-URxvt*color15:  #FEFFFE
+! black
+*.color0:       #100a07
+*.color8:       #a09fa2
+
+! red
+*.color1:       #2f1808
+*.color9:       #674438
+
+! green
+*.color2:       #5b3f17
+*.color10:      #b3a19b
+
+! yellow
+*.color3:       #746d48
+*.color11:      #a09fa2
+
+! blue
+*.color4:       #8b8357
+*.color12:      #f9b24f
+
+! magenta
+*.color5:       #a29965
+*.color13:      #faba61
+
+! cyan
+*.color6:       #b9ae73
+*.color14:      #d8b196
+
+! white
+*color7:       #d0c482
+*color15:      #b2642e
 
 URxvt*font:  xft:Source Code Pro:size=13
 URxvt*scrollBar:  false
 
 URxvt.transparent:  true
-URxvt.shading:      10
+URxvt.shading:      15
+
+

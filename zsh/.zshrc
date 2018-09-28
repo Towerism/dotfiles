@@ -34,7 +34,7 @@ fi
 # Customize to your needs...
 
 for config_file ($HOME/.yadr/zsh/*.zsh) source $config_file
-prompt steeef
+prompt minimal
 
 export TERM=xterm-256color
 export ALTERNATE_EDITOR=""
