@@ -8,32 +8,32 @@
 *.color8:       #a09fa2
 
 ! red
-*.color1:       #2f1808
-*.color9:       #674438
+*.color1:       #683512
+*.color9:       #b2642e
 
 ! green
-*.color2:       #5b3f17
-*.color10:      #b3a19b
+*.color2:       #906324
+*.color10:      #b3664d
 
 ! yellow
-*.color3:       #746d48
-*.color11:      #a09fa2
+*.color3:       #8a7a2c
+*.color11:      #9c99a2
 
 ! blue
-*.color4:       #8b8357
+*.color4:       #c4b97b
 *.color12:      #f9b24f
 
 ! magenta
-*.color5:       #a29965
+*.color5:       #e0d38c
 *.color13:      #faba61
 
 ! cyan
-*.color6:       #b9ae73
+*.color6:       #f1e49d
 *.color14:      #d8b196
 
 ! white
-*color7:       #d0c482
-*color15:      #b2642e
+*.color7:       #333024
+*.color15:      #947c74
 
 URxvt*font:  xft:Source Code Pro:size=13
 URxvt*scrollBar:  false
