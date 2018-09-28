@@ -39,7 +39,7 @@ set $ws9 9
 set $ws0 10
 
 # Setup clients for workspaces
-assign [class="URxvt"] $ws1
+assign [class="kitty"] $ws1
 assign [class="Emacs"] $ws2
 assign [class="Chromium"] $ws3
 assign [class="Uzbl-core"] $ws3
