@@ -1,6 +1,5 @@
 ! special
 *.foreground:   #d1a282
-*.background:   #18160f
 *.cursorColor:  #d1a282
 
 ! black
@@ -31,15 +30,16 @@
 *.color6:       #f1e49d
 *.color14:      #d8b196
 
+!#333024
 ! white
-*.color7:       #333024
+*.color7:       #ffffff 
 *.color15:      #947c74
 
 URxvt*font:  xft:Source Code Pro:size=13
 URxvt*scrollBar:  false
 
 URxvt.transparent:    true
-URxvt.shading:        35
+URxvt.tintColor:      #231f1e
 URxvt*borderLess:     0
 URxvt*borderColor:    #e39c39
 emacs*borderColor:    #e39c39
