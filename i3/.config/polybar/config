@@ -190,6 +190,7 @@ label = %percentage:2%%
 type = custom/script
 exec = ~/.config/polybar/scripts/updates-arch-combined.sh
 format-underline = ${colors.secondary}
+interval = 600
 
 [module/memory]
 type = internal/memory
