@@ -47,9 +47,6 @@ assign [class="Franz"] $ws5
 for_window [class="Spotify"] move to workspace $ws4 # Spotify devs are scrubs
 for_window [class="Uzbl-core"] focus child, layout tabbed, focus # tabbed web browsing
 
-# Setup polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
 # Setup gaps
 gaps inner 12 
 gaps outer 0
@@ -62,7 +59,7 @@ exec compton
 exec --no-startup-id exec bash $HOME/.fehbg
 
 # Start the pulse audio server
-exec --no-startup-id pulseaudio --start
+exec --no-startup-id pulseaudio
 
 # Start network manager client tray
 # exec --no-startup-id nm-applet
@@ -72,6 +69,9 @@ exec --no-startup-id i3-sensible-terminal
 exec --no-startup-id emacs
 exec --no-startup-id chromium
 exec --no-startup-id franz
+
+# Setup polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Preferences
 focus_follows_mouse no
