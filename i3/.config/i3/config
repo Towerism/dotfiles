@@ -61,6 +61,9 @@ exec --no-startup-id exec bash $HOME/.fehbg
 # Start the pulse audio server
 exec --no-startup-id pulseaudio
 
+# Start music server
+exec --no-startup-id mopidy
+
 # Start network manager client tray
 # exec --no-startup-id nm-applet
 
