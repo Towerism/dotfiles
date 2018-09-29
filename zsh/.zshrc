@@ -12,11 +12,9 @@ IDENTITIES=(id_rsa)
 
 LOGINSSH=$HOME/.loginssh
 if [[ -a "$LOGINSSH" ]]; then
-    printf "unlocking private keys... "
     for identity in $IDENTITIES; do
-        $LOGINSSH $identity
+        ($LOGINSSH $identity &)
     done
-    echo "done"
 
     # disable prezto identity intialization
     zstyle ':prezto:module:ssh:load' identities ''
