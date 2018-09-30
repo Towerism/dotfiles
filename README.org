@@ -11,7 +11,7 @@ This repo currently has the following dotfiles:
 - .config/kitty/kitty.conf
 ** Requirements
 The following are assumed to be installed:
-- [[https://github.com/skwp/dotfiles][yadr]] (required by .zshrc)
+- prezto (for a pleasant zsh experience)
 - i3wm
 - polybar
 - rofi (required by i3)

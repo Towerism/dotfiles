@@ -26,10 +26,6 @@ if [ -n "$INSIDE_EMACS" ]; then
     unset zle_bracketed_paste
 fi
 
-autoload -Uz promptinit
-promptinit
-prompt minimal
-
 export TERM=xterm-256color
 export ALTERNATE_EDITOR=""
 
