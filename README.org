@@ -47,7 +47,7 @@ $ ~/.dotfiles/install
 This dotfile setup is designed to allow the user to change the theme on the fly.
 Themes can be loaded randomly, or selectively, on the fly based on wallpapers
 stored in .wallpapers folder. Use ~Super+Shift+t~ to load a random theme. Or use
-the ~~/.dotfiles/load-theme .wallpapers/<path>~ to load a specific theme based
+the ~\~/.dotfiles/load-theme .wallpapers/<path>~ to load a specific theme based
 on the chosen wallpaper. Pywal is used to dynamically, and repeatably, create a
 colorscheme based on the chosen wallpaper. The colorscheme will be applied to the
 terminal, polybar, and dunst notifications.
