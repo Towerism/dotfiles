@@ -32,6 +32,7 @@ The following are optional:
 - compton (optional for cool animations and transparency)
 - Franz (for cloud services)
 - Spotify
+- playerctl (control media playback)
 - kitty (preferred terminal)
 ** Usage
 You should edit ~install~ and change ~DIR~ to where you cloned the repository.
