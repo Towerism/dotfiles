@@ -18,12 +18,12 @@
 
 [colors]
 background = ${xrdb:background}
-background-alt = ${xrdb:color4}
+background-alt = ${xrdb:color9}
 foreground = ${xrdb:foreground}
 foreground-alt = ${xrdb:color1}
 primary = ${xrdb:color3}
 secondary = ${xrdb:color6}
-alert = ${xrdb:color9}
+alert = ${xrdb:color12}
 
 [bar/example]
 monitor = ${env:MONITOR:HDMI-0}
