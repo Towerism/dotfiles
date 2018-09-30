@@ -48,8 +48,8 @@ for_window [class="Spotify"] move to workspace $ws4 # Spotify devs are scrubs
 for_window [class="Uzbl-core"] focus child, layout tabbed, focus # tabbed web browsing
 
 # Setup gaps
-gaps inner 12 
-gaps outer 0
+gaps inner 17 
+gaps outer 25
 for_window [class="^.*"] border pixel 0
 
 # Setup X composition
