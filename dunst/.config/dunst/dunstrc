@@ -16,6 +16,12 @@
 # xrdb_theme.sh wrapper
 #
 ###################################
+###################################
+#
+# Config file created with
+# xrdb_theme.sh wrapper
+#
+###################################
 [global]
     ### Display ###
 
@@ -82,7 +88,7 @@
     frame_width = 1
 
     # Defines color of the frame around the notification window.
-    frame_color = "#9a8e6b"
+    frame_color = "#79848d"
 
     # Define a color for the separator.
     # possible values are:
@@ -263,23 +269,23 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#0C0503"
-    foreground = "#D16E2C"
+    background = "#050506"
+    foreground = "#505F6C"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_normal]
-    background = "#0C0503"
-    foreground = "#B75332"
+    background = "#050506"
+    foreground = "#315874"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_critical]
-    background = "#0C0503"
-    foreground = "#AA5224"
-    frame_color = "#AA5224"
+    background = "#050506"
+    foreground = "#35526B"
+    frame_color = "#35526B"
     timeout = 0
     # Icon for notifications with critical urgency, uncomment to enable
     #icon = /path/to/icon
