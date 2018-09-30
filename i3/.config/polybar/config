@@ -18,9 +18,10 @@
 
 [colors]
 background = ${xrdb:background}
-background-alt = ${xrdb:color9}
+background-alt = ${xrdb:color2}
+workspace-underline = ${xrdb:color7}
 foreground = ${xrdb:foreground}
-foreground-contrast = ${xrdb:color0}
+foreground-contrast = ${xrdb:foreground}
 foreground-alt = ${xrdb:color1}
 primary = ${xrdb:color3}
 secondary = ${xrdb:color7}
@@ -103,7 +104,7 @@ type = internal/bspwm
 label-focused = %index%
 label-focused-foreground = ${colors.foreground-contrast}
 label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.secondary}
+label-focused-underline= ${colors.workspace-underline}
 label-focused-padding = 2
 
 label-occupied = %index%
@@ -328,7 +329,7 @@ label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 
 menu-0-0 = lock
-menu-0-0-exec = i3lock -i ~/.wallpapers/arch-stable-packages.png
+menu-0-0-exec = i3lock -i ~/.lockscreenonly/arch-stable-packages.png
 menu-0-1 = reboot
 menu-0-1-exec = menu-open-1
 menu-0-2 = power off
