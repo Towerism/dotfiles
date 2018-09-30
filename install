@@ -2,6 +2,7 @@
 # -*- mode: shell-script -*-
 DIR=$(dirname $(realpath "$0"))
 OPT="-d $DIR"
+WALLPAPER
 
 which stow >/dev/null 2>&1 || { echo "Unable to automatically install dotfiles: stow was not found"; exit 1; }
 
@@ -20,10 +21,20 @@ git submodule init
 git submodule update
 printf "done\n"
 
-printf "Configuring dunst theme...\n"
+printf "Configuring theme...\n"
+
+# configure theme with wal
+
+autoload -Uz compinit
+compinit
+# Completion for kitty
+kitty + complete setup zsh | source /dev/stdin
+
+# propagate theme to dunstrc
 DUNST_CONFIG=~/.config/dunst
 printf "\t"
 $DUNST_CONFIG/xrdb_theme.sh
 mv -f $DUNST_CONFIG/dunstrc_xr_colors $DUNST_CONFIG/dunstrc
+
 printf "done\n"
 

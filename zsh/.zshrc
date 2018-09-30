@@ -15,23 +15,19 @@ if [[ -a "$LOGINSSH" ]]; then
     for identity in $IDENTITIES; do
         ($LOGINSSH $identity &)
     done
-
-    # disable prezto identity intialization
-    zstyle ':prezto:module:ssh:load' identities ''
 fi
 
-# Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
+# Completion for kitty
+autoload -Uz compinit
+compinit
+kitty + complete setup zsh | source /dev/stdin
 
 if [ -n "$INSIDE_EMACS" ]; then
     unset zle_bracketed_paste
 fi
 
-# Customize to your needs...
-
-for config_file ($HOME/.yadr/zsh/*.zsh) source $config_file
+autoload -Uz promptinit
+promptinit
 prompt minimal
 
 export TERM=xterm-256color
@@ -65,3 +61,4 @@ source /usr/share/nvm/init-nvm.sh
 (cat ~/.cache/wal/sequences &)
 source ~/.cache/wal/colors-tty.sh
 source ~/.cache/wal/colors.sh
+

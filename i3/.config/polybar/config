@@ -18,12 +18,11 @@
 
 [colors]
 background = ${xrdb:background}
-background-alt = #55000000
+background-alt = ${xrdb:color4}
 foreground = ${xrdb:foreground}
-;#555358
 foreground-alt = ${xrdb:color1}
 primary = ${xrdb:color3}
-secondary = ${xrdb:color4}
+secondary = ${xrdb:color6}
 alert = ${xrdb:color9}
 
 [bar/example]
@@ -33,7 +32,7 @@ enable-ipc = true
 height = 32 
 ;offset-x = 1%
 ;offset-y = 1%
-radius = 6.0
+radius = 0.0
 fixed-center = true
 
 background = ${colors.background}
@@ -42,7 +41,7 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-size = 4
+border-size = 0
 border-color = #00000000
 
 padding-left = 0
