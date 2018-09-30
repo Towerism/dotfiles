@@ -59,7 +59,7 @@ exec compton
 exec --no-startup-id exec bash $HOME/.fehbg
 
 # Start the pulse audio server
-exec --no-startup-id pulseaudio
+exec --no-startup-id i3-msg 'exec /usr/bin/pulseaudio --start'
 
 # Start music server
 exec --no-startup-id mopidy

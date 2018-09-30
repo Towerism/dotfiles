@@ -1,7 +1,6 @@
 {
     "wallpaper": "/home/mfracker/.wallpapers/spacemacs.png",
     "alpha": "100",
-
     "special": {
         "background": "#0B1A2F",
         "foreground": "#cacad1",
