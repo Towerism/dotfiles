@@ -1,0 +1,4 @@
+#!/bin/bash
+
+wal -i ~/.wallpapers
+i3-msg restart

@@ -81,6 +81,9 @@ exec_always --no-startup-id BACKGROUND=$background $HOME/.config/polybar/launch.
 # Preferences
 focus_follows_mouse no
 
+# random theme
+bindsym $mod+Shift+t exec ~/.dotfiles/random-theme
+
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec ponymix increase 1 && pkill -RTMIN+10 i3blocks
 bindsym XF86AudioLowerVolume exec ponymix decrease 1 && pkill -RTMIN+10 i3blocks
