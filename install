@@ -23,13 +23,6 @@ printf "done\n"
 
 printf "Configuring theme...\n"
 
-# configure theme with wal
-
-autoload -Uz compinit
-compinit
-# Completion for kitty
-kitty + complete setup zsh | source /dev/stdin
-
 # propagate theme to dunstrc
 DUNST_CONFIG=~/.config/dunst
 printf "\t"
