@@ -25,7 +25,7 @@ The following are assumed to be installed:
 - pulseaudio
 - ponymix (used for pulseaudio volume control)
 - pywal (used for tty colorscheme restoration)
-- [color-blend](https://www.github.com/towerism/color-blend) (used for calculating colors)
+- [[https://www.github.com/towerism/color-blend][color-blend]] (used for calculating colors)
 ** Optional
 The following are optional:
 - GNU Stow (recommended if you want to run the auto-install script)
