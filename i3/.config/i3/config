@@ -73,8 +73,10 @@ exec --no-startup-id emacs
 exec --no-startup-id chromium
 exec --no-startup-id franz
 
+set_from_resource $background color0
+
 # Setup polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id BACKGROUND=$background $HOME/.config/polybar/launch.sh
 
 # Preferences
 focus_follows_mouse no

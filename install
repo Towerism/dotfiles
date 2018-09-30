@@ -1,8 +1,11 @@
 #!/bin/bash
 # -*- mode: shell-script -*-
+
+set -e
+
 DIR=$(dirname $(realpath "$0"))
 OPT="-d $DIR"
-WALLPAPER
+
 
 which stow >/dev/null 2>&1 || { echo "Unable to automatically install dotfiles: stow was not found"; exit 1; }
 
