@@ -131,7 +131,7 @@ readonly valid_keys="${!theme_attr_dict[@]}"
 #
 # User config dir and file
 readonly user_conf_dir="${XDG_CONFIG_HOME:-$HOME/.config}/dunst"
-readonly user_conf="$user_conf_dir/dunstrc"
+readonly user_conf="$user_conf_dir/template_dunstrc"
 
 # Default config dir and example file
 example_conf_dir="/usr/share/dunst"
@@ -234,16 +234,6 @@ for idx in "${!conf[@]}"; do
             ;;
     esac
 done
-
-# Create a header for the xr_color config file
-user_xr_color_conf_content="\
-###################################
-#
-# Config file created with
-# $script_name wrapper
-#
-###################################
-"
 
 # After everything is completed, write the new config to a file
 user_xr_color_conf_content+="$(printf '%s\n' "${conf[@]}")"
