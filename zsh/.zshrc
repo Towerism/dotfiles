@@ -6,21 +6,14 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-export IDENTITY_EMAIL="martin.frackerjr@gmail.com"
+# unlock ssh identity
+eval $(keychain --quiet --eval ~/.ssh/id_rsa)
 
-IDENTITIES=(id_rsa)
-
-LOGINSSH=$HOME/.loginssh
-if [[ -a "$LOGINSSH" ]]; then
-    for identity in $IDENTITIES; do
-        ($LOGINSSH $identity &)
-    done
-fi
-
-# Completion for kitty
-autoload -Uz compinit
+# set up kitty autocomplete
 compinit
 kitty + complete setup zsh | source /dev/stdin
+
+prompt pure
 
 if [ -n "$INSIDE_EMACS" ]; then
     unset zle_bracketed_paste
