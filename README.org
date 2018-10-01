@@ -2,15 +2,16 @@ Why are dotfile repositories important? See https://dotfiles.github.io/.
 * dotfiles
 [[screenshots/elias-forest-theme.png]]
 
-This repo currently has the following dotfiles:
-- .zshrc
-- .emacs.d
-- .spacemacs.d
-- .config/i3/config
-- .config/i3status/config
-- .Xresources
-- .config/polybar/config
-- .config/kitty/kitty.conf
+This repo currently has configs for the following:
+- emacs
+- i3
+- dunst
+- kitty
+- ncmpcpp
+- polybar
+- rofi
+- wallpapers
+- zsh
 ** Requirements
 The following are assumed to be installed:
 - prezto (for a pleasant zsh experience)
@@ -53,34 +54,40 @@ the =~/.dotfiles/load-theme .wallpapers/<path>= to load a specific theme based
 on the chosen wallpaper. Pywal is used to dynamically, and repeatably, create a
 colorscheme based on the chosen wallpaper. The colorscheme will be applied to the
 terminal, polybar, and dunst notifications.
-
-** .zshrc
-It automatically starts the emacs daemon and gives several aliases to
-~emacsclient -t~. It also provides good defaults, including fuzzy completion,
-and git integration.
-** .emacs.d
+** emacs
+Emacs is configured by spacemacs.
+*** .emacs.d
 This is essentially a snapshot of Spacemacs. Updating this submodule will update the Spacemacs emacs distribution.
 
-** .spacemacs.d
+*** .spacemacs.d
 This is the configuration dotfile for Spacemacs. Any custom layers will go in here.
-** i3config
+** i3
 This is a modified version of the default config. Window navigation was modified
 to mirror vim bindings exactly, so horizontal splitting had to be remapped. I've
 also configured certain programs to open to certain workspaces, i.e. emacs open
 in the code workspaces, and chromium opens in the www workspace.
+** dunst
+Dunst is used for notifications. It hasn't been configured much from default
+other than wider notification window. The configuration is generated when
+changing themes in order to reflect the whatever the current colorscheme is.
+** kitty
+The kitty default configuration is sufficient for now. The only thing changed is
+the default font.
+** ncmpcpp
+The chosen media player frontend. The configuration uses vim navigation style.
 ** polybar
 This config shows a pretty status bar at the top of the screen. It shows
 battery, storage capacity used, volume, memory and cpu usage, wifi, power menu,
 and workspaces that are pinned to the corresponding monitor.
-** i3lock
-You can use i3lock-fancy instead which will blur your screen and give you a
-password prompt. Creating a systemd unit in ~/usr/lib/systemd/system~ will allow
-you to lock the screen before sleeping the system. See this [[https://bbs.archlinux.org/viewtopic.php?id=150058][thread]] for more
-info. 
+** rofi
+The preferred application launchered. It is configured to match whatever the
+current colorscheme is.
+** wallpapers
+Contains lockscreen-only wallpapers that don't work with pywal as well as the
+wallpapers that can be used with wal. The random-theme script pulls wallpapers
+from the wallpapers that are not lockscreen-only.
+** zsh
+This configuration automatically starts the emacs daemon and gives several
+aliases to ~emacsclient -t~. It also provides good defaults through the prezto
+zsh configuration framework, including fuzzy completion, and git integration.
 
-If issues are encountered with black screen upon wake, check to make sure
-mkinitcpio hooks includes resume and kernel parameters sets resume=</dev/sdaX>,
-where X is swap partition. If you still have problems, then it is likely a
-graphics driver issue.
-** .Xresources
-This config sets up the Monokai theme for URxvt. It also hides the URxvt's scrollbar.
