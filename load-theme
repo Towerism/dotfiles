@@ -1,8 +1,7 @@
 #!/bin/bash
 
-wal -i $1
-./generate-dunst-config
+wal --saturate 0.4 -i $1
+~/.dotfiles/generate-dunst-config
 i3-msg restart
-echo "would have exited with code $?"
 exit 0
 

@@ -1,2 +1,1 @@
-wal -i $(cat ~/.cache/wal/wal)
-~/.dotfiles/refresh
+~/.dotfiles/load-theme $(cat ~/.cache/wal/wal)

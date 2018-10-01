@@ -1,4 +1,4 @@
 #!/bin/bash
 
-wal -i ~/.wallpapers
-~/.dotfiles/refresh
+~/.dotfiles/load-theme ~/.wallpapers
+
