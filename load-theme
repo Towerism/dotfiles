@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wal --saturate 0.4 -i $1
+wal --saturate 0.0 -i $1
 ~/.dotfiles/generate-dunst-config
 i3-msg restart
 exit 0
