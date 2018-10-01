@@ -1,2 +1,2 @@
-wal -i ~/.cache/wal/wal
+wal -i $(cat ~/.cache/wal/wal)
 ~/.dotfiles/refresh
