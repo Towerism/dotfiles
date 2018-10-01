@@ -1,5 +1,6 @@
 Why are dotfile repositories important? See https://dotfiles.github.io/.
 * dotfiles
+[[screenshots/elias-forest-theme.png]]
 
 This repo currently has the following dotfiles:
 - .zshrc
