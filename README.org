@@ -37,10 +37,9 @@ The following are optional:
 - playerctl (control media playback)
 - kitty (preferred terminal)
 ** Usage
-You should edit ~install~ and change ~DIR~ to where you cloned the repository.
 You may have to remove existing dotfiles if they are not already managed by GNU
 stow. After cloning, running the install script will set up the symlinks for
-you:
+you, as well as install the default theme:
 #+BEGIN_SRC
 $ git clone https://github.com/towerism/dotfiles ~/.dotfiles
 $ ~/.dotfiles/install
@@ -57,7 +56,8 @@ terminal, polybar, and dunst notifications.
 ** emacs
 Emacs is configured by spacemacs.
 *** .emacs.d
-This is essentially a snapshot of Spacemacs. Updating this submodule will update the Spacemacs emacs distribution.
+This is essentially a snapshot of Spacemacs. Updating this submodule will update
+the Spacemacs emacs distribution.
 
 *** .spacemacs.d
 This is the configuration dotfile for Spacemacs. Any custom layers will go in here.
@@ -65,7 +65,8 @@ This is the configuration dotfile for Spacemacs. Any custom layers will go in he
 This is a modified version of the default config. Window navigation was modified
 to mirror vim bindings exactly, so horizontal splitting had to be remapped. I've
 also configured certain programs to open to certain workspaces, i.e. emacs open
-in the code workspaces, and chromium opens in the www workspace.
+in the code workspaces, and chromium opens in the www workspace. The
+configuration also automatically loads the theme that was most recently loaded.
 ** dunst
 Dunst is used for notifications. It hasn't been configured much from default
 other than wider notification window. The configuration is generated when
