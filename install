@@ -24,13 +24,11 @@ git submodule init
 git submodule update
 printf "done\n"
 
-printf "Configuring theme...\n"
-
-# propagate theme to dunstrc
-DUNST_CONFIG=~/.config/dunst
-printf "\t"
-$DUNST_CONFIG/xrdb_theme.sh
-mv -f $DUNST_CONFIG/dunstrc_xr_colors $DUNST_CONFIG/dunstrc
-
+printf "Ensuring theme is configured... "
+# configure theme if it has not been configured
+if [[ ! -a "$HOME/.cache/wal/wal" ]]; then
+    printf "\n"
+    ~/.dotfiles/load-theme ~/.wallpapers/elias-forest-landscape-scenery-tx-2560x1440.jpg
+fi
 printf "done\n"
 

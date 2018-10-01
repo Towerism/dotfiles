@@ -1,5 +1,6 @@
-
-  /emacs/.emacs.d
-  !/emacs/.emacs.d/private
-  !/emacs/.emacs.d/private
+/emacs/.emacs.d
+!/emacs/.emacs.d/private
+!/emacs/.emacs.d/private
 /emacs/.spacemacs.d/.spacemacs.env
+dunstrc
+

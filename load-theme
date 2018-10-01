@@ -1,5 +1,8 @@
 #!/bin/bash
 
 wal -i $1
+./generate-dunst-config
 i3-msg restart
+echo "would have exited with code $?"
+exit 0
 
