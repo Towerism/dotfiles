@@ -22,12 +22,10 @@ fi
 export TERM=xterm-256color
 export ALTERNATE_EDITOR=""
 
-alias e='emacsclient -t'
-alias ec='emacsclient -c'
-alias vim='emacsclient -t'
-alias vi='emacsclient -t'
+alias vim='nvim'
+alias vi='nvim'
 
-export EDITOR=vim
+export EDITOR=nvim
 
 alias fuck='sudo $(fc -ln -1)'
 alias stow-local='sudo stow -t /usr/local/bin'

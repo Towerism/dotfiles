@@ -8,6 +8,11 @@ else
 endif
 
 Plug 'tpope/vim-fugitive'
+Plug 'dylanaraps/wal.vim'
 
 call plug#end()
+
+if !exists("g:gui_oni")
+    colorscheme wal
+endif
 
