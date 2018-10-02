@@ -27,7 +27,6 @@ export const configuration = {
     "ui.colorscheme": "Monokai",
     "oni.bookmarks": ["~/source/repos"],
     "oni.loadInitVim": true,
-    "workspace.autoDetectWorkspace": "always",
 
     // UI customizations
     "ui.animations.enabled": true,
