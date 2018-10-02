@@ -25,7 +25,7 @@ foreground-contrast = ${xrdb:foreground}
 foreground-alt = ${xrdb:color1}
 primary = ${xrdb:color3}
 secondary = ${xrdb:color7}
-alert = ${xrdb:color12}
+alert = ${xrdb:color1}
 
 [bar/example]
 monitor = ${env:MONITOR:HDMI-0}

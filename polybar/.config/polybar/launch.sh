@@ -3,7 +3,9 @@
 # Terminate already running bar instances
 killall -q polybar
 
-export LIGHTER_BACKGROUND=$(color-blend whiten --factor 0.25 $BACKGROUND)
+. ~/.cache/wal/colors.sh
+
+export LIGHTER_BACKGROUND=$(color-blend mix --factor 0.2 $background --with $foreground)
 
 # Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
