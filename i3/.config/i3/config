@@ -41,6 +41,7 @@ set $ws0 10
 # Setup clients for workspaces
 assign [class="kitty"] $ws1
 assign [class="Emacs"] $ws2
+assign [class="oni"] $ws2
 assign [class="Chromium"] $ws3
 assign [class="Uzbl-core"] $ws3
 assign [class="Franz"] $ws5
@@ -69,7 +70,7 @@ exec --no-startup-id mopidy
 
 # Start base programs
 exec --no-startup-id i3-sensible-terminal
-exec --no-startup-id emacs
+exec --no-startup-id oni
 exec --no-startup-id chromium
 exec --no-startup-id franz
 
