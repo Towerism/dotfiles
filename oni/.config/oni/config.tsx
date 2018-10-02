@@ -24,18 +24,15 @@ export const deactivate = (oni: Oni.Plugin.Api) => {
 export const configuration = {
     //add custom config here, such as
 
-    "ui.colorscheme": "nord",
-
-    //"oni.useDefaultConfig": true,
-    //"oni.bookmarks": ["~/Documents"],
+    "ui.colorscheme": "Monokai",
+    "oni.bookmarks": ["~/source/repos"],
     "oni.loadInitVim": true,
-    //"editor.fontSize": "12px",
-    //"editor.fontFamily": "Monaco",
+    "workspace.autoDetectWorkspace": "always",
 
     // UI customizations
     "ui.animations.enabled": true,
     "ui.fontSmoothing": "auto",
-    "editor.fontSize": "13px",
+    "editor.fontSize": "16px",
     "editor.fontWeight": "normal",
     "editor.fontFamily": "Source Code Pro",
 
