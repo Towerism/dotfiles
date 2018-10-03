@@ -1,8 +1,11 @@
 Why are dotfile repositories important? See https://dotfiles.github.io/.
-* dotfiles
-[[screenshots/elias-forest-theme.png]]
+
+# dotfiles
+
+![alt text](screenshots/elias-forest-theme.png "screenshot")
 
 This repo currently has configs for the following:
+
 - emacs
 - i3
 - dunst
@@ -12,8 +15,11 @@ This repo currently has configs for the following:
 - rofi
 - wallpapers
 - zsh
-** Requirements
+
+## Requirements
+
 The following are assumed to be installed:
+
 - prezto (for a pleasant zsh experience)
 - i3wm
 - polybar
@@ -27,67 +33,95 @@ The following are assumed to be installed:
 - pulseaudio
 - ponymix (used for pulseaudio volume control)
 - pywal (used for tty colorscheme restoration)
-- [[https://www.github.com/towerism/color-blend][color-blend]] (used for calculating colors)
-** Optional
+- [color-blend](https://www.github.com/towerism/color-blend) (used for calculating colors)
+
+## Optional
+
 The following are optional:
+
 - GNU Stow (recommended if you want to run the auto-install script)
 - compton (optional for cool animations and transparency)
 - Franz (for cloud services)
 - Spotify
 - playerctl (control media playback)
 - kitty (preferred terminal)
-** Usage
+
+## Usage
+
 You may have to remove existing dotfiles if they are not already managed by GNU
 stow. After cloning, running the install script will set up the symlinks for
 you, as well as install the default theme:
-#+BEGIN_SRC
+
+``` bash
 $ git clone https://github.com/towerism/dotfiles ~/.dotfiles
 $ ~/.dotfiles/install
-#+END_SRC
+```
 
-*** Themes
+### Themes
+
 This dotfile setup is designed to allow the user to change the theme on the fly.
 Themes can be loaded randomly, or selectively, on the fly based on wallpapers
-stored in .wallpapers folder. Use =Super+Shift+t= to load a random theme. Or use
-the =~/.dotfiles/load-theme .wallpapers/<path>= to load a specific theme based
+stored in .wallpapers folder. Use `Super+Shift+t` to load a random theme. Or use
+the `~/.dotfiles/load-theme .wallpapers/<path>` to load a specific theme based
 on the chosen wallpaper. Pywal is used to dynamically, and repeatably, create a
 colorscheme based on the chosen wallpaper. The colorscheme will be applied to the
 terminal, polybar, and dunst notifications.
-** emacs
+
+## emacs
+
 Emacs is configured by spacemacs.
-*** .emacs.d
+
+### .emacs.d
+
 This is essentially a snapshot of Spacemacs. Updating this submodule will update
 the Spacemacs emacs distribution.
 
-*** .spacemacs.d
+### .spacemacs.d
+
 This is the configuration dotfile for Spacemacs. Any custom layers will go in here.
-** i3
+
+## i3
+
 This is a modified version of the default config. Window navigation was modified
 to mirror vim bindings exactly, so horizontal splitting had to be remapped. I've
 also configured certain programs to open to certain workspaces, i.e. emacs open
 in the code workspaces, and chromium opens in the www workspace. The
 configuration also automatically loads the theme that was most recently loaded.
-** dunst
+
+## dunst
+
 Dunst is used for notifications. It hasn't been configured much from default
 other than wider notification window. The configuration is generated when
 changing themes in order to reflect the whatever the current colorscheme is.
-** kitty
+
+## kitty
+
 The kitty default configuration is sufficient for now. The only thing changed is
 the default font.
-** ncmpcpp
+
+## ncmpcpp
+
 The chosen media player frontend. The configuration uses vim navigation style.
-** polybar
+
+## polybar
+
 This config shows a pretty status bar at the top of the screen. It shows
 battery, storage capacity used, volume, memory and cpu usage, wifi, power menu,
 and workspaces that are pinned to the corresponding monitor.
-** rofi
+
+## rofi
+
 The preferred application launchered. It is configured to match whatever the
 current colorscheme is.
-** wallpapers
+
+## wallpapers
+
 Contains lockscreen-only wallpapers that don't work with pywal as well as the
 wallpapers that can be used with wal. The random-theme script pulls wallpapers
 from the wallpapers that are not lockscreen-only.
-** zsh
+
+## zsh
+
 This configuration automatically starts the emacs daemon and gives several
 aliases to ~emacsclient -t~. It also provides good defaults through the prezto
 zsh configuration framework, including fuzzy completion, and git integration.
