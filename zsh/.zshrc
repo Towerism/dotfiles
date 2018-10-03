@@ -15,11 +15,6 @@ kitty + complete setup zsh | source /dev/stdin
 
 prompt pure
 
-if [ -n "$INSIDE_EMACS" ]; then
-    unset zle_bracketed_paste
-fi
-
-export TERM=xterm-256color
 export ALTERNATE_EDITOR=""
 
 alias vim='nvim'
@@ -30,13 +25,6 @@ export EDITOR=nvim
 alias fuck='sudo $(fc -ln -1)'
 alias stow-local='sudo stow -t /usr/local/bin'
 alias startx='ssh-agent startx'
-
-export PATH="$(ruby -r rubygems -e "puts Gem.user_dir")/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/scripts:$PATH"
-
-# Make git an alias for hub (git extension allowing interface with GitHub)
-eval "$(hub alias -s)"
 
 source ~/.profile
 
