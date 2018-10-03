@@ -20,31 +20,31 @@ This repo currently has configs for the following:
 
 The following are assumed to be installed:
 
-- prezto (for a pleasant zsh experience)
-- i3wm
-- polybar
-- rofi (required by i3)
 - acpi (required by polybar for battery indicator)
+- [color-blend](https://www.github.com/towerism/color-blend) (used for calculating colors)
 - feh (required for background)
 - Font Awesome (required by polybar)
-- Roboto font (required by polybar)
-- sysstat (required by polybar for cpu usage)
+- i3wm
 - pacman-contrib (required by polybar for update checking)
+- prezto (for a pleasant zsh experience)
 - pulseaudio
+- polybar
 - ponymix (used for pulseaudio volume control)
 - pywal (used for tty colorscheme restoration)
-- [color-blend](https://www.github.com/towerism/color-blend) (used for calculating colors)
+- Roboto font (required by polybar)
+- rofi (required by i3)
+- sysstat (required by polybar for cpu usage)
 
 ## Optional
 
 The following are optional:
 
-- GNU Stow (recommended if you want to run the auto-install script)
 - compton (optional for cool animations and transparency)
 - Franz (for cloud services)
-- Spotify
-- playerctl (control media playback)
+- GNU Stow (recommended if you want to run the auto-install script)
 - kitty (preferred terminal)
+- playerctl (control media playback)
+- Spotify
 
 ## Usage
 
