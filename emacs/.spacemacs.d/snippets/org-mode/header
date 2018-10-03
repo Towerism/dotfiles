@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: header
-# key: header
-# --
-#+OPTIONS: toc:nil num:nil
-#+AUTHOR: ${1:Name}
-#+LATEX_HEADER: \usepackage[margin=1in]{geometry}
-#+TITLE: ${2:Title}

@@ -6,7 +6,7 @@ Why are dotfile repositories important? See https://dotfiles.github.io/.
 
 This repo currently has configs for the following:
 
-- emacs
+- oni
 - i3
 - dunst
 - kitty
@@ -67,18 +67,13 @@ on the chosen wallpaper. Pywal is used to dynamically, and repeatably, create a
 colorscheme based on the chosen wallpaper. The colorscheme will be applied to the
 terminal, polybar, and dunst notifications.
 
-## emacs
+## oni
 
-Emacs is configured by spacemacs.
-
-### .emacs.d
-
-This is essentially a snapshot of Spacemacs. Updating this submodule will update
-the Spacemacs emacs distribution.
-
-### .spacemacs.d
-
-This is the configuration dotfile for Spacemacs. Any custom layers will go in here.
+Oni is a modern electron-based editor that combines neovim with the good parts of
+editors like Atom and VSCode. The main reason we like oni is because of its support
+of the Language Server Protocol. Combine this with the 
+[vim-polyglot](https://www.github.com/sheerun/vim-polyglot), and you have a modern
+text editor with an authentic vim-feel that is unparalleled by any other text editor.
 
 ## i3
 
