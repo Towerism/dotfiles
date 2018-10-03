@@ -24,12 +24,12 @@ The following are assumed to be installed:
 - i3wm
 - polybar
 - rofi (required by i3)
-- acpi (required by i3blocks for battery indicator)
+- acpi (required by polybar for battery indicator)
 - feh (required for background)
 - Font Awesome (required by polybar)
 - Roboto font (required by polybar)
-- sysstat (required by i3blocks for cpu usage)
-- pacman-contrib (required by i3blocks for update checking)
+- sysstat (required by polybar for cpu usage)
+- pacman-contrib (required by polybar for update checking)
 - pulseaudio
 - ponymix (used for pulseaudio volume control)
 - pywal (used for tty colorscheme restoration)
