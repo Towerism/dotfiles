@@ -29,6 +29,7 @@ export EDITOR=nvim
 
 alias fuck='sudo $(fc -ln -1)'
 alias stow-local='sudo stow -t /usr/local/bin'
+alias startx='ssh-agent startx'
 
 export PATH="$(ruby -r rubygems -e "puts Gem.user_dir")/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
