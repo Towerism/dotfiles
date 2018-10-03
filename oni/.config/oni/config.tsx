@@ -40,5 +40,8 @@ export const configuration = {
     "language.bash.languageServer.arguments": ["start"],
 
     "language.dockerfile.languageServer.command": "docker-langserver",
-    "language.dockerfile.languageServer.arguments": ["--stdio"]
+    "language.dockerfile.languageServer.arguments": ["--stdio"],
+
+    "language.vue.languageServer.command": "vls",
+    "language.vue.languageServer.arguments": ["--stdio"]
 }
