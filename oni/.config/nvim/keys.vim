@@ -11,6 +11,7 @@ nmap <leader>w <C-w>
 
 nmap <leader>bn :bn <CR>
 nmap <leader>bp :bp <CR>
+nmap <leader>bd :bd <CR>
 nmap <leader>bb :buffers <CR>
 
 nmap <leader>gs :Gstatus <CR>
