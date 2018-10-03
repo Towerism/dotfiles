@@ -117,7 +117,9 @@ from the wallpapers that are not lockscreen-only.
 
 ## zsh
 
-This configuration automatically starts the emacs daemon and gives several
-aliases to ~emacsclient -t~. It also provides good defaults through the prezto
-zsh configuration framework, including fuzzy completion, and git integration.
+This provides good defaults through the prezto zsh configuration framework,
+including fuzzy completion, and git integration. It also uses keychain for
+managing ssh-agent across multiple terminals and Xsessions. It creates several
+aliases to neovim and makes it the default editor.
+
 
