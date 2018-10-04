@@ -21,7 +21,7 @@ nmap <leader>gr :Gread <CR>
 nmap <leader>gp :Gpush <CR>
 
 nmap <leader>fj :e . <CR>
-nmap <leader>fT :NERDTreeToggle <CR>
+nmap <leader>fT :NERDTreeFind <CR>
 
 nmap <leader>pp :e ~/source/repos <CR>
 
