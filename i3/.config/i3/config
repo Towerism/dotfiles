@@ -59,9 +59,6 @@ exec compton
 # Setup wallpaper
 exec --no-startup-id exec ~/.scripts/restore-theme
 
-# Start the pulse audio server
-exec --no-startup-id exec /usr/bin/pulseaudio --start
-
 # Start music server
 exec --no-startup-id mopidy
 
