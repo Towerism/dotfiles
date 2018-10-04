@@ -60,7 +60,6 @@ exec compton
 exec --no-startup-id exec ~/.dotfiles/restore-theme
 
 # Start the pulse audio server
-exec --no-startup-id exec /usr/bin/pulseaudio --kill
 exec --no-startup-id exec /usr/bin/pulseaudio --start
 
 # Start music server
@@ -76,7 +75,7 @@ exec --no-startup-id chromium
 exec --no-startup-id franz
 
 # Setup polybar
-exec_always --no-startup-id "sh -c 'sleep 2; $HOME/.config/polybar/launch.sh'"
+exec_always --no-startup-id "sh -c 'sleep 5; $HOME/.config/polybar/launch.sh'"
 
 # Preferences
 focus_follows_mouse no
