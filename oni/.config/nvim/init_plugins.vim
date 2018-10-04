@@ -7,5 +7,6 @@ endif
 Plug 'tpope/vim-fugitive'
 Plug 'dylanaraps/wal.vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'SpaceVim/vim-swig'
 
 call plug#end()
