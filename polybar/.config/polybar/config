@@ -60,9 +60,9 @@ modules-left = i3
 modules-center = date
 modules-right = xbacklight pulseaudio updates-arch-combined filesystem memory cpu wlan eth battery powermenu
 
-tray-position = right
+;tray-position = right
 tray-padding = 2
-;tray-transparent = true
+tray-transparent = true
 ;tray-background = #0063ff
 
 wm-restack = i3
