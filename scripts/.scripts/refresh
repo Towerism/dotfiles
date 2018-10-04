@@ -1,5 +1,5 @@
 #!/bin/bash
-~/.dotfiles/generate-dunst-config
+~/.scripts/generate-dunst-config
 i3-msg restart
 exit 0
 

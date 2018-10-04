@@ -57,7 +57,7 @@ for_window [class="^.*"] border pixel 0
 exec compton
 
 # Setup wallpaper
-exec --no-startup-id exec ~/.dotfiles/restore-theme
+exec --no-startup-id exec ~/.scripts/restore-theme
 
 # Start the pulse audio server
 exec --no-startup-id exec /usr/bin/pulseaudio --start
@@ -81,7 +81,7 @@ exec_always --no-startup-id "sh -c 'sleep 5; $HOME/.config/polybar/launch.sh'"
 focus_follows_mouse no
 
 # random theme
-bindsym $mod+Shift+t exec ~/.dotfiles/random-theme
+bindsym $mod+Shift+t exec ~/.scripts/random-theme
 
 # lock the screen
 bindsym $mod+Escape exec ~/.scripts/lock

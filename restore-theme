@@ -1,1 +1,0 @@
-~/.dotfiles/load-theme $(cat ~/.cache/wal/wal)

@@ -28,7 +28,7 @@ printf "Ensuring theme is configured... "
 # configure theme if it has not been configured
 if [[ ! -a "$HOME/.cache/wal/wal" ]]; then
     printf "\n"
-    ~/.dotfiles/load-theme ~/.wallpapers/elias-forest-landscape-scenery-tx-2560x1440.jpg
+    ~/.scripts/load-theme ~/.wallpapers/elias-forest-landscape-scenery-tx-2560x1440.jpg
 fi
 printf "done\n"
 

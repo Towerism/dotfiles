@@ -1,5 +1,5 @@
 #!/bin/bash
 
 wal -i $1
-~/.dotfiles/refresh
+~/.scripts/refresh
 

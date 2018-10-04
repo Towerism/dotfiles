@@ -2,7 +2,7 @@
 
 LOCKSCREEN_DIR=~/.lockscreenonly
 
-random_lockscreen="$LOCKSCREEN_DIR/$(ls $LOCKSCREEN_DIR | shuf | head -n 1)"
+random_lockscreen="$LOCKSCREEN_DIR/$(ls $LOCKSCREEN_DIR | shuf -n 1)"
 
 i3lock -i $random_lockscreen
 
