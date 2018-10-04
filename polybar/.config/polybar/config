@@ -329,7 +329,7 @@ label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 
 menu-0-0 = lock
-menu-0-0-exec = i3lock -i ~/.lockscreenonly/arch-stable-packages.png
+menu-0-0-exec = ~/.scripts/lock
 menu-0-1 = reboot
 menu-0-1-exec = menu-open-1
 menu-0-2 = power off
