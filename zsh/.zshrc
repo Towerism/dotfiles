@@ -38,3 +38,5 @@ source /usr/share/nvm/init-nvm.sh
 source ~/.cache/wal/colors-tty.sh
 source ~/.cache/wal/colors.sh
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
