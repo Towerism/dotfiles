@@ -7,3 +7,5 @@ if !exists("g:gui_oni")
     colorscheme wal
 endif
 
+autocmd BufEnter * exe ':cd %:p:h'
+
