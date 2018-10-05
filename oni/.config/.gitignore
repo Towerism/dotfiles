@@ -7,8 +7,8 @@ oni/Cookies-journal
 oni/Preferences
 oni/Settings
 oni/plugins
-nvim/plugged
 oni/SS
 oni/SingletonCookie
 oni/SingletonLock
-
+nvim/.netrwhist
+nvim/plugged
