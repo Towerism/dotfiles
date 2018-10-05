@@ -28,9 +28,8 @@ nmap <leader>pp :call fzf#run({ 'source': 'ls ~/source/repos', 'sink': function 
 nmap <leader>pf :GFiles <CR>
 
 function! s:openProject(directory)
-    let l:sourceDir = '~/source/repos/' . a:directory
-    let l:source = '(cd ' . l:sourceDir . ' && git ls-tree --full-tree -r --name-only HEAD)'
-    call fzf#run({'source': l:source, 'sink': 'e', 'down': '20%'})
-    :startinsert!
+    exe 'cd ~/source/repos/' . a:directory
+    exe 'GFiles'
+    call feedkeys('$a')
 endfunction
 
