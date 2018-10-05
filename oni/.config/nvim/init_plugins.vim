@@ -9,5 +9,7 @@ Plug 'dylanaraps/wal.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'SpaceVim/vim-swig'
 Plug 'scrooloose/nerdtree'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()

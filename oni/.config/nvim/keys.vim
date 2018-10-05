@@ -12,7 +12,7 @@ nmap <leader>w <C-w>
 nmap <leader>bn :bn <CR>
 nmap <leader>bp :bp <CR>
 nmap <leader>bd :bd <CR>
-nmap <leader>bb :buffers <CR>
+nmap <leader>bb :Buffers <CR>
 
 nmap <leader>gs :Gstatus <CR>
 nmap <leader>gd :Gdiff <CR>
@@ -21,7 +21,15 @@ nmap <leader>gr :Gread <CR>
 nmap <leader>gp :Gpush <CR>
 
 nmap <leader>fj :e . <CR>
-nmap <leader>fT :NERDTreeFind <CR>
+nmap <leader>fr :NERDTreeFind <CR>
+nmap <leader>fT :NERDTreeToggle <CR>
 
-nmap <leader>pp :e ~/source/repos <CR>
+nmap <leader>pp :call fzf#run({'source': 'ls ~/source/repos', 'sink': function ('<sid>openProject'), 'down': '20%' }) <CR>
+nmap <leader>pf :GFiles <CR>
+
+function! s:openProject(directory)
+    let l:sourceDir = '~/source/repos' . a:directory
+    call fzf#run({'dir': '~/source/repos/' . a:directory, 'sink': 'e', 'down': '20%'})
+    :startinsert!
+endfunction
 
