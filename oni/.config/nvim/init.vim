@@ -7,5 +7,5 @@ if !exists("g:gui_oni")
     colorscheme wal
 endif
 
-set autochdir
+autocmd BufEnter * exe ':cd %:p:h'
 

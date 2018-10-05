@@ -11,6 +11,5 @@ Plug 'SpaceVim/vim-swig'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'vim-airline/vim-airline'
 
 call plug#end()
