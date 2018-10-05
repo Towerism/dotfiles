@@ -24,17 +24,20 @@ export const deactivate = (oni: Oni.Plugin.Api) => {
 export const configuration = {
     //add custom config here, such as
 
-    "ui.colorscheme": "nord",
+    "ui.colorscheme": "Monokai",
     "oni.bookmarks": ["~/source/repos"],
     "oni.loadInitVim": true,
 
     // UI customizations
+    "oni.hideMenu": true,
+    "tabs.mode": "native",
     "ui.animations.enabled": true,
     "ui.fontSmoothing": "auto",
     "editor.fontSize": "16px",
     "editor.fontWeight": "normal",
     "editor.fontFamily": "Source Code Pro",
-    "sidebar.enabled": false
+    "sidebar.enabled": false,
+    "statusbar.enabled": false,
 
     // Language servers
     "language.bash.languageServer.command": "bash-language-server",
