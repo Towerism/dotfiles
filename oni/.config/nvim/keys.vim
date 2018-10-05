@@ -2,7 +2,7 @@
 nnoremap <SPACE> <Nop>
 
 inoremap fd <Esc>
-nnoremap fd <Esc>
+vnoremap fd <Esc>
 
 nmap <C-\> :e ~/.config/nvim/init.vim <CR>
 nmap <C-S-\|> :source ~/.config/nvim/init.vim <CR>
