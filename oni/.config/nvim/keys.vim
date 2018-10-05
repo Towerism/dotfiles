@@ -24,12 +24,13 @@ nmap <leader>fj :e . <CR>
 nmap <leader>fr :NERDTreeFind <CR>
 nmap <leader>fT :NERDTreeToggle <CR>
 
-nmap <leader>pp :call fzf#run({'source': 'ls ~/source/repos', 'sink': function ('<sid>openProject'), 'down': '20%' }) <CR>
+nmap <leader>pp :call fzf#run({ 'source': 'ls ~/source/repos', 'sink': function ('<sid>openProject'), 'down': '20%' }) <CR>
 nmap <leader>pf :GFiles <CR>
 
 function! s:openProject(directory)
-    let l:sourceDir = '~/source/repos' . a:directory
-    call fzf#run({'dir': '~/source/repos/' . a:directory, 'sink': 'e', 'down': '20%'})
+    let l:sourceDir = '~/source/repos/' . a:directory
+    let l:source = '(cd ' . l:sourceDir . ' && git ls-tree --full-tree -r --name-only HEAD)'
+    call fzf#run({'source': l:source, 'sink': 'e', 'down': '20%'})
     :startinsert!
 endfunction
 
