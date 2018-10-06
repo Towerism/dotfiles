@@ -29,6 +29,7 @@ export const configuration = {
     "oni.loadInitVim": true,
 
     // UI customizations
+    "oni.hideMenu": true,
     "ui.animations.enabled": true,
     "ui.fontSmoothing": "auto",
     "editor.fontSize": "16px",
