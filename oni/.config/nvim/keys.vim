@@ -7,6 +7,8 @@ vnoremap fd <Esc>
 nmap <C-\> :e ~/.config/nvim/init.vim <CR>
 nmap <C-S-\|> :source ~/.config/nvim/init.vim <CR>
 
+nmap <A-q> :exe 'normal gqip' <CR>
+
 nmap <leader>w <C-w>
 
 nmap <leader>bn :bn <CR>
