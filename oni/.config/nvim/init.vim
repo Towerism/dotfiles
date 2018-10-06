@@ -7,6 +7,7 @@ if !exists("g:gui_oni")
     colorscheme wal
 endif
 
+set autochdir
 set number
 set noswapfile
 set smartcase
