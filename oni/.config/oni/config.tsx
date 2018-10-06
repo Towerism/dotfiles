@@ -24,9 +24,10 @@ export const deactivate = (oni: Oni.Plugin.Api) => {
 export const configuration = {
     //add custom config here, such as
 
-    "ui.colorscheme": "nord",
+    "ui.colorscheme": "monokai",
     "oni.bookmarks": ["~/source/repos"],
     "oni.loadInitVim": true,
+    "oni.useDefaultConfig": false,
 
     // UI customizations
     "oni.hideMenu": true,
