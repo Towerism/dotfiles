@@ -6,6 +6,7 @@ function! s:sharedPlugins()
     Plug 'scrooloose/nerdtree'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
+    Plug 'airblade/vim-gitgutter'
 endfunction
 
 function! s:oniOnlyPlugins()
