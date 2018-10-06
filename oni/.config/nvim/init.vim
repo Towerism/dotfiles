@@ -8,7 +8,7 @@ if !exists("g:gui_oni")
 endif
 
 autocmd FileType gitcommit if ! &previewwindow && expand('%:t') !~# 'index' | :DiffGitCached | endif
-autocmd BufWritePost gitcommit :GitGutterAll
+autocmd BufWritePost,BufEnter,BufLeave * :GitGutterAll
 
 set autochdir
 set number
