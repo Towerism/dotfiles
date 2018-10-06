@@ -29,6 +29,9 @@ nmap <leader>fT :NERDTreeToggle <CR>
 nmap <leader>pp :call fzf#run({ 'source': 'ls ~/source/repos', 'sink': function ('<sid>openProject'), 'down': '20%' }) <CR>
 nmap <leader>pf :GFiles <CR>
 
+" Use ESC to exit insert mode in :term
+tnoremap <Esc> <C-\><C-n>
+
 function! s:openProject(directory)
     exe 'cd ~/source/repos/' . a:directory
     exe 'GFiles'
