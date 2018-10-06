@@ -7,6 +7,9 @@ if !exists("g:gui_oni")
     colorscheme wal
 endif
 
+autocmd FileType gitcommit if ! &previewwindow && expand('%:t') !~# 'index' | :DiffGitCached | endif
+autocmd BufWritePost gitcommit :GitGutterAll
+
 set autochdir
 set number
 set noswapfile
@@ -35,4 +38,3 @@ set tabstop=8
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-
