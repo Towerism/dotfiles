@@ -93,6 +93,7 @@ mount-0 = /
 mount-1 = /mnt/mass
 
 label-mounted = ${env:FILESYSTEM_MODULE_LABEL}
+label-mounted-underline = ${colors.secondary}
 label-unmounted =
 label-unmounted-foreground =
 
