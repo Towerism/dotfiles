@@ -183,7 +183,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+format-prefix = "cpu "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${colors.secondary}
 label = %percentage:2%%
@@ -197,7 +197,7 @@ interval = 600
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
+format-prefix = "ram "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${colors.secondary}
 label = %percentage_used%%
@@ -207,7 +207,7 @@ type = internal/network
 interface = wlp113s0
 interval = 3.0
 
-format-connected-prefix = " "
+format-connected-prefix = "wifi "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 format-connected = <label-connected>
 format-connected-underline = ${colors.secondary}
@@ -225,7 +225,7 @@ interface = vethe22ff28
 interval = 3.0
 
 format-connected-underline = ${colors.secondary}
-format-connected-prefix = " "
+format-connected-prefix = "eth "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
@@ -240,12 +240,11 @@ type = internal/date
 interval = 5
 
 date =
-date-alt = " %Y %b %d"
+date-alt = "%Y %b %d"
 
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${colors.secondary}
 
@@ -278,39 +277,15 @@ battery = BAT0
 adapter = AC
 full-at = 98
 
-format-charging = <animation-charging> <label-charging>
+format-charging = chr <label-charging>
 format-charging-underline = ${colors.secondary}
 
-format-discharging = <animation-discharging> <label-discharging>
+format-discharging = bat <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = " "
+format-full-prefix = "bat "
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
-
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
-ramp-capacity-foreground = ${colors.foreground-alt}
-
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-3 = 
-animation-charging-4 = 
-animation-charging-foreground = ${colors.foreground-alt}
-animation-charging-framerate = 750
-
-animation-discharging-0 = 
-animation-discharging-1 = 
-animation-discharging-2 = 
-animation-discharging-3 = 
-animation-discharging-4 = 
-animation-discharging-foreground = ${colors.foreground-alt}
-animation-discharging-framerate = 750
-interval = 60
 
 [module/powermenu]
 type = custom/menu
