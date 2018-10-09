@@ -3,7 +3,8 @@
 
 set -e
 
-DIR=$(dirname $(realpath "$0"))
+DIR_OVERRIDE=$1
+DIR=${DIR_OVERRIDE:-$(dirname $(realpath "$0"))}
 OPT="-d $DIR"
 
 
