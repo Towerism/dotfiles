@@ -1,5 +1,5 @@
 #!/bin/bash
 ~/.scripts/generate-dunst-config
-i3-msg restart
+~/.config/polybar/launch.sh
 exit 0
 
