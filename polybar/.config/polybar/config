@@ -22,7 +22,7 @@ background-alt = ${env:LIGHTER_BACKGROUND:#FFF}
 workspace-underline = ${xrdb:color1}
 foreground = ${xrdb:foreground}
 foreground-contrast = ${xrdb:foreground}
-foreground-alt = ${xrdb:color1}
+foreground-alt = ${env:FOREGROUND_ALT:#ccc}
 primary = ${xrdb:color3}
 secondary = ${xrdb:color7}
 alert = ${xrdb:color1}
@@ -90,11 +90,9 @@ type = internal/fs
 interval = 25
 
 mount-0 = /
+mount-1 = /mnt/mass
 
-format-mounted-prefix = " "
-format-mounted-prefix-foreground = ${colors.foreground-alt}
-format-mounted-underline = ${colors.secondary}
-label-mounted = %percentage_used%%
+label-mounted = ${env:FILESYSTEM_MODULE_LABEL}
 label-unmounted =
 label-unmounted-foreground =
 
