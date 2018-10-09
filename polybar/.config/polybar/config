@@ -240,10 +240,10 @@ type = internal/date
 interval = 5
 
 date =
-date-alt = "%Y %b %d"
+date-alt = "%Y %b %a"
 
-time = %H:%M
-time-alt = %H:%M:%S
+time = "%a %H:%M"
+time-alt = "%H:%M:%S"
 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${colors.secondary}
