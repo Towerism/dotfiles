@@ -8,7 +8,9 @@ if !exists("g:gui_oni")
 endif
 
 autocmd FileType gitcommit if ! &previewwindow && expand('%:t') !~# 'index' | :DiffGitCached | endif
-autocmd BufWritePost,BufEnter,BufLeave * :GitGutterAll
+autocmd BufWritePost,BufEnter * :GitGutterAll
+
+let g:rooter_resolve_links = 1
 
 set number
 set noswapfile
