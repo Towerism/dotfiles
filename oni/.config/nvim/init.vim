@@ -10,7 +10,6 @@ endif
 autocmd FileType gitcommit if ! &previewwindow && expand('%:t') !~# 'index' | :DiffGitCached | endif
 autocmd BufWritePost,BufEnter,BufLeave * :GitGutterAll
 
-set autochdir
 set number
 set noswapfile
 set smartcase
