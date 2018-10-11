@@ -1,5 +1,6 @@
 function! s:sharedPlugins()
     Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-surround'
     Plug 'dylanaraps/wal.vim'
     Plug 'sheerun/vim-polyglot'
     Plug 'SpaceVim/vim-swig'
