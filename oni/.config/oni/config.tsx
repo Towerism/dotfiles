@@ -42,9 +42,23 @@ export const configuration = {
   "language.bash.languageServer.command": "bash-language-server",
   "language.bash.languageServer.arguments": ["start"],
 
-  "language.dockerfile.languageServer.command": "docker-langserver",
-  "language.dockerfile.languageServer.arguments": ["--stdio"],
-
   "language.vue.languageServer.command": "vls",
-  "language.vue.languageServer.arguments": ["--stdio"]
+  "language.vue.languageServer.arguments": ["--stdio"],
+
+
+  // Prettier
+  "oni.plugins.prettier": {
+    "settings": {
+      "semi": true,
+      "tabWidth": 2,
+      "useTabs": false,
+      "singleQuote": false,
+      "trailingComma": "none",
+      "bracketSpacing": true,
+      "jsxBracketSameLine": false,
+      "arrowParens": "avoid",
+      "printWidth": 80
+      
+    }
+  }
 }
