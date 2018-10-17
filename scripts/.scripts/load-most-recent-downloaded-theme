@@ -1,0 +1,7 @@
+#!/bin/bash
+
+DOWNLOADS=~/Downloads
+WALLPAPER=$(ls -t "$DOWNLOADS" | head -1)
+WALLPAPER_PATH=~/.wallpapers
+mv "$DOWNLOADS/$WALLPAPER" "$WALLPAPER_PATH/"
+~/.scripts/load-theme "$WALLPAPER_PATH/$WALLPAPER"
