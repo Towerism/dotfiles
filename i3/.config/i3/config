@@ -43,6 +43,7 @@ assign [class="kitty"] $ws1
 assign [class="Emacs"] $ws2
 assign [class="oni"] $ws2
 assign [class="Chromium"] $ws3
+assign [class="Firefox"] $ws3
 assign [class="Uzbl-core"] $ws3
 assign [class="Franz"] $ws5
 for_window [class="Spotify"] move to workspace $ws4 # Spotify devs are scrubs
