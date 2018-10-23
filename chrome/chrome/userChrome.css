@@ -1,0 +1,253 @@
+/* Import the CSS file.
+Change 'ecly' to your username. */
+@import url('file:///home/mfracker/.cache/wal/colors.css');
+@namespace xul url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+:root {
+    --foreground-alt: var(--color2);
+    --foreground-alt-alt: var(--color4);
+    --font: "Roboto";
+
+    /* for thinner tabs */
+	--tab-line-color: none !important;
+	--toolbarbutton-border-radius: 0px !important;
+    /* removes inner padding of all toolbar buttons */
+	--toolbarbutton-inner-padding: -1px !important;
+    /* decreases tab height (only works in pair with "--toolbarbutton-inner-padding") */
+	--tab-min-height: 22px !important;
+}
+
+/* set font size for everything */
+* {
+	font-size: 14px !important;
+}
+
+/* --- General color settings of header panel --- */
+/* text area coloring */
+textarea, input, select {
+    background-color: var(--background) !important;
+    color: var(--foreground) !important;
+    -moz-appearance: none !important;
+    border-color: var(--background) !important;
+    font-family: var(--font) !important;
+}
+
+/* url container color */
+#urlbar {
+    background-color: var(--background) !important;
+    color: var(--foreground) !important;
+}
+
+/* Color for firefox panel (tabs background and background behind url bar) */
+menubar, toolbar, nav-bar, #TabsToolbar > *{
+    font-family: var(--font) !important;
+    background-color: var(--background) !important;
+    color: var(--foreground) !important;
+}
+
+/* Back button coloring color */
+#back-button .toolbarbutton-icon {
+    background-color: var(--background) !important;
+    color: var(--foreground) !important;
+    padding-left: 5px !important;
+}
+
+/* --- Urlbar settings --- */
+/* Hide (i) in URL bar */
+#identity-icon {
+	width: 0 !important;
+}
+/* Adjust lock icon to be closer to edge */
+#identity-box {
+	padding-inline-start: 2px !important;
+}
+/* Custom bindings.xml in same folder as userChrome, for simple URL */
+#urlbar {
+	/* -moz-binding: url("bindings.xml#urlbar") !important; */
+}
+/* Center URL */
+/* #urlbar .urlbar-input-box { */
+/* 	text-align: center; */
+/* 	margin-bottom: 1px; */
+/* } */
+
+/* Bookmark padding */
+toolbarbutton.bookmark-item:not(.subviewbutton) {
+	padding: 1px 6px !important;
+}
+/* /1* Get rid of bookmark icon *1/ */
+/* .bookmark-item .toolbarbutton-icon { */
+/* 	display: none; */
+/* } */
+
+/* --- General sizing settings of header panel --- */
+/* changes padding of toolbar buttons */
+toolbar .toolbarbutton-1 {
+	margin: -2px !important;
+	padding: 0px 4px 0px 4px !important;
+}
+
+/* adjusts the padding and margin of the URL box buttons */
+
+:root .urlbar-icon {
+	width: 20px !important;
+	height: 20px !important;
+	padding: 4px !important;
+}
+
+/* adjusts the padding and margin of the icons before the URL */
+#identity-icon, #tracking-protection-icon, #connection-icon, .notification-anchor-icon, #blocked-permissions-container > .blocked-permission-icon, #extension-icon {
+	width: 14px !important;
+	height: 14px !important;
+	margin-inline-start: 4px !important;
+}
+
+/* adjusts entire nav bar padding */
+#nav-bar {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+/* adjusts the padding of the three lines menu button */
+#PanelUI-menu-button {
+	padding-inline-start: 4px !important;
+	padding-inline-end: 8px !important;
+}
+
+/* hide the empty space prior to tabs */
+.titlebar-placeholder[type="pre-tabs"]{
+    display:none !important;
+}
+
+/* hides forward and back buttons */
+#forward-button {
+	display: none !important;
+}
+/* #back-button { */
+/* 	display: none !important; */
+/* } */
+
+/* reduces the margin of the url bar */
+#urlbar-container {
+	margin: -4px !important;
+}
+
+/* url bar border settings */
+#urlbar, .searchbar-textbox {
+	border: 0px solid hsla(240,5%,5%,.25) !important;
+}
+
+/* --- Customize the context menu --- */
+/* Remove all silly margins and set color/font everywhere */
+#contentAreaContextMenu *, #placesContext *, .textbox-contextmenu *, #tabContextMenu *, #toolbar-context-menu *{
+    font-family: var(--font) !important;
+}
+
+/* Specs for submenus and */
+/* General menu item specs */
+menu, menuitem{
+    font-family: var(--font) !important;
+}
+
+/* This affects eg. dropdowns from bookmarks folders, and context menus */
+menuitem > * {
+    font-family: var(--font) !important;
+}
+
+/* Disable some context menu buttons */
+#context-back,
+#context-forward,
+#context-reload,
+#context-stop,
+#context-bookmarkpage
+{display:none !important; }
+
+
+
+/* --- Autocomplete dropdown --- */
+.autocomplete-richlistitem {
+    font-family: var(--font) !important;
+    color: var(--foreground) !important;
+    background-color: var(--background) !important;
+}
+
+/* selected item using arrow keys */
+.autocomplete-richlistitem[selected],
+treechildren.searchbar-treebody::-moz-tree-row(selected) {
+  background-color: var(--foreground-alt-alt) !important;
+}
+
+/* hover effect */
+.autocomplete-richlistitem:hover{
+    font-weight: bold !important;
+}
+
+/* the bow surrounding the items */
+.autocomplete-richlistbox {
+    background-color: var(--background) !important;
+    margin: 0px !important;
+}
+/*
+.autocomplete-richlistitem:focused{
+    font-weight:bold !important;
+}*/
+
+/* urls in autocomplete dropdopwn */
+.ac-url-text, .ac-action-text {
+    font-family: var(--font) !important;
+    color: var(--foreground-alt) !important;
+}
+
+
+/* separator between item and url for autocomplete */
+.ac-separator-text{
+    font-family: var(--font) !important;
+    color: var(--foreground-alt-alt) !important;
+}
+
+/* Hide the bottom two bars of autocomplete and bookmark indicator */
+.search-panel-one-offs, .search-one-offs, .ac-type-icon {
+    display: none !important;
+}
+
+/* --- Tree Style Tab Compact --- */
+/* Hide main tabs toolbar */
+#TabsToolbar {
+    visibility: collapse;
+}
+/* Sidebar min and max width removal */
+#sidebar {
+    max-width: none !important;
+    min-width: 0px !important;
+}
+/* Hide splitter, when using Tree Style Tab. */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] + #sidebar-splitter {
+    display: none !important;
+}
+/* Hide sidebar header, when using Tree Style Tab. */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+    visibility: collapse;
+}
+
+/* Shrink sidebar until hovered, when using Tree Style Tab. */
+:root {
+    --thin-tab-width: 30px;
+    --wide-tab-width: 200px;
+}
+#sidebar-box:not([sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]) {
+    min-width: var(--wide-tab-width) !important;
+    max-width: none !important;
+}
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
+    position: relative !important;
+    transition: all 300ms !important;
+    min-width: var(--thin-tab-width) !important;
+    max-width: var(--thin-tab-width) !important;
+}
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]:hover {
+    transition: all 300ms !important;
+    min-width: var(--wide-tab-width) !important;
+    max-width: var(--wide-tab-width) !important;
+    margin-right: calc((var(--wide-tab-width) - var(--thin-tab-width)) * -1) !important;
+}
+
