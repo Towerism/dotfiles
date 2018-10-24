@@ -45,6 +45,9 @@ export const configuration = {
   "language.vue.languageServer.command": "vls",
   "language.vue.languageServer.arguments": ["--stdio"],
 
+  "language.go.languageServer.rootFiles": [".git"], // In a git repository
+  "language.go.languageServer.command": "go-langserver",
+  "language.go.languageServer.arguments": ["--gocodecompletion", "--freeosmemory", "false"],
 
   // Prettier
   "oni.plugins.prettier": {
