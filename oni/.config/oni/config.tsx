@@ -36,7 +36,7 @@ export const configuration = {
   "editor.fontSize": "16px",
   "editor.fontWeight": "normal",
   "editor.fontFamily": "Source Code Pro",
-  "sidebar.enabled": false
+  "sidebar.enabled": false,
 
   // Language servers
   "language.bash.languageServer.command": "bash-language-server",
