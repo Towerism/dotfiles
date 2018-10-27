@@ -22,7 +22,6 @@ alias vim='nvim'
 alias vi='nvim'
 
 export EDITOR=nvim
-export ONI_CONFIG_FILE=~/.dotfiles/oni/.config/oni/config.tsx
 
 alias fuck='sudo $(fc -ln -1)'
 alias stow-local='sudo stow -t /usr/local/bin'
