@@ -39,8 +39,8 @@ export const configuration = {
   "sidebar.enabled": false,
 
   // Language servers
-  "language.bash.languageServer.command": "bash-language-server",
-  "language.bash.languageServer.arguments": ["start"],
+  "language.sh.languageServer.command": "bash-language-server",
+  "language.sh.languageServer.arguments": ["start"],
 
   "language.vue.languageServer.command": "vls",
   "language.vue.languageServer.arguments": ["--stdio"],
