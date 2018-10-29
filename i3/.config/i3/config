@@ -72,9 +72,6 @@ exec --no-startup-id oni
 exec --no-startup-id chromium
 exec --no-startup-id franz
 
-# Start pulseaudio server
-exec --no-startup-id pulseaudio --start
-
 # Setup polybar
 exec_always --no-startup-id "sh -c 'sleep 5; $HOME/.config/polybar/launch.sh'"
 
