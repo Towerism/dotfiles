@@ -9,7 +9,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 . ~/.cache/wal/colors.sh
 
 export LIGHTER_BACKGROUND=$(color-blend mix --factor 0.2 $background --with $foreground)
-export FOREGROUND_ALT=$color1
+export FOREGROUND_ALT=$color5
 export FILESYSTEM_MODULE_LABEL="%{F$FOREGROUND_ALT}%mountpoint%%{F-} %percentage_used%%"
 
 function loadbars {

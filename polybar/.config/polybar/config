@@ -19,7 +19,7 @@
 [colors]
 background = ${xrdb:background}
 background-alt = ${env:LIGHTER_BACKGROUND:#FFF}
-workspace-underline = ${xrdb:color1}
+workspace-underline = ${env:FOREGROUND_ALT:#ccc}
 foreground = ${xrdb:foreground}
 foreground-contrast = ${xrdb:foreground}
 foreground-alt = ${env:FOREGROUND_ALT:#ccc}
