@@ -206,7 +206,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlp113s0
+interface = ${env:WLAN_INTERFACE:wlp113s0}
 interval = 3.0
 
 format-connected-prefix = "wifi "
