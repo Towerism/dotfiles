@@ -13,6 +13,7 @@ This repo currently has configs for the following:
 - ncmpcpp
 - polybar
 - rofi
+- tig
 - wallpapers
 - zsh
 
@@ -36,6 +37,7 @@ The following are assumed to be installed:
 - Roboto font (required by polybar)
 - rofi (required by i3)
 - sysstat (required by polybar for cpu usage)
+- tig
 
 ## Optional
 
@@ -78,7 +80,6 @@ of the Language Server Protocol. Combine this with the
 text editor with an authentic vim-feel that is unparalleled by any other text editor.
 
 ## i3
-
 This is a modified version of the default config. Window navigation was modified
 to mirror vim bindings exactly, so horizontal splitting had to be remapped. I've
 also configured certain programs to open to certain workspaces, i.e. emacs open
@@ -105,6 +106,10 @@ The chosen media player frontend. The configuration uses vim navigation style.
 This config shows a pretty status bar at the top of the screen. It shows
 battery, storage capacity used, volume, memory and cpu usage, wifi, power menu,
 and workspaces that are pinned to the corresponding monitor.
+
+## tig
+
+Ncurses git interface. Configured with vim-like keybindings.
 
 ## rofi
 
