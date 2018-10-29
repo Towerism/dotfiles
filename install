@@ -32,3 +32,5 @@ if [[ ! -a "$HOME/.cache/wal/wal" ]]; then
 fi
 printf "done\n"
 
+echo "Warming up lockscreen cache in the background."
+~/.scripts/warmup-lockscreen-cache &
