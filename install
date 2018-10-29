@@ -10,14 +10,13 @@ OPT="-d $DIR"
 
 which stow >/dev/null 2>&1 || { echo "Unable to automatically install dotfiles: stow was not found"; exit 1; }
 
-MODULES=$(cat $DIR/modules)
 
 echo "Stowing modules:"
-for module in $MODULES; do
+while read module; do
     printf "  $module... "
     stow $OPT $module
     echo "done"
-done
+done < $DIR/modules
 
 printf "Ensuring Spacemacs is initialized... "
 cd "$DIR/"

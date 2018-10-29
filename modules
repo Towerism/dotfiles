@@ -2,10 +2,9 @@ dunst
 i3
 kitty
 ncmpcpp
-oni
+--no-folding oni
 polybar
 rofi
 scripts
 wallpapers
 zsh
-
