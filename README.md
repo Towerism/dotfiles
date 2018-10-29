@@ -24,6 +24,8 @@ The following are assumed to be installed:
 - [color-blend](https://www.github.com/towerism/color-blend) (used for calculating colors)
 - feh (required for background)
 - Font Awesome (required by polybar)
+- unifont (required by polybar)
+- Source Code Pro font (used by oni)
 - i3wm
 - pacman-contrib (required by polybar for update checking)
 - prezto (for a pleasant zsh experience)
