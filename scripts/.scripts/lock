@@ -1,11 +1,8 @@
 #!/bin/bash
 
 LOCKSCREEN_DIR=~/.lockscreenonly
-LOCKSCREEN_TEMP=/tmp/i3-lockscreen
 
-resolution=$(xdpyinfo | grep dimensions | sed -r 's/^[^0-9]*([0-9]+x[0-9]+).*$/\1/')
 random_lockscreen="$LOCKSCREEN_DIR/$(ls $LOCKSCREEN_DIR | shuf -n 1)"
-convert -scale $resolution "$random_lockscreen" "$LOCKSCREEN_TEMP"
 
-i3lock -i "$LOCKSCREEN_TEMP"
+~/.scripts/lock-multimonitor -i $random_lockscreen
 
