@@ -2,7 +2,7 @@ dunst
 i3
 kitty
 ncmpcpp
---no-folding oni
+oni --no-folding
 polybar
 rofi
 scripts
