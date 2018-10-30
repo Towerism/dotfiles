@@ -47,7 +47,8 @@ The following are optional:
 - Franz (for cloud services)
 - GNU Stow (recommended if you want to run the auto-install script)
 - kitty (preferred terminal)
-- playerctl (control media playback)
+- mopidy (mpd compatible music server)
+- mpc (control mopidy/mpd playback)
 - Spotify
 
 ## Usage

@@ -60,9 +60,6 @@ exec compton
 # Setup wallpaper
 exec --no-startup-id exec ~/.scripts/restore-theme
 
-# Start music server
-exec --no-startup-id mopidy
-
 # Start network manager client tray
 # exec --no-startup-id nm-applet
 
@@ -90,14 +87,14 @@ bindsym XF86AudioLowerVolume exec ponymix decrease 1 && pkill -RTMIN+10 i3blocks
 bindsym XF86AudioMute exec ponymix toggle && pkill -RTMIN+10 i3blocks
 
 # Media player controls
-bindsym $mod+Down exec playerctl play-pause
-bindsym $mod+Right exec playerctl next && pkill -RTMIN+20 i3blocks
-bindsym $mod+Left exec playerctl previous && pkill -RTMIN+20 i3blocks
+bindsym $mod+Down exec mpc toggle
+bindsym $mod+Right exec mpc next
+bindsym $mod+Left exec mpc prev
 
 # Alternate media player controls
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPrev exec mpc prev
 
 # Backlight controls
 bindsym $mod+F5 exec xbacklight -dec 10
