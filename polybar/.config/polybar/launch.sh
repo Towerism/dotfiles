@@ -14,8 +14,8 @@ export FILESYSTEM_MODULE_LABEL="%{F$FOREGROUND_ALT}%mountpoint%%{F-} %percentage
 
 function loadbars {
     echo "loading polybar on monitor $1"
-    lighter_background=~/
-    MONITOR=$1 polybar --reload example &
+    MONITOR=$1 polybar --reload top &
+    MONITOR=$1 polybar --reload bottom &
 }
 
 # Launch bar1 and bar2
