@@ -49,6 +49,8 @@ export const configuration = {
   "language.go.languageServer.command": "go-langserver",
   "language.go.languageServer.arguments": ["--gocodecompletion", "--freeosmemory", "false"],
 
+  "language.cpp.completionTriggerCharacters": [".", ">", ":"],
+
   // Prettier
   "oni.plugins.prettier": {
     "settings": {
