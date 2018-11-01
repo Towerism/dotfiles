@@ -6,13 +6,15 @@ Why are dotfile repositories important? See https://dotfiles.github.io/.
 
 This repo currently has configs for the following:
 
-- oni
 - i3
 - dunst
 - kitty
 - ncmpcpp
+- oni
 - polybar
 - rofi
+- task
+- scripts
 - tig
 - wallpapers
 - zsh
@@ -37,6 +39,7 @@ The following are assumed to be installed:
 - Roboto font (required by polybar)
 - rofi (required by i3)
 - sysstat (required by polybar for cpu usage)
+- task
 - tig
 
 ## Optional
@@ -107,6 +110,15 @@ The chosen media player frontend. The configuration uses vim navigation style.
 This config shows a pretty status bar at the top of the screen. It shows
 battery, storage capacity used, volume, memory and cpu usage, wifi, power menu,
 and workspaces that are pinned to the corresponding monitor.
+
+## scripts
+
+Shared scripts.
+
+## task
+
+Task warrior configuration. Contains tasksh specific configs as well as
+inthe.am configs for task sync.
 
 ## tig
 
