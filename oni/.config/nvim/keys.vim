@@ -3,7 +3,7 @@ nnoremap <SPACE> <Nop>
 
 inoremap fd <Esc>
 vnoremap fd <Esc>
-" Use ESC to exit insert mode in :term
+" Use fd to exit insert mode in :term
 tnoremap fd <C-\><C-n><C-w>q
 
 nmap <leader>fed :e ~/.config/nvim/init.vim <CR>
