@@ -4,8 +4,8 @@ nnoremap <SPACE> <Nop>
 inoremap fd <Esc>
 vnoremap fd <Esc>
 
-nmap <C-\> :e ~/.config/nvim/init.vim <CR>
-nmap <C-S-\|> :source ~/.config/nvim/init.vim <CR>
+nmap <leader>fed :e ~/.config/nvim/init.vim <CR>
+nmap <leader>feR :source ~/.config/nvim/init.vim <CR>
 
 nmap <A-q> :exe 'normal gqip' <CR>
 
@@ -30,7 +30,7 @@ nmap <leader>pp :call fzf#run({ 'source': 'ls ~/source/repos', 'sink': function 
 nmap <leader>pf :GFiles <CR>
 
 " Use ESC to exit insert mode in :term
-tnoremap <Esc> <C-\><C-n>
+tnoremap <Esc> <C-\><C-n><C-w>q
 
 function! s:openProject(directory)
     exe 'cd ~/source/repos/' . a:directory
