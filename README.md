@@ -86,7 +86,7 @@ text editor with an authentic vim-feel that is unparalleled by any other text ed
 ## i3
 This is a modified version of the default config. Window navigation was modified
 to mirror vim bindings exactly, so horizontal splitting had to be remapped. I've
-also configured certain programs to open to certain workspaces, i.e. emacs open
+also configured certain programs to open to certain workspaces, i.e. oni open
 in the code workspaces, and chromium opens in the www workspace. The
 configuration also automatically loads the theme that was most recently loaded.
 
