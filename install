@@ -33,4 +33,4 @@ fi
 printf "done\n"
 
 echo "Warming up lockscreen cache in the background."
-~/.scripts/warmup-lockscreen-cache &
+~/.scripts/warmup-lockscreen-cache
