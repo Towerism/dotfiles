@@ -231,6 +231,7 @@ mode "theme" {
   bindsym m exec --no-startup-id ~/.scripts/load-most-recent-downloaded-theme
   bindsym d exec --no-startup-id ~/.scripts/delete-current-theme
   bindsym t exec --no-startup-id sh -c "~/.scripts/random-theme && sleep 0.1 && i3-msg -t command mode 'theme'"
+  bindsym i exec sh -c "notify-send 'Theme Info' `cat ~/.cache/wal/wal`"
 
   bindsym Return mode "default"
   bindsym Escape mode "default"
