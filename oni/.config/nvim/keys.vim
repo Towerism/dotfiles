@@ -7,7 +7,8 @@ vnoremap fd <Esc>
 tnoremap fd <C-\><C-n><C-w>q
 
 nmap <leader>fed :e ~/.config/nvim/init.vim <CR>
-nmap <leader>feR :source ~/.config/nvim/init.vim <CR>
+" Have to reset airline after sourcing init.vim
+nmap <leader>feR :source ~/.config/nvim/init.vim <CR> :AirlineToggle <CR> :AirlineToggle <CR>
 
 nmap <A-q> :exe 'normal gqip' <CR>
 
@@ -29,7 +30,7 @@ nmap <leader>fr :NERDTreeFind <CR>
 nmap <leader>fT :NERDTreeToggle <CR>
 
 nmap <leader>pp :call fzf#run({ 'source': 'ls ~/source/repos', 'sink': function ('<sid>openProject'), 'down': '20%' }) <CR>
-nmap <leader>pf :GFiles <CR>
+nmap <leader>pf :call fzf#run({ 'source': 'ag --hidden --ignore .git -g ""', 'down': '20%', 'sink': 'e' }) <CR>
 
 function! s:openProject(directory)
     exe 'cd ~/source/repos/' . a:directory
