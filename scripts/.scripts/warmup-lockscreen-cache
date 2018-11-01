@@ -1,5 +1,9 @@
 #!/bin/bash
 
 for img in $(ls ~/.lockscreenonly); do
-  ~/.scripts/lock-multimonitor -d -i ~/.lockscreenonly/$img
+  ~/.scripts/lock-multimonitor -d -i ~/.lockscreenonly/$img &
+done
+
+for job in `jobs -p`; do
+  wait $job
 done
