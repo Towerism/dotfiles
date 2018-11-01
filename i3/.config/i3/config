@@ -237,3 +237,4 @@ mode "theme" {
 }
 
 bindsym $mod+Shift+t mode "theme"
+bindsym $mod+t exec --no-startup-id ~/.scripts/theme-switcher
