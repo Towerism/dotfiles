@@ -15,6 +15,14 @@ let g:rooter_resolve_links = 1
 let g:rooter_silent_chdir = 1
 let g:rooter_use_lcd = 1
 
+set signcolumn=yes
+let g:LanguageClient_serverCommands = {
+  \ 'vue': ['vls'],
+  \ 'cpp': ['clangd']
+  \ }
+
+let g:deoplete#enable_at_startup = 1
+
 set number
 set noswapfile
 set smartcase

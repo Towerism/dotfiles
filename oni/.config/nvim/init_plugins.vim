@@ -8,6 +8,7 @@ function! s:sharedPlugins()
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
   Plug 'airblade/vim-rooter'
+  Plug 'Shougo/echodoc.vim'
 endfunction
 
 function! s:oniOnlyPlugins()
@@ -16,6 +17,11 @@ endfunction
 
 function! s:terminalOnlyPlugins()
   Plug 'vim-airline/vim-airline'
+  Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 endfunction
 
 if exists("g:gui_oni")
