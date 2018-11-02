@@ -8,7 +8,14 @@ tnoremap fd <C-\><C-n><C-w>q
 
 nmap <leader>fed :e ~/.config/nvim/init.vim <CR>
 " Have to reset airline after sourcing init.vim
-nmap <leader>feR :source ~/.config/nvim/init.vim <CR> :AirlineToggle <CR> :AirlineToggle <CR>
+nmap <leader>feR :source ~/.config/nvim/init.vim <CR> :call <sid>resetAirline() <CR>
+
+function! s:resetAirline()
+  if !exists("g:gui_oni")
+    exe ':AirlineToggle'
+    exe ':AirlineToggle'
+  endif
+endfunction
 
 nmap <A-q> :exe 'normal gqip' <CR>
 
