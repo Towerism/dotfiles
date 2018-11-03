@@ -82,8 +82,8 @@ bindsym $mod+m exec --no-startup-id chromium --app=http://localhost:6680/iris
 bindsym $mod+Escape exec ~/.scripts/lock
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec ponymix increase 1 && pkill -RTMIN+10 i3blocks
-bindsym XF86AudioLowerVolume exec ponymix decrease 1 && pkill -RTMIN+10 i3blocks
+bindsym XF86AudioRaiseVolume exec ponymix increase 5 && pkill -RTMIN+10 i3blocks
+bindsym XF86AudioLowerVolume exec ponymix decrease 5 && pkill -RTMIN+10 i3blocks
 bindsym XF86AudioMute exec ponymix toggle && pkill -RTMIN+10 i3blocks
 
 # Media player controls
