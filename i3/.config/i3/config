@@ -71,7 +71,7 @@ exec --no-startup-id chromium
 exec --no-startup-id franz
 
 # Setup polybar
-exec_always --no-startup-id "sh -c 'sleep 5; $HOME/.config/polybar/launch.sh'"
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Preferences
 focus_follows_mouse no
