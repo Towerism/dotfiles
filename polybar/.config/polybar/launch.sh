@@ -11,6 +11,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 export LIGHTER_BACKGROUND=$(color-blend mix --factor 0.2 $background --with $foreground)
 export FOREGROUND_ALT=$color5
 export FILESYSTEM_MODULE_LABEL="%{F$FOREGROUND_ALT}%mountpoint%%{F-} %percentage_used%%"
+export MPD_MODULE_LABEL="%{F$FOREGROUND_ALT}%artist%%{F-} %title%"
 
 function loadbars {
     echo "loading polybar on monitor $1"

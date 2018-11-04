@@ -57,8 +57,8 @@ font-1 = unifont:fontformat=truetype:size=10:antialias=false;0
 font-2 = FontAwesome:pixelsize=13;2
 
 modules-left = xbacklight pulseaudio
-modules-center = date
-modules-right =  wlan eth battery powermenu
+modules-center = mpd
+modules-right =  wlan eth date battery powermenu
 
 ;tray-position = right
 tray-padding = 2
@@ -297,6 +297,55 @@ format-discharging-underline = ${self.format-charging-underline}
 format-full-prefix = "bat "
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
+
+[module/mpd]
+type = internal/mpd
+format-online = <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next>  <label-song>
+;format-playing = ${self.format-online}
+;format-paused = ${self.format-online}
+;format-stopped = ${self.format-online}
+
+; Available tags:
+;   <label-offline>
+;format-offline = <label-offline>
+
+; Available tokens:
+;   %artist%
+;   %album-artist%
+;   %album%
+;   %date%
+;   %title%
+; Default: %artist% - %title%
+label-song = ${env:MPD_MODULE_LABEL}
+
+; Available tokens:
+;   %elapsed%
+;   %total%
+; Default: %elapsed% / %total%
+;label-time = %elapsed% / %total%
+
+; Available tokens:
+;   None
+label-offline =
+
+; Only applies if <icon-X> is used
+icon-play = ⏵
+icon-pause = ⏸
+icon-stop = ⏹
+icon-prev = ⏮
+icon-next = ⏭
+icon-seekf = ⏩
+
+; Used to display the state of random/repeat/repeatone/single
+; Only applies if <icon-[random|repeat|repeatone|single]> is used
+toggle-on-foreground = #ff
+toggle-off-foreground = #55
+
+; Only applies if <bar-progress> is used
+bar-progress-width = 45
+bar-progress-indicator = |
+bar-progress-fill = ─
+bar-progress-empty = ─
 
 [module/powermenu]
 type = custom/menu
