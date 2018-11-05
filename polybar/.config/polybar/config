@@ -334,6 +334,7 @@ icon-pause = ⏸
 icon-stop = ⏹
 icon-prev = ⏮
 icon-next = ⏭
+icon-seekb = ⏪
 icon-seekf = ⏩
 
 ; Used to display the state of random/repeat/repeatone/single
