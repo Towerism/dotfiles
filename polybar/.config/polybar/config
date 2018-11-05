@@ -58,7 +58,7 @@ font-2 = FontAwesome:pixelsize=13;2
 
 modules-left = xbacklight pulseaudio
 modules-center = mpd
-modules-right =  wlan eth date battery powermenu
+modules-right =  wlan eth battery powermenu
 
 ;tray-position = right
 tray-padding = 2
@@ -92,7 +92,7 @@ padding-left = 0
 padding-right = 2
 modules-left = i3
 modules-center = updates-arch-combined 
-modules-right = filesystem memory cpu
+modules-right = filesystem memory cpu date
 
 [module/filesystem]
 type = internal/fs
