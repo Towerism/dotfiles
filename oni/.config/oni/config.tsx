@@ -51,6 +51,10 @@ export const configuration = {
 
   "language.cpp.completionTriggerCharacters": [".", ">", ":"],
 
+  "language.rust.languageServer.command": "rustup",
+  "language.rust.languageServer.arguments": ["run", "stable", "rls"],
+  "language.rust.languageServer.rootFiles": ["Cargo.toml"],
+
   // Prettier
   "oni.plugins.prettier": {
     "settings": {
@@ -63,7 +67,7 @@ export const configuration = {
       "jsxBracketSameLine": false,
       "arrowParens": "avoid",
       "printWidth": 80
-      
+
     }
   }
 }
