@@ -65,7 +65,7 @@ exec --no-startup-id exec ~/.scripts/restore-theme
 # exec --no-startup-id nm-applet
 
 # Start base programs
-exec --no-startup-id i3-sensible-terminal
+exec --no-startup-id kitty
 exec --no-startup-id oni
 exec --no-startup-id chromium
 exec --no-startup-id franz
@@ -112,7 +112,7 @@ floating_modifier $mod
 bindsym $mod+Shift+s exec --no-startup-id systemctl suspend
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal 
+bindsym $mod+Return exec kitty
 # kill focused window
 bindsym $mod+Shift+q kill
 
