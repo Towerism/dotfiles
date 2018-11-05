@@ -1,5 +1,4 @@
 :let nvimhome = "~/.config/nvim"
-
 source $HOME/.config/nvim/keys.vim
 source $HOME/.config/nvim/init_plugins.vim
 
@@ -29,6 +28,7 @@ set smartcase
 
 set splitright
 set splitbelow
+set backupcopy=yes
 
 " Turn off statusbar, because it is externalized
 set noshowmode
