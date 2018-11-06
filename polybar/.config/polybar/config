@@ -288,10 +288,12 @@ battery = BAT0
 adapter = AC
 full-at = 98
 
-format-charging = chr <label-charging>
+format-charging-prefix = "chr "
+format-charging-prefix-foreground = ${colors.foreground-alt}
 format-charging-underline = ${colors.secondary}
 
-format-discharging = bat <label-discharging>
+format-discharging-prefix = "bat "
+format-discharging-prefix-foreground = ${colors.foreground-alt}
 format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = "bat "
