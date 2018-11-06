@@ -9,7 +9,6 @@ This repo currently has configs for the following:
 - i3
 - dunst
 - kitty
-- ncmpcpp
 - oni
 - polybar
 - rofi
@@ -100,10 +99,6 @@ changing themes in order to reflect the whatever the current colorscheme is.
 
 The kitty default configuration is sufficient for now. The only thing changed is
 the default font.
-
-## ncmpcpp
-
-The chosen media player frontend. The configuration uses vim navigation style.
 
 ## polybar
 
