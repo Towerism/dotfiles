@@ -36,15 +36,10 @@ set $ws0 10
 
 # Setup clients for workspaces
 assign [class="kitty"] $ws1
-assign [class="Emacs"] $ws2
 assign [class="oni"] $ws2
 assign [instance="chromium"] $ws3
 assign [instance="localhost__iris"] $ws4
-assign [class="Firefox"] $ws3
-assign [class="Uzbl-core"] $ws3
 assign [class="Franz"] $ws5
-for_window [class="Spotify"] move to workspace $ws4 # Spotify devs are scrubs
-for_window [class="Uzbl-core"] focus child, layout tabbed, focus # tabbed web browsing
 
 # Setup gaps
 gaps inner 17 
