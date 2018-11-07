@@ -22,6 +22,7 @@ This repo currently has configs for the following:
 
 The following are assumed to be installed:
 
+- ag AKA the silver searcher (required by neovim for searching)
 - acpi (required by polybar for battery indicator)
 - [color-blend](https://www.github.com/towerism/color-blend) (used for calculating colors)
 - colorz (used as a backend for pywal)
