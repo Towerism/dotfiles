@@ -64,5 +64,5 @@ endfunction()
 
 augroup LSP
   autocmd!
-  autocmd FileType cpp,c,vue,rust call SetLSPShortcuts()
+  autocmd FileType cpp,c,vue,rust,javascript,typescript call SetLSPShortcuts()
 augroup END

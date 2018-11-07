@@ -19,6 +19,8 @@ set signcolumn=yes
 let g:LanguageClient_serverCommands = {
   \ 'vue': ['vls'],
   \ 'cpp': ['clangd'],
+  \ 'javascript': ['typescript-language-server', '--stdio'],
+  \ 'typescript': ['typescript-language-server', '--stdio'],
   \ 'rust': ['rustup', 'run', 'stable', 'rls'],
   \ }
 
