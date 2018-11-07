@@ -51,8 +51,7 @@ export const configuration = {
 
   "language.cpp.completionTriggerCharacters": [".", ">", ":"],
 
-  "language.rust.languageServer.command": "rustup",
-  "language.rust.languageServer.arguments": ["run", "stable", "rls"],
+  "language.rust.languageServer.command": "rls",
   "language.rust.languageServer.rootFiles": ["Cargo.toml"],
 
   // Prettier
