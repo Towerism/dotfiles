@@ -18,10 +18,6 @@ prompt pure
 export ALTERNATE_EDITOR=""
 export XDG_CONFIG_HOME="$HOME/.config"
 
-alias vim='nvim'
-alias vi='nvim'
-
-export EDITOR=nvim
 
 export MPD_HOST=localhost
 export MPD_PORT=6600
@@ -29,6 +25,10 @@ export MPD_PORT=6600
 alias fuck='sudo $(fc -ln -1)'
 alias stow-local='sudo stow -t /usr/local/bin'
 alias startx='ssh-agent startx'
+alias vim='nvim'
+alias vi='nvim'
+
+export EDITOR=nvim
 
 source ~/.profile
 
