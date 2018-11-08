@@ -25,6 +25,7 @@ export MPD_PORT=6600
 alias fuck='sudo $(fc -ln -1)'
 alias stow-local='sudo stow -t /usr/local/bin'
 alias startx='ssh-agent startx'
+alias toclip='xclip -selection clipboard'
 alias vim='nvim'
 alias vi='nvim'
 
