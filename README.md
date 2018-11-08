@@ -24,6 +24,7 @@ The following are assumed to be installed:
 
 - acpi (required by polybar for battery indicator)
 - [color-blend](https://www.github.com/towerism/color-blend) (used for calculating colors)
+- colorz (used as a backend for pywal)
 - feh (required for background)
 - Font Awesome (required by polybar)
 - unifont (required by polybar)
@@ -34,7 +35,7 @@ The following are assumed to be installed:
 - pulseaudio
 - polybar
 - ponymix (used for pulseaudio volume control)
-- pywal (used for tty colorscheme restoration)
+- pywal (used to generate colorscheme from wallpaper)
 - Roboto font (required by polybar)
 - rofi (required by i3)
 - sysstat (required by polybar for cpu usage)
