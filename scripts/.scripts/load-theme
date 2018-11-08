@@ -1,5 +1,5 @@
 #!/bin/bash
 
-wal -i $1
+wal --backend colorz -i $1
 ~/.scripts/refresh
 
