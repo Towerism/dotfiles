@@ -67,3 +67,6 @@ bind generic cr !?git revert %(commit)
 bind generic K view-help
 bind generic <C-w><C-w> view-next
 bind generic S :source ~/.tigrc
+
+bind generic p none
+bind generic pp !git push -u origin %(branch)
