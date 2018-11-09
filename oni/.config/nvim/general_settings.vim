@@ -1,0 +1,26 @@
+if !exists("g:gui_oni")
+    colorscheme wal
+endif
+
+set number
+set noswapfile
+set smartcase
+
+set splitright
+set splitbelow
+set backupcopy=yes
+
+" Turn off statusbar, because it is externalized
+set noshowmode
+set noruler
+set laststatus=0
+set noshowcmd
+
+" Enable GUI mouse behavior
+set mouse=a
+
+" Default tab settings
+set tabstop=8
+set shiftwidth=2
+set softtabstop=2
+set expandtab
