@@ -2,7 +2,7 @@ Why are dotfile repositories important? See https://dotfiles.github.io/.
 
 # dotfiles
 
-![alt text](screenshots/surfacemountains-studio-theme.png "screenshot")
+![alt text](screenshots/deadpool-vs-thanos.png "screenshot")
 
 This repo currently has configs for the following:
 
