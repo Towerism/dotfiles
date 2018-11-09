@@ -14,6 +14,7 @@ bind generic gP back
 bind generic gn view-next
 
 bind main    G  none
+bind main    G  move-last-line
 bind generic G  move-last-line
 
 bind generic v  none
