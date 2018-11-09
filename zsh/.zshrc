@@ -28,6 +28,7 @@ alias startx='ssh-agent startx'
 alias toclip='xclip -selection clipboard'
 alias vim='nvim'
 alias vi='nvim'
+alias mem='~/.scripts/search-zhistory'
 
 export EDITOR=nvim
 
