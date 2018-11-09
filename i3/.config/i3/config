@@ -48,7 +48,7 @@ gaps outer 25
 for_window [class="^.*"] border pixel 0
 
 # Setup X composition
-exec compton
+exec compton -czf -i0.9
 
 # Setup wallpaper
 exec --no-startup-id exec ~/.scripts/restore-theme
