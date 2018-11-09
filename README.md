@@ -54,6 +54,14 @@ The following are optional:
 - mpc (control mopidy/mpd playback)
 - Spotify
 
+Here are more optional requirements related to the Language Server Protocol.
+You only have to install these if you want LSP-support in neovim:
+
+- vls (vue)
+- clangd (c/c++)
+- typescript-language-server
+- rls (rust) 
+
 ## Usage
 
 You may have to remove existing dotfiles if they are not already managed by GNU
@@ -67,13 +75,11 @@ $ ~/.dotfiles/install
 
 ### Themes
 
-This dotfile setup is designed to allow the user to change the theme on the fly.
-Themes can be loaded randomly, or selectively, on the fly based on wallpapers
-stored in .wallpapers folder. Use `Super+Shift+t` to load a random theme. Or use
-the `~/.scripts/load-theme .wallpapers/<path>` to load a specific theme based
-on the chosen wallpaper. Pywal is used to dynamically, and repeatably, create a
-colorscheme based on the chosen wallpaper. The colorscheme will be applied to the
-terminal, polybar, and dunst notifications.
+This dotfile setup is designed to allow the user to change the theme on the
+fly.  Themes can be loaded randomly, or selectively, on the fly based on
+wallpapers stored in .wallpapers folder. In addition to `Super+t` which allows
+you to select a theme based on a wallpaper, there is a special theme mode for
+loading and deleting themes.
 
 ## oni
 
@@ -82,6 +88,13 @@ editors like Atom and VSCode. The main reason we like oni is because of its supp
 of the Language Server Protocol. Combine this with the 
 [vim-polyglot](https://www.github.com/sheerun/vim-polyglot), and you have a modern
 text editor with an authentic vim-feel that is unparalleled by any other text editor.
+
+NOTE: oni is very unstable. I think it's a very good text editor, however I
+find a well configured (neo)vim setup preferrable for its stability and
+consistency. I will still be maintaining the oni module, just know that I primarily
+use neovim by itself.
+
+**Plugin manager**: vim-plug
 
 ## i3
 This is a modified version of the default config. Window navigation was modified
@@ -118,7 +131,8 @@ inthe.am configs for task sync.
 
 ## tig
 
-Ncurses git interface. Configured with vim-like keybindings.
+Ncurses git interface. Configured with vim-like keybindings. This configuration
+is also inspired by magit which I used for a while when I still used emacs.
 
 ## rofi
 
