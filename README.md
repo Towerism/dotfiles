@@ -30,6 +30,7 @@ The following are assumed to be installed:
 - unifont (required by polybar)
 - Source Code Pro font (used by oni)
 - i3wm
+- imagemagick
 - pacman-contrib (required by polybar for update checking)
 - prezto (for a pleasant zsh experience)
 - pulseaudio
