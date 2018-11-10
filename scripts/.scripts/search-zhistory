@@ -1,7 +1,8 @@
-#!/bin/bash
+#!/bin/zsh
 
 SELECTED_COMMAND=$(tac .zhistory | sed "s/^:[^;]*;//g" | fzf)
 
 if [ ! -z "$SELECTED_COMMAND" ]; then
-  $SELECTED_COMMAND
+  print -s "$SELECTED_COMMAND" # add the command to zhistory
+  eval "$SELECTED_COMMAND"
 fi
