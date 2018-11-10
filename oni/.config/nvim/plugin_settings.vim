@@ -8,11 +8,14 @@ let g:rooter_use_lcd = 1
 
 set hidden
 set signcolumn=yes
+let typescriptLanguageServer = ['typescript-language-server', '--stdio']
+
 let g:LanguageClient_serverCommands = {
   \ 'vue': ['vls'],
   \ 'cpp': ['clangd'],
-  \ 'javascript': ['typescript-language-server', '--stdio'],
-  \ 'typescript': ['typescript-language-server', '--stdio'],
+  \ 'javascript': typescriptLanguageServer,
+  \ 'javascript.jsx': typescriptLanguageServer,
+  \ 'typescript': typescriptLanguageServer,
   \ 'rust': ['rustup', 'run', 'stable', 'rls'],
   \ }
 
