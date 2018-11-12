@@ -1,3 +1,8 @@
+augroup LSP
+  autocmd!
+  autocmd FileType cpp,c,vue,rust,javascript,typescript call SetLSPShortcuts()
+augroup END
+
 function! SetLSPShortcuts()
   nnoremap <leader>ld :call LanguageClient#textDocument_definition()<CR>
   nnoremap <leader>lr :call LanguageClient#textDocument_rename()<CR>
@@ -9,9 +14,6 @@ function! SetLSPShortcuts()
   nnoremap <leader>lh :call LanguageClient#textDocument_hover()<CR>
   nnoremap <leader>ls :call LanguageClient_textDocument_documentSymbol()<CR>
   nnoremap <leader>lm :call LanguageClient_contextMenu()<CR>
+  nnoremap <leader>lK :LanguageClientStop <CR>
+  nnoremap <leader>lS :LanguageClientStart <CR>
 endfunction()
-
-augroup LSP
-  autocmd!
-  autocmd FileType cpp,c,vue,rust,javascript,typescript call SetLSPShortcuts()
-augroup END
