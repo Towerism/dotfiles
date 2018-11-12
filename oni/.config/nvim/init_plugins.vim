@@ -9,7 +9,7 @@ function! s:sharedPlugins()
   Plug 'junegunn/fzf.vim'
   Plug 'airblade/vim-rooter'
   Plug 'Shougo/echodoc.vim'
-  Plug 'Raimondi/delimitMate'
+  Plug 'jiangmiao/auto-pairs'
 endfunction
 
 function! s:oniOnlyPlugins()
