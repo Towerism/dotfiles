@@ -37,6 +37,7 @@ The following are assumed to be installed:
 - pulseaudio
 - polybar
 - ponymix (used for pulseaudio volume control)
+- prezto (used for zsh config)
 - pywal (used to generate colorscheme from wallpaper)
 - Roboto font (required by polybar)
 - rofi (required by i3)
@@ -50,6 +51,7 @@ The following are optional:
 
 - compton (optional for cool animations and transparency)
 - Franz (for cloud services)
+- fzf (commandline fuzzy completion used by zsh and neovim)
 - GNU Stow (recommended if you want to run the auto-install script)
 - kitty (preferred terminal)
 - mopidy (mpd compatible music server)
