@@ -32,9 +32,6 @@ export EDITOR=nvim
 
 source ~/.profile
 
-# set vi bindings in terminal
-zstyle ':prezto:module:editor' key-bindings 'vi'
-
 if [ -f "$HOME/.system_specific_paths" ]; then
     source ~/.system_specific_paths
 fi
@@ -47,3 +44,6 @@ source ~/.cache/wal/colors.sh
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Map fd to enter vi-cmd-mode
+bindkey fd vi-cmd-mode
