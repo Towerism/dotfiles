@@ -13,8 +13,6 @@ eval $(keychain --quiet --eval ~/.ssh/id_rsa)
 compinit
 kitty + complete setup zsh | source /dev/stdin
 
-prompt pure
-
 export ALTERNATE_EDITOR=""
 export XDG_CONFIG_HOME="$HOME/.config"
 
@@ -33,6 +31,9 @@ alias mem='~/.scripts/search-zhistory'
 export EDITOR=nvim
 
 source ~/.profile
+
+# set vi bindings in terminal
+zstyle ':prezto:module:editor' key-bindings 'vi'
 
 if [ -f "$HOME/.system_specific_paths" ]; then
     source ~/.system_specific_paths
