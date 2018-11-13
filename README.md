@@ -4,19 +4,7 @@ Why are dotfile repositories important? See https://dotfiles.github.io/.
 
 ![alt text](screenshots/deadpool-vs-thanos.png "screenshot")
 
-This repo currently has configs for the following:
-
-- i3
-- dunst
-- kitty
-- oni
-- polybar
-- rofi
-- task
-- scripts
-- tig
-- wallpapers
-- zsh
+See the modules folder to see what configs this repo manages.
 
 ## Requirements
 
