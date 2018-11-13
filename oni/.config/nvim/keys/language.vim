@@ -16,4 +16,6 @@ function! SetLSPShortcuts()
   nnoremap <leader>lm :call LanguageClient_contextMenu()<CR>
   nnoremap <leader>lK :LanguageClientStop <CR>
   nnoremap <leader>lS :LanguageClientStart <CR>
+
+  inoremap <expr> <C-n> deoplete#manual_complete()
 endfunction()
