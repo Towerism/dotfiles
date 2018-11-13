@@ -5,6 +5,7 @@ endif
 set number
 set noswapfile
 set smartcase
+set clipboard=unnamedplus
 
 set splitright
 set splitbelow
