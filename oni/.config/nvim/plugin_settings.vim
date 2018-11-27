@@ -16,7 +16,7 @@ let g:LanguageClient_serverCommands = {
   \ 'javascript': typescriptLanguageServer,
   \ 'javascript.jsx': typescriptLanguageServer,
   \ 'typescript': typescriptLanguageServer,
-  \ 'rust': ['rustup', 'run', 'stable', 'rls'],
+  \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
   \ }
 
 let g:deoplete#enable_at_startup = 1
