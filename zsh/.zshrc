@@ -27,10 +27,13 @@ alias toclip='xclip -selection clipboard'
 alias vim='nvim'
 alias vi='nvim'
 alias mem='~/.scripts/search-zhistory'
+alias ssh='TERM=xterm-color ssh'
 
 export EDITOR=nvim
 
 source ~/.profile
+
+export PATH=$HOME/.cargo/bin:$PATH
 
 if [ -f "$HOME/.system_specific_paths" ]; then
     source ~/.system_specific_paths
