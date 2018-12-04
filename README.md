@@ -21,7 +21,7 @@ The following are assumed to be installed:
 - i3wm
 - imagemagick
 - pacman-contrib (required by polybar for update checking)
-- prezto (for a pleasant zsh experience)
+- powerline and powerline-fonts (for terminal)
 - pulseaudio
 - polybar
 - ponymix (used for pulseaudio volume control)
