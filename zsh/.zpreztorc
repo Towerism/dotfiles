@@ -33,7 +33,8 @@ zstyle ':prezto:load' pmodule \
   'prompt' \
   'git' \
   'node' \
-  'rsync'
+  'rsync' \
+  'docker'
 
 #
 # Autosuggestions
