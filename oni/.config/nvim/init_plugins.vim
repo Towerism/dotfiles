@@ -10,6 +10,7 @@ function! s:sharedPlugins()
   Plug 'airblade/vim-rooter'
   Plug 'Shougo/echodoc.vim'
   Plug 'jiangmiao/auto-pairs'
+  Plug 'lepture/vim-jinja'
 endfunction
 
 function! s:oniOnlyPlugins()
