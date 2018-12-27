@@ -33,7 +33,7 @@ export const configuration = {
   "oni.hideMenu": true,
   "ui.animations.enabled": true,
   "ui.fontSmoothing": "auto",
-  "editor.fontSize": "16px",
+  "editor.fontSize": "14px",
   "editor.fontWeight": "normal",
   "editor.fontFamily": "Source Code Pro",
   "sidebar.enabled": false,
