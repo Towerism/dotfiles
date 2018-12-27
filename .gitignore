@@ -4,7 +4,6 @@
 /emacs/.spacemacs.d/.spacemacs.env
 dunstrc
 kitty-colors.conf
-tsconfig.json
 scripts/.scripts/img
 nvim/plugged
 
