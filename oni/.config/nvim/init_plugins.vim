@@ -11,6 +11,8 @@ function! s:sharedPlugins()
   Plug 'Shougo/echodoc.vim'
   Plug 'jiangmiao/auto-pairs'
   Plug 'lepture/vim-jinja'
+  Plug 'editorconfig/editorconfig-vim'
+  Plug 'sbdchd/neoformat'
 endfunction
 
 function! s:oniOnlyPlugins()
