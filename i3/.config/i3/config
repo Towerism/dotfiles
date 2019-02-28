@@ -70,7 +70,7 @@ assign [class="Franz"] $ws5
 # Setup gaps
 gaps inner 17 
 gaps outer 25
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 
 # Setup X composition
 exec compton
