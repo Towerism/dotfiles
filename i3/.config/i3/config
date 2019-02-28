@@ -11,6 +11,31 @@
 
 set $mod Mod4
 
+#colors
+set_from_resource $color00 i3wm.color0 #101218
+set_from_resource $color01 i3wm.color1 #1f222d
+set_from_resource $color02 i3wm.color2 #252936
+set_from_resource $color03 i3wm.color3 #7780a1
+set_from_resource $color04 i3wm.color4 #C0C5CE
+set_from_resource $color05 i3wm.color5 #d1d4e0
+set_from_resource $color06 i3wm.color6 #C9CCDB
+set_from_resource $color07 i3wm.color7 #ffffff
+set_from_resource $color08 i3wm.color8 #ee829f
+set_from_resource $color09 i3wm.color9 #f99170
+set_from_resource $color10 i3wm.color10 #ffefcc
+set_from_resource $color11 i3wm.color11 #a5ffe1
+set_from_resource $color12 i3wm.color12 #97e0ff
+set_from_resource $color13 i3wm.color13 #97bbf7
+set_from_resource $color14 i3wm.color14 #c0b7f9
+set_from_resource $color15 i3wm.color15 #fcc09e
+
+# class                 border   backgr.  text     indicator child_border
+client.focused          $color00 $color00 $color00 $color03  $color04
+client.focused_inactive $color00 $color00 $color00 $color00  $color00
+client.unfocused        $color00 $color00 $color00 $color00  $color00
+client.urgent           $color00 $color00 $color00 $color00  $color00
+client.placeholder      $color00 $color00 $color00 $color00  $color00
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -45,7 +70,7 @@ assign [class="Franz"] $ws5
 # Setup gaps
 gaps inner 17 
 gaps outer 25
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 1
 
 # Setup X composition
 exec compton
