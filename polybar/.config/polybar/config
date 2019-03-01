@@ -39,7 +39,7 @@ fg-alt = ${env:FOREGROUND_ALT:#ccc}
 
 background = ${colors.color00}
 background-alt = ${colors.bg-lightened}
-workspace-underline = ${colors.bg-lightened}
+workspace-underline = ${colors.fg-alt}
 foreground = ${colors.color15}
 foreground-contrast = ${colors.color15}
 foreground-alt = ${colors.fg-alt}
@@ -104,16 +104,16 @@ label-indicator-background = ${colors.secondary}
 label-indicator-underline = ${colors.underline}
 
 modules-left = xbacklight pulseaudio
-modules-center = i3
-modules-right = updates-arch-combined wlan eth battery powermenu
+modules-center = mpd
+modules-right = wlan eth date powermenu
 
 [bar/top2]
 inherit = bar/top1
 padding-left = 0
 padding-right = 2
-modules-left = 
-modules-center = mpd
-modules-right = filesystem memory cpu date
+modules-left = filesystem updates-arch-combined 
+modules-center = i3
+modules-right = memory cpu battery
 
 [module/filesystem]
 type = internal/fs
