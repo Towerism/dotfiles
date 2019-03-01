@@ -30,11 +30,11 @@ set_from_resource $color14 i3wm.color14 #c0b7f9
 set_from_resource $color15 i3wm.color15 #fcc09e
 
 # class                 border   backgr.  text     indicator child_border
-client.focused          $color00 $color00 $color00 $color03  $color04
-client.focused_inactive $color00 $color00 $color00 $color00  $color00
-client.unfocused        $color00 $color00 $color00 $color00  $color00
-client.urgent           $color00 $color00 $color00 $color00  $color00
-client.placeholder      $color00 $color00 $color00 $color00  $color00
+client.focused          $color01 $color01 $color01 $color03  $color04
+client.focused_inactive $color01 $color01 $color01 $color01  $color01
+client.unfocused        $color01 $color01 $color01 $color01  $color01
+client.urgent           $color01 $color01 $color01 $color01  $color01
+client.placeholder      $color01 $color01 $color01 $color01  $color01
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
