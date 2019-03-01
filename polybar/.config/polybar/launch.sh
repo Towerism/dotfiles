@@ -15,8 +15,9 @@ export MPD_MODULE_LABEL="%{F$FOREGROUND_ALT}%artist%%{F-} %title%"
 
 function loadbars {
     echo "loading polybar on monitor $1"
-    MONITOR=$1 polybar --reload top &
-    MONITOR=$1 polybar --reload bottom &
+    MONITOR=$1 polybar --reload top1 &
+    sleep 1
+    MONITOR=$1 polybar --reload top2 &
 }
 
 # Launch bar1 and bar2

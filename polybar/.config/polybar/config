@@ -17,21 +17,42 @@
 ;==========================================================
 
 [colors]
-background = ${xrdb:background}
-background-alt = ${env:LIGHTER_BACKGROUND:#FFF}
-workspace-underline = ${env:FOREGROUND_ALT:#ccc}
-foreground = ${xrdb:foreground}
-foreground-contrast = ${xrdb:foreground}
-foreground-alt = ${env:FOREGROUND_ALT:#ccc}
-primary = ${xrdb:color3}
-secondary = ${xrdb:color7}
-alert = ${xrdb:color1}
+color00 = ${xrdb:polybar.color0}
+color01 = ${xrdb:polybar.color1}
+color02 = ${xrdb:polybar.color2}
+color03 = ${xrdb:polybar.color3}
+color04 = ${xrdb:polybar.color4}
+color05 = ${xrdb:polybar.color5}
+color06 = ${xrdb:polybar.color6}
+color07 = ${xrdb:polybar.color7}
+color08 = ${xrdb:polybar.color8}
+color09 = ${xrdb:polybar.color9}
+color10 = ${xrdb:polybar.color10}
+color11 = ${xrdb:polybar.color11}
+color12 = ${xrdb:polybar.color12}
+color13 = ${xrdb:polybar.color13}
+color14 = ${xrdb:polybar.color14}
+color15 = ${xrdb:polybar.color15}
 
-[bar/top]
+bg-lightened = ${env:LIGHTER_BACKGROUND:#FFF}
+fg-alt = ${env:FOREGROUND_ALT:#ccc}
+
+background = ${colors.color00}
+background-alt = ${colors.bg-lightened}
+workspace-underline = ${colors.bg-lightened}
+foreground = ${colors.color15}
+foreground-contrast = ${colors.color15}
+foreground-alt = ${colors.fg-alt}
+primary = ${colors.color03}
+secondary = ${colors.color07}
+underline = ${colors.color00}
+alert = ${colors.color01}
+
+[bar/top1]
 monitor = ${env:MONITOR:HDMI-0}
 width = 100%
 enable-ipc = true
-height = 32 
+height = 30 
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -44,7 +65,7 @@ line-size = 3
 line-color = #f00
 
 border-size = 0
-border-color = #00000000
+border-color = ${colors.color03}
 
 padding-left = 2
 padding-right = 2
@@ -55,10 +76,7 @@ module-margin-right = 2
 font-0 = Roboto:pixelsize=13;1
 font-1 = unifont:fontformat=truetype:size=10:antialias=false;0
 font-2 = FontAwesome:pixelsize=13;2
-
-modules-left = xbacklight pulseaudio
-modules-center = mpd
-modules-right =  wlan eth battery powermenu
+font-3 = Roboto:pixelsize=32;5
 
 ;tray-position = right
 tray-padding = 2
@@ -75,23 +93,26 @@ cursor-scroll = ns-resize
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = ${colors.secondary}
+format-prefix-underline = ${colors.underline}
 
 label-layout = %layout%
-label-layout-underline = ${colors.secondary}
+label-layout-underline = ${colors.underline}
 
 label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
-label-indicator-underline = ${colors.secondary}
+label-indicator-underline = ${colors.underline}
 
-[bar/bottom]
-inherit = bar/top
-bottom = true
+modules-left = xbacklight pulseaudio
+modules-center = i3
+modules-right = updates-arch-combined wlan eth battery powermenu
+
+[bar/top2]
+inherit = bar/top1
 padding-left = 0
 padding-right = 2
-modules-left = i3
-modules-center = updates-arch-combined 
+modules-left = 
+modules-center = mpd
 modules-right = filesystem memory cpu date
 
 [module/filesystem]
@@ -102,7 +123,7 @@ mount-0 = /
 mount-1 = /mnt/mass
 
 label-mounted = ${env:FILESYSTEM_MODULE_LABEL}
-label-mounted-underline = ${colors.secondary}
+label-mounted-underline = ${colors.underline}
 label-unmounted =
 label-unmounted-foreground =
 
@@ -196,13 +217,13 @@ type = internal/cpu
 interval = 2
 format-prefix = "cpu "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.secondary}
+format-underline = ${colors.underline}
 label = %percentage:2%%
 
 [module/updates-arch-combined]
 type = custom/script
 exec = ~/.config/polybar/scripts/updates-arch-combined.sh
-format-underline = ${colors.secondary}
+format-underline = ${colors.underline}
 interval = 600
 
 [module/memory]
@@ -210,7 +231,7 @@ type = internal/memory
 interval = 2
 format-prefix = "ram "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.secondary}
+format-underline = ${colors.underline}
 label = %percentage_used%%
 
 [module/wlan]
@@ -221,12 +242,12 @@ interval = 3.0
 format-connected-prefix = "wifi "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 format-connected = <label-connected>
-format-connected-underline = ${colors.secondary}
+format-connected-underline = ${colors.underline}
 label-connected = %essid%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${colors.secondary}
+;format-disconnected-underline = ${colors.underline}
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
@@ -235,7 +256,7 @@ type = internal/network
 interface = vethe22ff28
 interval = 3.0
 
-format-connected-underline = ${colors.secondary}
+format-connected-underline = ${colors.underline}
 format-connected-prefix = "eth "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
@@ -257,7 +278,7 @@ time = "%a %H:%M"
 time-alt = "  %H:%M:%S"
 
 format-date-foreground = ${colors.foreground-alt}
-format-underline = ${colors.secondary}
+format-underline = ${colors.underline}
 
 label = %date% %time%
 
@@ -290,7 +311,7 @@ full-at = 98
 
 format-charging-prefix = "chr "
 format-charging-prefix-foreground = ${colors.foreground-alt}
-format-charging-underline = ${colors.secondary}
+format-charging-underline = ${colors.underline}
 
 format-discharging-prefix = "bat "
 format-discharging-prefix-foreground = ${colors.foreground-alt}
