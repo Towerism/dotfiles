@@ -104,7 +104,7 @@ label-indicator-background = ${colors.secondary}
 label-indicator-underline = ${colors.underline}
 
 modules-left = xbacklight pulseaudio
-modules-center = mpd
+modules-center =
 modules-right = wlan eth date powermenu
 
 [bar/top2]
