@@ -39,7 +39,6 @@ fg-alt = ${env:FOREGROUND_ALT:#ccc}
 
 background = ${colors.color00}
 background-alt = ${colors.bg-lightened}
-workspace-underline = ${colors.fg-alt}
 foreground = ${colors.color15}
 foreground-contrast = ${colors.color15}
 foreground-alt = ${colors.fg-alt}
@@ -47,6 +46,7 @@ primary = ${colors.color03}
 secondary = ${colors.color07}
 underline = ${colors.color00}
 alert = ${colors.color01}
+workspace-underline = ${colors.color03}
 
 [bar/top1]
 monitor = ${env:MONITOR:HDMI-0}
