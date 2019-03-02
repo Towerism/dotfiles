@@ -68,7 +68,7 @@ assign [instance="localhost__iris"] $ws4
 assign [class="Franz"] $ws5
 
 # Setup gaps
-gaps inner 0
+gaps inner 1
 gaps outer 0
 for_window [class="^.*"] border pixel 2
 
