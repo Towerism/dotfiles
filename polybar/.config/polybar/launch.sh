@@ -12,6 +12,7 @@ export LIGHTER_BACKGROUND=$(color-blend mix --factor 0.2 $background --with $for
 export FOREGROUND_ALT=$color5
 export FILESYSTEM_MODULE_LABEL="%{F$FOREGROUND_ALT}%mountpoint%%{F-} %percentage_used%%"
 export MPD_MODULE_LABEL="%{F$FOREGROUND_ALT}%artist%%{F-} %title%"
+export WLAN_INTERFACE=$(iw dev | awk '$1=="Interface"{print $2}')
 
 function loadbars {
     echo "loading polybar on monitor $1"
