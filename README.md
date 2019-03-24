@@ -26,11 +26,14 @@ The following are assumed to be installed:
 - polybar
 - ponymix (used for pulseaudio volume control)
 - prezto (used for zsh config)
+- python
+- python neovim module
 - pywal (used to generate colorscheme from wallpaper)
 - Roboto font (required by polybar)
 - rofi (required by i3)
 - sysstat (required by polybar for cpu usage)
 - task
+- wireless_tools (make sure this is installed before compiling polybar)
 - tig
 
 ## Optional
