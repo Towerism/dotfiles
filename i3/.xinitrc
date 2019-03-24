@@ -1,4 +1,5 @@
 xrdb -merge ~/.cache/wal/colors.Xresources
+xrdb -merge ~/.Xresources
 source ~/.profile
 numlockx on
 systemctl --user import-environment DISPLAY
