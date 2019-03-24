@@ -101,6 +101,9 @@ bindsym $mod+c exec kitty --class code nvim
 # lock the screen
 bindsym $mod+Escape exec ~/.scripts/lock
 
+# lock the screen whenever we sleep
+exec --no-startup-id xss-lock ~/.scripts/lock
+
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec ponymix increase 5 && pkill -RTMIN+10 i3blocks
 bindsym XF86AudioLowerVolume exec ponymix decrease 5 && pkill -RTMIN+10 i3blocks

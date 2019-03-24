@@ -36,6 +36,7 @@ The following are assumed to be installed:
 - wireless_tools (make sure this is installed before compiling polybar)
 - tig
 - xbacklight (or light for acpi control instead)
+- xss-lock (used to lock the screen before sleep)
 
 ## Optional
 
