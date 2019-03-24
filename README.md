@@ -35,6 +35,7 @@ The following are assumed to be installed:
 - task
 - wireless_tools (make sure this is installed before compiling polybar)
 - tig
+- xbacklight (or light for acpi control instead)
 
 ## Optional
 
