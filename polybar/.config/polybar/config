@@ -50,6 +50,7 @@ workspace-underline = ${colors.color03}
 
 [bar/top1]
 monitor = ${env:MONITOR:HDMI-0}
+dpi = -1
 width = 100%
 enable-ipc = true
 height = 30 
