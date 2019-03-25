@@ -111,8 +111,6 @@ modules-right = wlan eth date powermenu
 [bar/top2]
 inherit = bar/top1
 border-bottom-size = 2
-padding-left = 2
-padding-right = 2
 modules-left = filesystem updates-arch-combined 
 modules-center = i3
 modules-right = memory cpu battery
