@@ -50,8 +50,8 @@ workspace-underline = ${colors.color03}
 
 [bar/top1]
 monitor = ${env:MONITOR:HDMI-0}
-dpi = -1
 width = 100%
+dpi = ${xrdb:Xft.dpi:-1}
 enable-ipc = true
 height = 30 
 ;offset-x = 1%
@@ -113,7 +113,7 @@ inherit = bar/top1
 border-bottom-size = 2
 modules-left = filesystem updates-arch-combined 
 modules-center = i3
-modules-right = memory cpu battery
+modules-right = memory cpu temperature battery
 
 [module/filesystem]
 type = internal/fs
@@ -233,6 +233,30 @@ format-prefix = "ram "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${colors.underline}
 label = %percentage_used%%
+
+[module/temperature]
+type = internal/temperature
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 0.5
+
+; Thermal zone to use
+; To list all the zone types, run 
+; $ for i in /sys/class/thermal/thermal_zone*; do echo "$i: $(<$i/type)"; done
+; Default: 0
+thermal-zone = 0
+
+; Full path of temperature sysfs path
+; Use `sensors` to find preferred temperature source, then run
+; $ for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done
+; to find path to desired file
+; Default reverts to thermal zone setting
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input
+
+; Threshold temperature to display warning label (in degrees celsius)
+; Default: 80
+warn-temperature = 80
 
 [module/wlan]
 type = internal/network
