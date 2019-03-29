@@ -338,6 +338,7 @@ format-charging-prefix-foreground = ${colors.foreground-alt}
 format-charging-underline = ${colors.underline}
 
 format-discharging-prefix = "bat "
+label-discharging = %percentage%% %time%
 format-discharging-prefix-foreground = ${colors.foreground-alt}
 format-discharging-underline = ${self.format-charging-underline}
 
