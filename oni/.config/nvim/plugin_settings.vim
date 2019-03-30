@@ -15,6 +15,7 @@ let g:LanguageClient_serverCommands = {
   \ 'cpp': ['clangd'],
   \ 'javascript': typescriptLanguageServer,
   \ 'javascript.jsx': typescriptLanguageServer,
+  \ 'python': ['pyls'],
   \ 'typescript': typescriptLanguageServer,
   \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
   \ }
