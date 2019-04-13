@@ -2,6 +2,10 @@ Why are dotfile repositories important? See https://dotfiles.github.io/.
 
 # dotfiles
 
+## About this branch
+
+This branch has specific changes for Arch Linux Windows Subsystem for Linux (WSL)
+
 ![alt text](screenshots/deadpool-vs-thanos.png "screenshot")
 
 See the modules folder to see what configs this repo manages.
