@@ -29,6 +29,9 @@ alias vi='nvim'
 alias mem='~/.scripts/search-zhistory'
 alias ssh='TERM=xterm-color ssh'
 
+alias npm='/bin/npm'
+alias tmux='tmux -u'
+
 export EDITOR=nvim
 
 source ~/.profile
