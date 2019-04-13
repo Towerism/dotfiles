@@ -138,6 +138,11 @@ is also inspired by magit which I used for a while when I still used emacs.
 The preferred application launchered. It is configured to match whatever the
 current colorscheme is.
 
+## tmux
+
+The preferred way of managing multiple shells when using a limited number of
+terminal emulators.
+
 ## wallpapers
 
 Contains lockscreen-only wallpapers that don't work with pywal as well as the
