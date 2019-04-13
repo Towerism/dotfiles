@@ -51,3 +51,5 @@ source ~/.cache/wal/colors.sh
 
 # Map fd to enter vi-cmd-mode
 bindkey fd vi-cmd-mode
+export LIBGL_ALWAYS_INDIRECT=1
+export DISPLAY=:0.0
