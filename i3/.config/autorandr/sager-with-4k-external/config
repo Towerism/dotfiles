@@ -13,4 +13,5 @@ rate 120.05
 output DP-1
 mode 3840x2160
 pos 2560x0
+primary
 rate 60.00
