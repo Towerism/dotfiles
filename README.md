@@ -60,7 +60,7 @@ You only have to install these if you want LSP-support in neovim:
 
 - vls (vue)
 - clangd (c/c++)
-- typescript-language-server
+- javascript-typescript-langserver
 - rls (rust) 
 
 ## Usage

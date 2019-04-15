@@ -8,7 +8,7 @@ let g:rooter_use_lcd = 1
 
 set hidden
 set signcolumn=yes
-let typescriptLanguageServer = ['typescript-language-server', '--stdio']
+let typescriptLanguageServer = ['javascript-typescript-stdio']
 
 let g:LanguageClient_serverCommands = {
   \ 'vue': ['vls'],
