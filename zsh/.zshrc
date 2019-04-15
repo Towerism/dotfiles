@@ -40,10 +40,6 @@ export PATH=$HOME/.cargo/bin:$PATH
 export DOCKER_CLIENT_TIMEOUT=120
 export COMPOSE_HTTP_TIMEOUT=120
 
-if [ -f "$HOME/.system_specific_paths" ]; then
-    source ~/.system_specific_paths
-fi
-
 # restore terminal colors
 (cat ~/.cache/wal/sequences &)
 source ~/.cache/wal/colors-tty.sh
@@ -56,3 +52,7 @@ source ~/.cache/wal/colors.sh
 bindkey fd vi-cmd-mode
 export LIBGL_ALWAYS_INDIRECT=1
 export DISPLAY=:0.0
+
+if [ -f "$HOME/.system_specific_paths" ]; then
+    source ~/.system_specific_paths
+fi
