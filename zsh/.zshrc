@@ -49,6 +49,8 @@ fi
 export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm"
 source /usr/local/opt/nvm/nvm.sh
 
+source "/Users/htp508/.sdkman/bin/sdkman-init.sh"
+
 # restore terminal colors
 (cat ~/.cache/wal/sequences &)
 source ~/.cache/wal/colors-tty.sh
@@ -62,3 +64,9 @@ source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 # Map fd to enter vi-cmd-mode
 bindkey fd vi-cmd-mode
 # End of lines added by compinstall
+
+if [ "$TMUX" = "" ]; then tmux; fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/htp508/.sdkman"
+[[ -s "/Users/htp508/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/htp508/.sdkman/bin/sdkman-init.sh"
