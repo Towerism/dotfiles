@@ -45,6 +45,8 @@ export COMPOSE_HTTP_TIMEOUT=120
 if [ -f "$HOME/.system_specific_paths" ]; then
     source ~/.system_specific_paths
 fi
+
+export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm"
 source /usr/local/opt/nvm/nvm.sh
 
 # restore terminal colors
