@@ -9,8 +9,13 @@
 # unlock ssh identity
 eval $(keychain --quiet --eval ~/.ssh/id_rsa)
 
-# set up kitty autocomplete
+# The following lines were added by compinstall
+zstyle :compinstall filename '/Users/htp508/.zshrc'
+
+autoload -Uz compinit
 compinit
+
+# set up kitty autocomplete
 kitty + complete setup zsh | source /dev/stdin
 
 export ALTERNATE_EDITOR=""
@@ -40,7 +45,7 @@ export COMPOSE_HTTP_TIMEOUT=120
 if [ -f "$HOME/.system_specific_paths" ]; then
     source ~/.system_specific_paths
 fi
-source /usr/share/nvm/init-nvm.sh
+source /usr/local/opt/nvm/nvm.sh
 
 # restore terminal colors
 (cat ~/.cache/wal/sequences &)
@@ -50,5 +55,8 @@ source ~/.cache/wal/colors.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+
 # Map fd to enter vi-cmd-mode
 bindkey fd vi-cmd-mode
+# End of lines added by compinstall
