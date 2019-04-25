@@ -17,14 +17,3 @@ while read module; do
     stow $OPT $module
     echo "done"
 done < $DIR/modules
-
-printf "Ensuring theme is configured... "
-# configure theme if it has not been configured
-if [[ ! -a "$HOME/.cache/wal/wal" ]]; then
-    printf "\n"
-    ~/.scripts/load-theme ~/.wallpapers/elias-forest-landscape-scenery-tx-2560x1440.jpg
-fi
-printf "done\n"
-
-echo "Warming up lockscreen cache in the background."
-~/.scripts/warmup-lockscreen-cache
