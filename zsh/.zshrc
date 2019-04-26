@@ -6,6 +6,13 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+# restore terminal colors
+(cat ~/.cache/wal/sequences &)
+source ~/.cache/wal/colors-tty.sh
+source ~/.cache/wal/colors.sh
+
+if [ "$TMUX" = "" ]; then tmux; fi
+
 # unlock ssh identity
 eval $(keychain --quiet --eval ~/.ssh/id_rsa)
 
@@ -14,9 +21,6 @@ zstyle :compinstall filename '/Users/htp508/.zshrc'
 
 autoload -Uz compinit
 compinit
-
-# set up kitty autocomplete
-kitty + complete setup zsh | source /dev/stdin
 
 export ALTERNATE_EDITOR=""
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -51,12 +55,6 @@ source /usr/local/opt/nvm/nvm.sh
 
 source "/Users/htp508/.sdkman/bin/sdkman-init.sh"
 
-# restore terminal colors
-(cat ~/.cache/wal/sequences &)
-source ~/.cache/wal/colors-tty.sh
-source ~/.cache/wal/colors.sh
-
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -64,8 +62,6 @@ source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 # Map fd to enter vi-cmd-mode
 bindkey fd vi-cmd-mode
 # End of lines added by compinstall
-
-if [ "$TMUX" = "" ]; then tmux; fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/htp508/.sdkman"
