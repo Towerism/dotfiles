@@ -13,6 +13,10 @@ source ~/.cache/wal/colors.sh
 
 if [ "$TMUX" = "" ]; then tmux; fi
 
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
 # unlock ssh identity
 eval $(keychain --quiet --eval ~/.ssh/id_rsa)
 
@@ -56,8 +60,6 @@ source /usr/local/opt/nvm/nvm.sh
 source "/Users/htp508/.sdkman/bin/sdkman-init.sh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 
 # Map fd to enter vi-cmd-mode
 bindkey fd vi-cmd-mode
