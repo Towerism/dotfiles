@@ -72,6 +72,9 @@
 # open terminal, blazingly fast compared to iTerm/Hyper
 cmd - return : open -na /Applications/iTerm.app
 
+# open terminal, launch nvim
+cmd + alt - c : ~/.scripts/launch-iterm nvim
+
 # close focused window
 alt - w : chunkc tiling::window --close
 
