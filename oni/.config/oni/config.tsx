@@ -31,11 +31,12 @@ export const configuration = {
 
   // UI customizations
   "oni.hideMenu": true,
+  "oni.fullScreenOnStart": true,
   "ui.animations.enabled": true,
   "ui.fontSmoothing": "auto",
   "editor.fontSize": "14px",
   "editor.fontWeight": "normal",
-  "editor.fontFamily": "Source Code Pro",
+  "editor.fontFamily": "Consolas for Powerline",
   "sidebar.enabled": false,
 
   // Language servers
