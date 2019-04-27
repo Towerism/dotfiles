@@ -11,8 +11,6 @@
 source ~/.cache/wal/colors-tty.sh
 source ~/.cache/wal/colors.sh
 
-if [ "$TMUX" = "" ]; then tmux; fi
-
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
