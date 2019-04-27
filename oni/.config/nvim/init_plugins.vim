@@ -13,6 +13,7 @@ function! s:sharedPlugins()
   Plug 'lepture/vim-jinja'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'sbdchd/neoformat'
+  Plug 'tpope/vim-sleuth'
 endfunction
 
 function! s:oniOnlyPlugins()
