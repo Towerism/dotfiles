@@ -52,8 +52,10 @@ if [ -f "$HOME/.system_specific_paths" ]; then
     source ~/.system_specific_paths
 fi
 
-export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm"
-source /usr/local/opt/nvm/nvm.sh
+if [ -f /usr/local/opt/nvm/nvm.sh ]; then
+    export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm"
+    source /usr/local/opt/nvm/nvm.sh
+fi
 
 source "/Users/htp508/.sdkman/bin/sdkman-init.sh"
 
