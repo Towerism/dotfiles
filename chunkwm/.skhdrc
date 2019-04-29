@@ -73,7 +73,7 @@
 cmd - return : open -na /Applications/iTerm.app
 
 # open terminal, launch nvim
-cmd + alt - c : ~/.scripts/launch-iterm nvim
+cmd + alt - e : ~/.scripts/launch-iterm nvim
 
 # close focused window
 alt - w : chunkc tiling::window --close
@@ -122,6 +122,9 @@ cmd + alt - 4 : chunkc tiling::desktop --focus 4
 cmd + alt - 5 : chunkc tiling::desktop --focus 5
 cmd + alt - 6 : chunkc tiling::desktop --focus 6
 cmd + alt - 7 : chunkc tiling::desktop --focus 7
+cmd + alt - 8 : chunkc tiling::desktop --focus 8
+cmd + alt - 9 : chunkc tiling::desktop --focus 9
+cmd + alt - 0 : chunkc tiling::desktop --focus 0
 
 # send window to desktop
 shift + alt - x : chunkc tiling::window --send-to-desktop $(chunkc get _last_active_desktop)
@@ -134,6 +137,9 @@ shift + alt - 4 : chunkc tiling::window --send-to-desktop 4
 shift + alt - 5 : chunkc tiling::window --send-to-desktop 5
 shift + alt - 6 : chunkc tiling::window --send-to-desktop 6
 shift + alt - 7 : chunkc tiling::window --send-to-desktop 7
+shift + alt - 8 : chunkc tiling::window --send-to-desktop 8
+shift + alt - 9 : chunkc tiling::window --send-to-desktop 9
+shift + alt - 0 : chunkc tiling::window --send-to-desktop 0
 
 # send window to desktop and follow focus
 shift + cmd - x : chunkc tiling::window --send-to-desktop $(chunkc get _last_active_desktop); chunkc tiling::desktop --focus $(chunkc get _last_active_desktop)
@@ -146,6 +152,9 @@ shift + cmd - 4 : chunkc tiling::window --send-to-desktop 4; chunkc tiling::desk
 shift + cmd - 5 : chunkc tiling::window --send-to-desktop 5; chunkc tiling::desktop --focus 5
 shift + cmd - 6 : chunkc tiling::window --send-to-desktop 6; chunkc tiling::desktop --focus 6
 shift + cmd - 7 : chunkc tiling::window --send-to-desktop 7; chunkc tiling::desktop --focus 7
+shift + cmd - 8 : chunkc tiling::window --send-to-desktop 8; chunkc tiling::desktop --focus 8
+shift + cmd - 9 : chunkc tiling::window --send-to-desktop 9; chunkc tiling::desktop --focus 9
+shift + cmd - 0 : chunkc tiling::window --send-to-desktop 0; chunkc tiling::desktop --focus 0
 
 # focus monitor
 ctrl + alt - z  : chunkc tiling::monitor -f prev
@@ -225,5 +234,9 @@ ctrl + alt - d : chunkc tiling::desktop --layout float
 
 ctrl + alt - w : chunkc tiling::desktop --deserialize ~/.chunkwm_layouts/dev_1
 
-# move desktop to next monitor
-cmd + alt - x : chunkc tiling::desktop --move next
+# move desktop
+ctrl + shift - z : chunkc tiling::desktop --move prev
+ctrl + shift - c : chunkc tiling::desktop --move next
+ctrl + shift - 1 : chunkc tiling::desktop --move 1
+ctrl + shift - 2 : chunkc tiling::desktop --move 2
+ctrl + shift - 3 : chunkc tiling::desktop --move 3
