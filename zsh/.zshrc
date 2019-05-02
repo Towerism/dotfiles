@@ -68,3 +68,5 @@ bindkey fd vi-cmd-mode
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/htp508/.sdkman"
 [[ -s "/Users/htp508/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/htp508/.sdkman/bin/sdkman-init.sh"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
