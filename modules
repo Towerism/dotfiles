@@ -1,8 +1,9 @@
 dunst
 i3
+coc
 kitty
 neofetch
-oni --no-folding
+oni
 polybar
 rofi
 scripts

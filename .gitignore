@@ -6,4 +6,5 @@ dunstrc
 kitty-colors.conf
 scripts/.scripts/img
 nvim/plugged
-
+oni/.config/oni/tsconfig.json
+node_modules

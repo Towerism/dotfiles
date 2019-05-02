@@ -52,3 +52,5 @@ source ~/.cache/wal/colors.sh
 
 # Map fd to enter vi-cmd-mode
 bindkey fd vi-cmd-mode
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

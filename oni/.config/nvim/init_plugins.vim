@@ -21,11 +21,7 @@ endfunction
 
 function! s:terminalOnlyPlugins()
   Plug 'vim-airline/vim-airline'
-  Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': './install.sh' }
 endfunction
 
 if exists("g:gui_oni")
