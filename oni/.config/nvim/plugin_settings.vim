@@ -10,14 +10,15 @@ set hidden
 set signcolumn=yes
 let typescriptLanguageServer = ['javascript-typescript-stdio']
 
-let g:LanguageClient_serverCommands = {
-  \ 'vue': ['vls'],
-  \ 'cpp': ['clangd'],
-  \ 'javascript': typescriptLanguageServer,
-  \ 'javascript.jsx': typescriptLanguageServer,
-  \ 'python': ['pyls'],
-  \ 'typescript': typescriptLanguageServer,
-  \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
-  \ }
+" Some servers have issues with backup files, see #649
+set nobackup
+set nowritebackup
 
-let g:deoplete#enable_at_startup = 1
+" Better display for messages
+set cmdheight=2
+
+" Smaller updatetime for CursorHold & CursorHoldI
+set updatetime=300
+
+" don't give |ins-completion-menu| messages.
+set shortmess+=c
