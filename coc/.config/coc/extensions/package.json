@@ -5,6 +5,7 @@
     "coc-highlight": "^1.0.5",
     "coc-html": "^1.0.7",
     "coc-json": "^1.0.15",
+    "coc-prettier": "^1.1.0",
     "coc-tsserver": "^1.2.1",
     "coc-vetur": "^1.1.1"
   }

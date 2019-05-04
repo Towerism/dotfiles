@@ -32,4 +32,4 @@ defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.config/
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 # install coc npm packages
-cd coc/.config/extensions/ && yarn install
+cd coc/.config/coc/extensions/ && yarn install
