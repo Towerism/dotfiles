@@ -1,12 +1,20 @@
 #!/usr/bin/osascript
 
 on run wallpaper
-    tell Application "Finder"
-        tell application "System Events"
-            set allDesktops to a reference to every desktop
+    set windowCount to 8
+    repeat with X from 1 to windowCount
+        tell application "Finder"
+            tell application "System Events"
+                if X > 1 then
+                    key code 124 using control down ## move right
+                    delay 1
+                end if
+                set deskGroup to (a reference to every desktop)
+                repeat with theDesk in deskGroup
+                    set picture of theDesk to wallpaper
+                end repeat
+            end tell
+            delay 1
         end tell
-        repeat with currentDesktop in allDesktops
-            log "desktop"
-        end
-    end tell
+    end repeat
 end run
