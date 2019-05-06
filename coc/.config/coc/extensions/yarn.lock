@@ -246,6 +246,10 @@
     "@types/unist" "*"
     "@types/vfile-message" "*"
 
+"Angular2@https://github.com/johnpapa/vscode-angular-snippets.git#master":
+  version "7.1.5"
+  resolved "https://github.com/johnpapa/vscode-angular-snippets.git#9dc00a0d8e05a0e4c6871e90990e69c81a788116"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -885,6 +889,14 @@ coc-css@^1.0.7:
     vscode-languageserver "^5.1.0"
     vscode-languageserver-protocol "^3.13.0"
 
+coc-docker@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/coc-docker/-/coc-docker-0.1.2.tgz#fbf15178b2623232130e9ec8f14facc15825ca30"
+  integrity sha512-W0PLeGRfC1TOc+9NpMI7nFkwCouNoHi0mNDD0tUc7V9zLAJKqDxMDvOWuTDWuqj/X5NyQ1n5SsRPLsUb9VxwgQ==
+  dependencies:
+    dockerfile-language-server-nodejs "^0.0.20"
+    tslib "^1.9.3"
+
 coc-emmet@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/coc-emmet/-/coc-emmet-1.0.9.tgz#a4035cfba1d1dafdc114a642bcd4f70905af113f"
@@ -1331,6 +1343,54 @@ dlv@^1.1.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/dlv/-/dlv-1.1.2.tgz#270f6737b30d25b6657a7e962c784403f85137e5"
   integrity sha512-xxD4VSH67GbRvSGUrckvha94RD7hjgOH7rqGxiytLpkaeMvixOHFZTGFK6EkIm3T761OVHT8ABHmGkq9gXgu6Q==
+
+dockerfile-ast@0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/dockerfile-ast/-/dockerfile-ast-0.0.11.tgz#c6f1a6fb312e826a42616e0424add0926137c03e"
+  integrity sha512-biCqz6yJ6xlRD/jPCI9bFFDBFVawAuYZc/7HqrdQBHdtOx+JbnqP0UgVGpzJrcdGCivfq5l3Dga1pISOL8F4Iw==
+  dependencies:
+    vscode-languageserver-types "^3.5.0"
+
+dockerfile-ast@0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/dockerfile-ast/-/dockerfile-ast-0.0.12.tgz#6f25f6ad55eeecdd297ab68b08be1b32e64b5aeb"
+  integrity sha512-cIV8oXkAxpIuN5XgG0TGg07nLDgrj4olkfrdT77OTA3VypscsYHBUg/FjHxW9K3oA+CyH4Th/qtoMgTVpzSobw==
+  dependencies:
+    vscode-languageserver-types "^3.5.0"
+
+dockerfile-language-server-nodejs@^0.0.20:
+  version "0.0.20"
+  resolved "https://registry.yarnpkg.com/dockerfile-language-server-nodejs/-/dockerfile-language-server-nodejs-0.0.20.tgz#3beca54de62bf0757a7c7debca33aeb0374f4f32"
+  integrity sha512-dLCP3E+MooojNG97qgunjAYFL1Gu1pA46HXiXYiHJ6AQnfyBM06F5kkTAGf4B68rXRde1oCG5zItTuA2Mtwlgg==
+  dependencies:
+    dockerfile-language-service "0.0.7"
+    dockerfile-utils "0.0.11"
+    vscode-languageserver "^5.1.0"
+
+dockerfile-language-service@0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/dockerfile-language-service/-/dockerfile-language-service-0.0.7.tgz#fd0bf270be1c007b125f469df856c0f906c6bf0e"
+  integrity sha512-891Esxo/3pX7IcvR6VCBq2jVWd7jKUSWswTSURVwGD3hN9SsObR2Btd3DEYp1Glspuf+eQIvf2DO1IDJ9kyovQ==
+  dependencies:
+    dockerfile-ast "0.0.11"
+    dockerfile-utils "0.0.12"
+    vscode-languageserver-types "^3.10.0"
+
+dockerfile-utils@0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/dockerfile-utils/-/dockerfile-utils-0.0.11.tgz#7b778b45591992ffcaca949d510b3e5b3ed1a445"
+  integrity sha512-LNdPIgcl58343dF4KNCHvFzUScUhgLI9BRAR+Vln6D1tVBGvv1k5/qHuxWRCAM2uyFbj73QVkKMScXPhY7TqfQ==
+  dependencies:
+    dockerfile-ast "0.0.12"
+    vscode-languageserver-types "3.6.0"
+
+dockerfile-utils@0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/dockerfile-utils/-/dockerfile-utils-0.0.12.tgz#dffae3762d8030b888204feb67cd2f29f3e914c9"
+  integrity sha512-xH7h27/eJiL+zRaZ9PR8jKSNDSiP60q6aK9XJPZi3l9XbprqV+2T/U11uPsGFWZkf/otciNNzqE8Lq5d/qE8HA==
+  dependencies:
+    dockerfile-ast "0.0.12"
+    vscode-languageserver-types "3.6.0"
 
 doctrine@^2.1.0:
   version "2.1.0"
@@ -5482,7 +5542,7 @@ vscode-languageserver-protocol@3.15.0-next.4, vscode-languageserver-protocol@^3.
     vscode-jsonrpc "^4.1.0-next.1"
     vscode-languageserver-types "3.15.0-next.1"
 
-vscode-languageserver-types@3.14.0, vscode-languageserver-types@^3.13.0, vscode-languageserver-types@^3.14.0, vscode-languageserver-types@^3.6.0-next.1:
+vscode-languageserver-types@3.14.0, vscode-languageserver-types@^3.10.0, vscode-languageserver-types@^3.13.0, vscode-languageserver-types@^3.14.0, vscode-languageserver-types@^3.5.0, vscode-languageserver-types@^3.6.0-next.1:
   version "3.14.0"
   resolved "https://registry.yarnpkg.com/vscode-languageserver-types/-/vscode-languageserver-types-3.14.0.tgz#d3b5952246d30e5241592b6dde8280e03942e743"
   integrity sha512-lTmS6AlAlMHOvPQemVwo3CezxBp0sNB95KNPkqp3Nxd5VFEnuG1ByM0zlRWos0zjO3ZWtkvhal0COgiV1xIA4A==
@@ -5491,6 +5551,11 @@ vscode-languageserver-types@3.15.0-next.1:
   version "3.15.0-next.1"
   resolved "https://registry.yarnpkg.com/vscode-languageserver-types/-/vscode-languageserver-types-3.15.0-next.1.tgz#eddca4cf2a2547357006d4f0cc177ddc56043b65"
   integrity sha512-R0kzmaI8gOGEoU7b9huYQAzgZzRQ/5Q8HKjsIUdfz0MjXcBZ4tr1ik1So1p1O5kGrI1VTCd22Fw/wI7ECGoIPw==
+
+vscode-languageserver-types@3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/vscode-languageserver-types/-/vscode-languageserver-types-3.6.0.tgz#0bba63b0fa82a714394a4478f55a596ee4ed7d0a"
+  integrity sha512-GSgQtGmtza4PoNH0+iHWylWg/1sw2DODezqYWRxbN910dPchI3CQaSJN76csKcQGv55wsWgX82T6n74q8mFSpw==
 
 vscode-languageserver@^5.0.3, vscode-languageserver@^5.1.0, vscode-languageserver@^5.2.1:
   version "5.2.1"
