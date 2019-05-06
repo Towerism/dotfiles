@@ -1,0 +1,12 @@
+#!/usr/bin/osascript
+
+on run wallpaper
+    tell Application "Finder"
+        tell application "System Events"
+            set allDesktops to a reference to every desktop
+        end tell
+        repeat with currentDesktop in allDesktops
+            log "desktop"
+        end
+    end tell
+end run

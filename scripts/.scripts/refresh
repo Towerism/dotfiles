@@ -1,4 +1,8 @@
 #!/bin/bash
 ~/.scripts/generate-kitty-colors
+
+WALLPAPER=$(cat "$HOME/.cache/wal/wal")
+~/.scripts/set-wallpaper $WALLPAPER
+
 exit 0
 
