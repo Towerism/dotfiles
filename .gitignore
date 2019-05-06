@@ -8,3 +8,6 @@ scripts/.scripts/img
 nvim/plugged
 oni/.config/oni/tsconfig.json
 node_modules
+coc/.config/coc/commands
+coc/.config/coc/history.json
+coc/.config/coc/snippets-mru
