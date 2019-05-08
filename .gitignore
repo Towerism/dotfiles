@@ -11,3 +11,4 @@ node_modules
 coc/.config/coc/commands
 coc/.config/coc/history.json
 coc/.config/coc/snippets-mru
+.DS_Store
