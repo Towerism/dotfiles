@@ -10,7 +10,6 @@ function! s:sharedPlugins()
   Plug 'airblade/vim-rooter'
   Plug 'Shougo/echodoc.vim'
   Plug 'jiangmiao/auto-pairs'
-  Plug 'lepture/vim-jinja'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'sbdchd/neoformat'
   Plug 'tpope/vim-sleuth'
