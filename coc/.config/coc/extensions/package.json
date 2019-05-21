@@ -1,14 +1,13 @@
 {
   "dependencies": {
-    "Angular2": "https://github.com/johnpapa/vscode-angular-snippets.git#master",
     "coc-angular": "^0.0.8",
     "coc-css": "^1.0.7",
     "coc-docker": "^0.1.2",
     "coc-emmet": "^1.0.9",
-    "coc-highlight": "^1.0.5",
+    "coc-highlight": "^1.1.2",
     "coc-html": "^1.0.7",
-    "coc-json": "^1.0.15",
-    "coc-prettier": "^1.1.0",
+    "coc-json": "^1.0.17",
+    "coc-prettier": "^1.1.1",
     "coc-snippets": "^2.0.10",
     "coc-tslint": "^1.0.15",
     "coc-tsserver": "^1.2.1",
