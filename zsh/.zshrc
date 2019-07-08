@@ -69,4 +69,5 @@ bindkey fd vi-cmd-mode
 export SDKMAN_DIR="/Users/htp508/.sdkman"
 [[ -s "/Users/htp508/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/htp508/.sdkman/bin/sdkman-init.sh"
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/Cellar/node@10/10.16.0/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
