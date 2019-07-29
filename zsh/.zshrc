@@ -57,17 +57,11 @@ if [ -f /usr/local/opt/nvm/nvm.sh ]; then
     source /usr/local/opt/nvm/nvm.sh
 fi
 
-source "/Users/htp508/.sdkman/bin/sdkman-init.sh"
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Map fd to enter vi-cmd-mode
 bindkey fd vi-cmd-mode
 # End of lines added by compinstall
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/htp508/.sdkman"
-[[ -s "/Users/htp508/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/htp508/.sdkman/bin/sdkman-init.sh"
 
 export PATH="/usr/local/bin:/usr/local/Cellar/node@10/10.16.0/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 

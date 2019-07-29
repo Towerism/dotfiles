@@ -1,6 +1,5 @@
 dunst
 coc
-chunkwm
 kitty
 iterm2
 neofetch
@@ -12,4 +11,5 @@ task
 tig
 tmux
 wallpapers
+yabai
 zsh
