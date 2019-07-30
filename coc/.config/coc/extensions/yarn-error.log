@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/Cellar/node/12.6.0/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js install
+  /usr/local/Cellar/node/12.6.0/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js
 
 PATH: 
-  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+  /usr/local/bin:/usr/local/Cellar/node@10/10.16.0/bin:/Users/martinfracker/.yarn/bin:/Users/martinfracker/.config/yarn/global/node_modules/.bin:/Users/martinfracker/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/martinfracker/Library/Android/Sdk/tools:/Users/martinfracker/Library/Android/Sdk/platform-tools:/Users/martinfracker/.fzf/bin
 
 Yarn version: 
   1.17.3
