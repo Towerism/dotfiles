@@ -1,0 +1,5 @@
+{
+    "eslint.autoFixOnSave": true,
+    "coc.preferences.formatOnType": true,
+    "coc.preferences.formatOnSaveFiletypes": ["css", "html", "typescript", "javascript"]
+}

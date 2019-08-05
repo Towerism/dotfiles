@@ -30,4 +30,4 @@ echo "Warming up lockscreen cache in the background."
 ~/.scripts/warmup-lockscreen-cache
 
 # install coc npm packages
-cd coc/.config/extensions/ && yarn install
+cd ~/.config/coc/extensions/ && yarn install
