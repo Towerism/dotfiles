@@ -89,3 +89,5 @@ nnoremap <silent> <leader>lj  :<C-u>CocNext<CR>
 nnoremap <silent> <leader>lk  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <leader>lp  :<C-u>CocListResume<CR>
+" Coc Action
+nnoremap <silent> <leader>la  :<C-u>CocAction<CR>
