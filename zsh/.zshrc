@@ -39,6 +39,7 @@ alias vim='nvim'
 alias vi='nvim'
 alias mem='~/.scripts/search-zhistory'
 alias ssh='TERM=xterm-color ssh'
+alias oni2='/Applications/Onivim2.app/Contents/MacOS/Oni2'
 
 export EDITOR=nvim
 
@@ -63,5 +64,7 @@ fi
 bindkey fd vi-cmd-mode
 # End of lines added by compinstall
 
-export PATH="/usr/local/bin:/usr/local/Cellar/node@10/10.16.0/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="/usr/local/Cellar/node@10/10.16.0/bin:/usr/local/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
+export PATH="$HOME/.jenv/bin:$PATH"
+  eval "$(jenv init -)"
