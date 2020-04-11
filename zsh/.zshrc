@@ -33,9 +33,9 @@ export EDITOR=nvim
 
 source ~/.profile
 
-export PATH=$HOME/.cargo/bin:$PATH
 export DOCKER_CLIENT_TIMEOUT=120
 export COMPOSE_HTTP_TIMEOUT=120
+[ -f ~/.cargo/env ] && source ~/.cargo/env
 
 if [ -f "$HOME/.system_specific_paths" ]; then
     source ~/.system_specific_paths
