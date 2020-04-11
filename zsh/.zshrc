@@ -54,3 +54,8 @@ source ~/.cache/wal/colors.sh
 bindkey fd vi-cmd-mode
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+export ANDROID_HOME="$HOME/Android/Sdk"
+PATH=$PATH:$ANDROID_HOME/tools; PATH=$PATH:$ANDROID_HOME/platform-tools
+
+export PATH=$PATH:/usr/bin/
