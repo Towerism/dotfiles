@@ -1,4 +1,4 @@
-if !exists("g:gui_oni")
+if !exists("veonim")
     colorscheme wal
 endif
 

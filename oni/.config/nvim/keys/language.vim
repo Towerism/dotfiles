@@ -1,3 +1,24 @@
+if exists("veonim")
+
+  nno <silent> <leader>lr :Veonim rename<cr>
+  nno <silent> gd :Veonim definition<cr>
+  nno <silent> gi :Veonim implementation<cr>
+  nno <silent> gt :Veonim type-definition<cr>
+  nno <silent> <leader>lf :Veonim references<cr>
+  nno <silent> K :Veonim hover<cr>
+  nno <silent> <leader>ls :Veonim symbols<cr>
+  nno <silent> <leadeer>lS :Veonim workspace-symbols<cr>
+  nno <silent> <leader>la :Veonim code-action<cr>
+  nno <silent> # :Veonim highlight<cr>
+  nno <silent> <leader>lH :Veonim highlight-clear<cr>
+  nno <silent> ,n :Veonim next-usage<cr>
+  nno <silent> ,p :Veonim prev-usage<cr>
+  nno <silent> <leader>le :Veonim show-problem<cr>
+  nno <silent> <c-n> :Veonim next-problem<cr>
+  nno <silent> <c-p> :Veonim prev-problem<cr>
+
+else
+
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
 inoremap <silent><expr> <TAB>
@@ -91,3 +112,5 @@ nnoremap <silent> <leader>lk  :<C-u>CocPrev<CR>
 nnoremap <silent> <leader>lp  :<C-u>CocListResume<CR>
 " Coc Action
 nnoremap <silent> <leader>la  :<C-u>CocAction<CR>
+
+endif
