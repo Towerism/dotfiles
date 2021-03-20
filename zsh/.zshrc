@@ -9,10 +9,6 @@
 # unlock ssh identity
 eval $(keychain --quiet --eval ~/.ssh/id_rsa)
 
-# set up kitty autocomplete
-compinit
-kitty + complete setup zsh | source /dev/stdin
-
 export ALTERNATE_EDITOR=""
 export XDG_CONFIG_HOME="$HOME/.config"
 
@@ -56,3 +52,4 @@ export DISPLAY=:0.0
 if [ -f "$HOME/.system_specific_paths" ]; then
     source ~/.system_specific_paths
 fi
+source /usr/share/nvm/init-nvm.sh
