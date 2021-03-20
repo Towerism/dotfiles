@@ -1,6 +1,3 @@
 #!/bin/bash
-~/.scripts/generate-dunst-config
-~/.scripts/generate-kitty-colors
-~/.config/polybar/launch.sh
 exit 0
 

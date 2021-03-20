@@ -25,6 +25,3 @@ if [[ ! -a "$HOME/.cache/wal/wal" ]]; then
     ~/.scripts/load-theme ~/.wallpapers/elias-forest-landscape-scenery-tx-2560x1440.jpg
 fi
 printf "done\n"
-
-echo "Warming up lockscreen cache in the background."
-~/.scripts/warmup-lockscreen-cache
