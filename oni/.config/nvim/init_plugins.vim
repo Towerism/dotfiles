@@ -1,7 +1,6 @@
 function! s:sharedPlugins()
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-surround'
-  Plug 'dylanaraps/wal.vim'
   Plug 'sheerun/vim-polyglot'
   Plug 'SpaceVim/vim-swig'
   Plug 'scrooloose/nerdtree'
@@ -13,6 +12,7 @@ function! s:sharedPlugins()
   Plug 'lepture/vim-jinja'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'sbdchd/neoformat'
+  Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 endfunction
 
 function! s:oniOnlyPlugins()

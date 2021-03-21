@@ -1,7 +1,3 @@
-if !exists("g:gui_oni")
-    colorscheme wal
-endif
-
 set incsearch
 set number
 set noswapfile
@@ -26,3 +22,4 @@ set tabstop=8
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+highlight clear SignColumn

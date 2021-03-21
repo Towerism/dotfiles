@@ -46,8 +46,10 @@ source ~/.cache/wal/colors.sh
 
 # Map fd to enter vi-cmd-mode
 bindkey fd vi-cmd-mode
+
+# Set up xserver connections so that clipboard works
+export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0
 export LIBGL_ALWAYS_INDIRECT=1
-export DISPLAY=:0.0
 
 if [ -f "$HOME/.system_specific_paths" ]; then
     source ~/.system_specific_paths
