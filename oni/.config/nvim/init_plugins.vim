@@ -21,7 +21,7 @@ endfunction
 
 function! s:terminalOnlyPlugins()
   Plug 'vim-airline/vim-airline'
-  Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': './install.sh' }
+  Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 endfunction
 
 if exists("g:gui_oni")
