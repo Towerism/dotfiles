@@ -8,8 +8,6 @@ runtime keys/language.vim
 runtime keys/project.vim
 runtime keys/window.vim
 
-inoremap <Esc> <Nop>
-vnoremap <Esc> <Nop>
 inoremap fd <Esc>
 vnoremap fd <Esc>
 " Use fd to exit insert mode in :term
