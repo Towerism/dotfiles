@@ -1,5 +1,6 @@
 {
     "eslint.autoFixOnSave": false,
     "coc.preferences.formatOnType": true,
-    "coc.preferences.formatOnSaveFiletypes": ["css", "html", "typescript", "javascript"]
+    "coc.preferences.formatOnSaveFiletypes": ["css", "html", "typescript", "javascript"],
+    "vetur.dev.vlsPath": "$HOME/.config/yarn/global/node_modules/vls"
 }
