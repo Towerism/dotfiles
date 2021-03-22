@@ -8,3 +8,5 @@ scripts/.scripts/img
 nvim/plugged
 oni/.config/oni/tsconfig.json
 node_modules
+/coc/.config/coc/extensions/package.json
+/coc/.config/coc/extensions/yarn.lock
