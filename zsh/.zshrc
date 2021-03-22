@@ -59,3 +59,9 @@ export ANDROID_HOME="$HOME/Android/Sdk"
 PATH=$PATH:$ANDROID_HOME/tools; PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export PATH=$PATH:/usr/bin/
+
+export PATH=~/.local/share/gamejoltclient/bin:$PATH
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/mfracker/.sdkman"
+[[ -s "/home/mfracker/.sdkman/bin/sdkman-init.sh" ]] && source "/home/mfracker/.sdkman/bin/sdkman-init.sh"
