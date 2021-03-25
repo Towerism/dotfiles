@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "coc-angular": ">=0.1000.7",
     "coc-css": ">=1.2.4",
     "coc-docker": ">=0.3.0",
     "coc-emmet": ">=1.1.6",

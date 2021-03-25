@@ -68,3 +68,4 @@ export PATH="/usr/local/Cellar/node@10/10.16.0/bin:/usr/local/bin:$HOME/.yarn/bi
 
 export PATH="$HOME/.jenv/bin:$PATH"
   eval "$(jenv init -)"
+export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
