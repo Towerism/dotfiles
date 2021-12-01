@@ -7,11 +7,11 @@
     "coc-highlight": ">=1.2.5",
     "coc-html": ">=1.2.4",
     "coc-json": ">=1.2.6",
-    "coc-prettier": ">=1.1.17",
     "coc-rls": ">=1.1.6",
     "coc-snippets": ">=2.1.28",
+    "coc-stylelint": ">=1.2.0",
     "coc-tslint": "^1.0.17",
     "coc-tsserver": ">=1.4.12",
-    "coc-vetur": ">=1.1.12"
+    "coc-vetur": ">=1.2.5"
   }
 }

@@ -2,6 +2,9 @@
     "eslint.filetypes": [
         "javascript",
         "javascriptreact",
-        "typescript"
-    ]
+        "typescript",
+        "vue"
+    ],
+    "eslint.format.enable": true,
+    "eslint.autoFixOnSave": true
 }
