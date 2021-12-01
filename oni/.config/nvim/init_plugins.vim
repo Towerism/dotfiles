@@ -18,6 +18,7 @@ function! s:terminalOnlyPlugins()
   Plug 'vim-airline/vim-airline'
   Plug 'dylanaraps/wal.vim'
   Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+  Plug 'github/copilot.vim', { 'branch': 'release' }
 endfunction
 
 call plug#begin('~/.config/nvim/plugged')
