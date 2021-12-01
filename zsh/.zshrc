@@ -65,3 +65,4 @@ bindkey fd vi-cmd-mode
 # End of lines added by compinstall
 
 export PATH="/usr/local/Cellar/node@10/10.16.0/bin:/usr/local/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+nvm use default
