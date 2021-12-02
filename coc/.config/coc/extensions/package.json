@@ -7,6 +7,7 @@
     "coc-highlight": ">=1.2.5",
     "coc-html": ">=1.2.4",
     "coc-json": ">=1.2.6",
+    "coc-prettier": ">=1.1.24",
     "coc-rls": ">=1.1.6",
     "coc-snippets": ">=2.1.28",
     "coc-stylelint": ">=1.2.0",

@@ -6,5 +6,7 @@
         "vue"
     ],
     "eslint.format.enable": true,
-    "eslint.autoFixOnSave": true
+    "eslint.autoFixOnSave": false,
+    "prettier.eslintIntegration": true,
+    "coc.preferences.formatOnSaveFiletypes": ["js", "vue"],
 }
