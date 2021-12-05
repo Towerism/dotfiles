@@ -1,6 +1,7 @@
 xrdb -merge ~/.cache/wal/colors.Xresources
 xrdb -merge ~/.Xresources
 systemctl --user import-environment DISPLAY
+xmodmap ~/.xmodmap
 
 if [ "$0" != "nvidia-xrun" ]; then
     source ~/.profile
