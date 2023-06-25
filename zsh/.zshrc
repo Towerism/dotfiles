@@ -5,13 +5,13 @@
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
 
 # unlock ssh identity
 eval $(keychain --quiet --eval ~/.ssh/id_rsa)
-
-# set up kitty autocomplete
-compinit
-kitty + complete setup zsh | source /dev/stdin
 
 export ALTERNATE_EDITOR=""
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -35,12 +35,13 @@ source ~/.profile
 
 export DOCKER_CLIENT_TIMEOUT=120
 export COMPOSE_HTTP_TIMEOUT=120
+
 [ -f ~/.cargo/env ] && source ~/.cargo/env
 
 if [ -f "$HOME/.system_specific_paths" ]; then
     source ~/.system_specific_paths
 fi
-source /usr/share/nvm/init-nvm.sh
+eval `fnm env`
 
 # restore terminal colors
 (cat ~/.cache/wal/sequences &)
@@ -65,3 +66,6 @@ export PATH=~/.local/share/gamejoltclient/bin:$PATH
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/mfracker/.sdkman"
 [[ -s "/home/mfracker/.sdkman/bin/sdkman-init.sh" ]] && source "/home/mfracker/.sdkman/bin/sdkman-init.sh"
+
+# Created by `pipx` on 2023-06-25 19:48:09
+export PATH="$PATH:/home/mfracker/.local/bin"
