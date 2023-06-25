@@ -7,27 +7,25 @@ DIR_OVERRIDE=$1
 DIR=${DIR_OVERRIDE:-$(dirname $(realpath "$0"))}
 OPT="-d $DIR"
 
-
-which stow >/dev/null 2>&1 || { echo "Unable to automatically install dotfiles: stow was not found"; exit 1; }
-
+which stow >/dev/null 2>&1 || {
+	echo "Unable to automatically install dotfiles: stow was not found"
+	exit 1
+}
 
 echo "Stowing modules:"
 while read module; do
-    printf "  $module... "
-    stow $OPT $module
-    echo "done"
-done < $DIR/modules
+	printf "  $module... "
+	stow $OPT $module
+	echo "done"
+done <$DIR/modules
 
 printf "Ensuring theme is configured... "
 # configure theme if it has not been configured
-if [[ ! -a "$HOME/.cache/wal/wal" ]]; then
-    printf "\n"
-    ~/.scripts/load-theme ~/.wallpapers/elias-forest-landscape-scenery-tx-2560x1440.jpg
+if [[ ! -e "$HOME/.cache/wal/wal" ]]; then
+	printf "\n"
+	~/.scripts/load-theme ~/.wallpapers/elias-forest-landscape-scenery-tx-2560x1440.jpg
 fi
 printf "done\n"
 
 echo "Warming up lockscreen cache in the background."
 ~/.scripts/warmup-lockscreen-cache
-
-# install coc npm packages
-cd ~/.config/coc/extensions/ && yarn install
